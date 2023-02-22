@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Anderson Grotesk UltraBold';
+  src: local('Anderson Grotesk UltraBold'),
+    url(fonts/AndersonGrotesk-Ultrabold.otf) format('opentype');
+  font-weight: 800;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Anderson Grotesk Bold';
+  src: local('Anderson Grotesk Bold'),
+    url(fonts/AndersonGrotesk-Bold.otf) format('opentype');
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Anderson Grotesk';
+  src: local('Anderson Grotesk'),
+    url(fonts/AndersonGrotesk.otf) format('opentype');
+  font-weight: 400;
+}
+  
+html {
+  /* Load system fonts */
+  font-family: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Roboto,
+    Segoe UI, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  color: #31393c;
+  background: #ffffff;
+  scroll-behavior: smooth;
+
+  /* Make type rendering look crisper */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Disable auto-enlargement of small text in Safari */
+  text-size-adjust: 100%;
+
+  /* Enable kerning and optional ligatures */
+  text-rendering: optimizeLegibility;
+
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#heading {
+  font-family: "Anderson Grotesk UltraBold", sans-serif;
+  background-image: url("Background8.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 275px;
   color: white;
+  border-radius: 25px;
+  border-top:100vh;
+  margin-top:-23px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+#title{
+  padding-left: 25px;
+  padding-top: 110px;
+  font-size: 75px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#subtitles{
+  
+  color:black;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }

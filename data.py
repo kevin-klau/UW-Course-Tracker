@@ -19,9 +19,10 @@ driver.get(url)
 import time
 time.sleep(1)
 
-# Scrolling down to the bottom of the page to get all 6000 courses
+# Scrolling down to the bottom of the page to get all 8000 courses
+
 while True:
-    count=count+1
+    
     # Get current scroll height
     last_height = driver.execute_script("return document.body.scrollHeight")
 
