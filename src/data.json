@@ -1,0 +1,2202 @@
+[
+    {
+        "code": "CS 115",
+        "name": "Introduction to Computer Science 1",
+        "ratings": "2139",
+        "useful": "21%",
+        "easy": "10%",
+        "liked": "24%"
+    },
+    {
+        "code": "MATH 135",
+        "name": "Algebra for Honours Mathematics",
+        "ratings": "1334",
+        "useful": "85%",
+        "easy": "42%",
+        "liked": "79%"
+    },
+    {
+        "code": "ECON 101",
+        "name": "Introduction to Microeconomics",
+        "ratings": "1222",
+        "useful": "64%",
+        "easy": "70%",
+        "liked": "45%"
+    },
+    {
+        "code": "PSYCH 101",
+        "name": "Introductory Psychology",
+        "ratings": "953",
+        "useful": "73%",
+        "easy": "66%",
+        "liked": "79%"
+    },
+    {
+        "code": "MATH 137",
+        "name": "Calculus 1 for Honours Mathematics",
+        "ratings": "877",
+        "useful": "85%",
+        "easy": "56%",
+        "liked": "69%"
+    },
+    {
+        "code": "CHE 102",
+        "name": "Chemistry for Engineers",
+        "ratings": "833",
+        "useful": "24%",
+        "easy": "70%",
+        "liked": "34%"
+    },
+    {
+        "code": "MATH 115",
+        "name": "Linear Algebra for Engineering",
+        "ratings": "807",
+        "useful": "82%",
+        "easy": "43%",
+        "liked": "67%"
+    },
+    {
+        "code": "CS 135",
+        "name": "Designing Functional Programs",
+        "ratings": "798",
+        "useful": "89%",
+        "easy": "68%",
+        "liked": "88%"
+    },
+    {
+        "code": "PD 1",
+        "name": "Career Fundamentals",
+        "ratings": "745",
+        "useful": "20%",
+        "easy": "80%",
+        "liked": "7%"
+    },
+    {
+        "code": "STAT 230",
+        "name": "Probability",
+        "ratings": "708",
+        "useful": "83%",
+        "easy": "58%",
+        "liked": "60%"
+    },
+    {
+        "code": "MATH 136",
+        "name": "Linear Algebra 1 for Honours Mathematics",
+        "ratings": "705",
+        "useful": "79%",
+        "easy": "41%",
+        "liked": "59%"
+    },
+    {
+        "code": "CS 246",
+        "name": "Object-Oriented Software Development",
+        "ratings": "666",
+        "useful": "66%",
+        "easy": "59%",
+        "liked": "62%"
+    },
+    {
+        "code": "MATH 138",
+        "name": "Calculus 2 for Honours Mathematics",
+        "ratings": "658",
+        "useful": "85%",
+        "easy": "47%",
+        "liked": "67%"
+    },
+    {
+        "code": "CS 240",
+        "name": "Data Structures and Data Management",
+        "ratings": "654",
+        "useful": "61%",
+        "easy": "58%",
+        "liked": "57%"
+    },
+    {
+        "code": "ECON 102",
+        "name": "Introduction to Macroeconomics",
+        "ratings": "638",
+        "useful": "61%",
+        "easy": "72%",
+        "liked": "52%"
+    },
+    {
+        "code": "CHEM 120",
+        "name": "General Chemistry 1",
+        "ratings": "624",
+        "useful": "81%",
+        "easy": "68%",
+        "liked": "71%"
+    },
+    {
+        "code": "MATH 117",
+        "name": "Calculus 1 for Engineering",
+        "ratings": "615",
+        "useful": "93%",
+        "easy": "69%",
+        "liked": "83%"
+    },
+    {
+        "code": "ENGL 109",
+        "name": "Introduction to Academic Writing",
+        "ratings": "587",
+        "useful": "41%",
+        "easy": "76%",
+        "liked": "41%"
+    },
+    {
+        "code": "CS 341",
+        "name": "Algorithms",
+        "ratings": "585",
+        "useful": "99%",
+        "easy": "54%",
+        "liked": "89%"
+    },
+    {
+        "code": "MATH 239",
+        "name": "Introduction to Combinatorics",
+        "ratings": "581",
+        "useful": "82%",
+        "easy": "27%",
+        "liked": "76%"
+    },
+    {
+        "code": "CS 245",
+        "name": "Logic and Computation",
+        "ratings": "577",
+        "useful": "24%",
+        "easy": "56%",
+        "liked": "28%"
+    },
+    {
+        "code": "CS 136",
+        "name": "Elementary Algorithm Design and Data Abstraction",
+        "ratings": "568",
+        "useful": "96%",
+        "easy": "60%",
+        "liked": "88%"
+    },
+    {
+        "code": "ECE 105",
+        "name": "Classical Mechanics",
+        "ratings": "567",
+        "useful": "56%",
+        "easy": "17%",
+        "liked": "47%"
+    },
+    {
+        "code": "BIOL 130",
+        "name": "Introductory Cell Biology",
+        "ratings": "565",
+        "useful": "84%",
+        "easy": "50%",
+        "liked": "57%"
+    },
+    {
+        "code": "SPCOM 223",
+        "name": "Public Speaking",
+        "ratings": "563",
+        "useful": "67%",
+        "easy": "73%",
+        "liked": "72%"
+    },
+    {
+        "code": "STAT 231",
+        "name": "Statistics",
+        "ratings": "487",
+        "useful": "66%",
+        "easy": "53%",
+        "liked": "40%"
+    },
+    {
+        "code": "CS 241",
+        "name": "Foundations of Sequential Programs",
+        "ratings": "479",
+        "useful": "93%",
+        "easy": "55%",
+        "liked": "90%"
+    },
+    {
+        "code": "CHEM 120L",
+        "name": "General Chemistry Laboratory 1",
+        "ratings": "472",
+        "useful": "80%",
+        "easy": "74%",
+        "liked": "75%"
+    },
+    {
+        "code": "MATH 119",
+        "name": "Calculus 2 for Engineering",
+        "ratings": "462",
+        "useful": "91%",
+        "easy": "65%",
+        "liked": "86%"
+    },
+    {
+        "code": "MATH 127",
+        "name": "Calculus 1 for the Sciences",
+        "ratings": "462",
+        "useful": "75%",
+        "easy": "48%",
+        "liked": "51%"
+    },
+    {
+        "code": "ECE 140",
+        "name": "Linear Circuits",
+        "ratings": "459",
+        "useful": "82%",
+        "easy": "61%",
+        "liked": "78%"
+    },
+    {
+        "code": "ECE 106",
+        "name": "Electricity and Magnetism",
+        "ratings": "430",
+        "useful": "45%",
+        "easy": "14%",
+        "liked": "44%"
+    },
+    {
+        "code": "MATH 116",
+        "name": "Calculus 1 for Engineering",
+        "ratings": "425",
+        "useful": "92%",
+        "easy": "80%",
+        "liked": "86%"
+    },
+    {
+        "code": "ECE 124",
+        "name": "Digital Circuits and Systems",
+        "ratings": "417",
+        "useful": "84%",
+        "easy": "49%",
+        "liked": "79%"
+    },
+    {
+        "code": "MATH 237",
+        "name": "Calculus 3 for Honours Mathematics",
+        "ratings": "403",
+        "useful": "88%",
+        "easy": "49%",
+        "liked": "81%"
+    },
+    {
+        "code": "AFM 101",
+        "name": "Introduction to Financial Accounting",
+        "ratings": "392",
+        "useful": "83%",
+        "easy": "66%",
+        "liked": "54%"
+    },
+    {
+        "code": "CHEM 123",
+        "name": "General Chemistry 2",
+        "ratings": "390",
+        "useful": "83%",
+        "easy": "59%",
+        "liked": "62%"
+    },
+    {
+        "code": "PHYS 111",
+        "name": "Physics 1",
+        "ratings": "374",
+        "useful": "58%",
+        "easy": "43%",
+        "liked": "41%"
+    },
+    {
+        "code": "ECE 222",
+        "name": "Digital Computers",
+        "ratings": "346",
+        "useful": "82%",
+        "easy": "42%",
+        "liked": "59%"
+    },
+    {
+        "code": "BIOL 130L",
+        "name": "Cell Biology Laboratory",
+        "ratings": "341",
+        "useful": "69%",
+        "easy": "60%",
+        "liked": "54%"
+    },
+    {
+        "code": "CS 251",
+        "name": "Computer Organization and Design",
+        "ratings": "335",
+        "useful": "69%",
+        "easy": "84%",
+        "liked": "65%"
+    },
+    {
+        "code": "SOC 101",
+        "name": "Introduction to Sociology",
+        "ratings": "334",
+        "useful": "53%",
+        "easy": "77%",
+        "liked": "55%"
+    },
+    {
+        "code": "MATH 235",
+        "name": "Linear Algebra 2 for Honours Mathematics",
+        "ratings": "333",
+        "useful": "79%",
+        "easy": "38%",
+        "liked": "66%"
+    },
+    {
+        "code": "BIOL 239",
+        "name": "Genetics",
+        "ratings": "330",
+        "useful": "89%",
+        "easy": "61%",
+        "liked": "78%"
+    },
+    {
+        "code": "CS 350",
+        "name": "Operating Systems",
+        "ratings": "323",
+        "useful": "94%",
+        "easy": "46%",
+        "liked": "85%"
+    },
+    {
+        "code": "CHEM 123L",
+        "name": "General Chemistry Laboratory 2",
+        "ratings": "312",
+        "useful": "79%",
+        "easy": "72%",
+        "liked": "68%"
+    },
+    {
+        "code": "PHYS 121",
+        "name": "Mechanics",
+        "ratings": "304",
+        "useful": "79%",
+        "easy": "46%",
+        "liked": "67%"
+    },
+    {
+        "code": "CS 137",
+        "name": "Programming Principles",
+        "ratings": "298",
+        "useful": "93%",
+        "easy": "84%",
+        "liked": "96%"
+    },
+    {
+        "code": "CS 116",
+        "name": "Introduction to Computer Science 2",
+        "ratings": "297",
+        "useful": "90%",
+        "easy": "77%",
+        "liked": "83%"
+    },
+    {
+        "code": "CLAS 104",
+        "name": "Classical Mythology",
+        "ratings": "296",
+        "useful": "25%",
+        "easy": "92%",
+        "liked": "85%"
+    },
+    {
+        "code": "AFM 131",
+        "name": "Introduction to Business in North America",
+        "ratings": "295",
+        "useful": "36%",
+        "easy": "65%",
+        "liked": "39%"
+    },
+    {
+        "code": "ECE 150",
+        "name": "Fundamentals of Programming",
+        "ratings": "294",
+        "useful": "87%",
+        "easy": "71%",
+        "liked": "78%"
+    },
+    {
+        "code": "MATH 118",
+        "name": "Calculus 2 for Engineering",
+        "ratings": "290",
+        "useful": "88%",
+        "easy": "48%",
+        "liked": "76%"
+    },
+    {
+        "code": "MATH 128",
+        "name": "Calculus 2 for the Sciences",
+        "ratings": "284",
+        "useful": "69%",
+        "easy": "49%",
+        "liked": "56%"
+    },
+    {
+        "code": "MSCI 261",
+        "name": "Engineering Economics: Financial Management for Engineers",
+        "ratings": "274",
+        "useful": "41%",
+        "easy": "80%",
+        "liked": "35%"
+    },
+    {
+        "code": "SE 101",
+        "name": "Introduction to Methods of Software Engineering",
+        "ratings": "268",
+        "useful": "44%",
+        "easy": "97%",
+        "liked": "60%"
+    },
+    {
+        "code": "CS 348",
+        "name": "Introduction to Database Management",
+        "ratings": "261",
+        "useful": "61%",
+        "easy": "67%",
+        "liked": "36%"
+    },
+    {
+        "code": "PHYS 115",
+        "name": "Mechanics",
+        "ratings": "256",
+        "useful": "79%",
+        "easy": "16%",
+        "liked": "52%"
+    },
+    {
+        "code": "COOP 1",
+        "name": "Co-operative Work Term",
+        "ratings": "253",
+        "useful": "90%",
+        "easy": "84%",
+        "liked": "90%"
+    },
+    {
+        "code": "BIOL 240",
+        "name": "Fundamentals of Microbiology",
+        "ratings": "250",
+        "useful": "83%",
+        "easy": "53%",
+        "liked": "79%"
+    },
+    {
+        "code": "GEOG 101",
+        "name": "Human Geographies: People, Space and Change",
+        "ratings": "243",
+        "useful": "58%",
+        "easy": "93%",
+        "liked": "79%"
+    },
+    {
+        "code": "BIOL 273",
+        "name": "Principles of Human Physiology 1",
+        "ratings": "242",
+        "useful": "95%",
+        "easy": "31%",
+        "liked": "82%"
+    },
+    {
+        "code": "STAT 333",
+        "name": "Stochastic Processes 1",
+        "ratings": "239",
+        "useful": "92%",
+        "easy": "19%",
+        "liked": "92%"
+    },
+    {
+        "code": "CS 349",
+        "name": "User Interfaces",
+        "ratings": "238",
+        "useful": "75%",
+        "easy": "75%",
+        "liked": "77%"
+    },
+    {
+        "code": "AFM 102",
+        "name": "Introduction to Managerial Accounting",
+        "ratings": "232",
+        "useful": "74%",
+        "easy": "67%",
+        "liked": "56%"
+    },
+    {
+        "code": "CS 138",
+        "name": "Introduction to Data Abstraction and Implementation",
+        "ratings": "232",
+        "useful": "96%",
+        "easy": "89%",
+        "liked": "91%"
+    },
+    {
+        "code": "CS 343",
+        "name": "Concurrent and Parallel Programming",
+        "ratings": "232",
+        "useful": "68%",
+        "easy": "41%",
+        "liked": "64%"
+    },
+    {
+        "code": "ENVS 178",
+        "name": "Environmental Applications of Data Management and Statistics",
+        "ratings": "230",
+        "useful": "72%",
+        "easy": "50%",
+        "liked": "39%"
+    },
+    {
+        "code": "CS 145",
+        "name": "Designing Functional Programs (Advanced Level)",
+        "ratings": "229",
+        "useful": "64%",
+        "easy": "62%",
+        "liked": "73%"
+    },
+    {
+        "code": "WKRPT 200",
+        "name": "Work-term Report",
+        "ratings": "225",
+        "useful": "14%",
+        "easy": "30%",
+        "liked": "5%"
+    },
+    {
+        "code": "ENVS 195",
+        "name": "Introduction to Environmental Studies",
+        "ratings": "223",
+        "useful": "72%",
+        "easy": "86%",
+        "liked": "78%"
+    },
+    {
+        "code": "HRM 200",
+        "name": "Basic Human Resources Management",
+        "ratings": "218",
+        "useful": "47%",
+        "easy": "83%",
+        "liked": "56%"
+    },
+    {
+        "code": "CHEM 266",
+        "name": "Basic Organic Chemistry 1",
+        "ratings": "217",
+        "useful": "82%",
+        "easy": "21%",
+        "liked": "51%"
+    },
+    {
+        "code": "SPCOM 100",
+        "name": "Interpersonal Communication",
+        "ratings": "217",
+        "useful": "42%",
+        "easy": "73%",
+        "liked": "44%"
+    },
+    {
+        "code": "PHYS 111L",
+        "name": "Physics 1 Laboratory",
+        "ratings": "215",
+        "useful": "31%",
+        "easy": "19%",
+        "liked": "21%"
+    },
+    {
+        "code": "SCI 238",
+        "name": "Introductory Astronomy",
+        "ratings": "213",
+        "useful": "31%",
+        "easy": "71%",
+        "liked": "71%"
+    },
+    {
+        "code": "CO 250",
+        "name": "Introduction to Optimization",
+        "ratings": "201",
+        "useful": "78%",
+        "easy": "39%",
+        "liked": "62%"
+    },
+    {
+        "code": "PHIL 145",
+        "name": "Critical Thinking",
+        "ratings": "201",
+        "useful": "72%",
+        "easy": "74%",
+        "liked": "64%"
+    },
+    {
+        "code": "STAT 202",
+        "name": "Introductory Statistics for Scientists",
+        "ratings": "199",
+        "useful": "74%",
+        "easy": "78%",
+        "liked": "62%"
+    },
+    {
+        "code": "SE 212",
+        "name": "Logic and Computation",
+        "ratings": "193",
+        "useful": "83%",
+        "easy": "29%",
+        "liked": "85%"
+    },
+    {
+        "code": "CS 370",
+        "name": "Numerical Computation",
+        "ratings": "192",
+        "useful": "86%",
+        "easy": "61%",
+        "liked": "79%"
+    },
+    {
+        "code": "PD 11",
+        "name": "Processes for Technical Report Writing",
+        "ratings": "189",
+        "useful": "21%",
+        "easy": "64%",
+        "liked": "6%"
+    },
+    {
+        "code": "CS 247",
+        "name": "Software Engineering Principles",
+        "ratings": "188",
+        "useful": "51%",
+        "easy": "64%",
+        "liked": "37%"
+    },
+    {
+        "code": "PSYCH 257",
+        "name": "Psychopathology",
+        "ratings": "186",
+        "useful": "92%",
+        "easy": "65%",
+        "liked": "91%"
+    },
+    {
+        "code": "GENE 123",
+        "name": "Electrical Circuits and Instrumentation",
+        "ratings": "181",
+        "useful": "61%",
+        "easy": "35%",
+        "liked": "54%"
+    },
+    {
+        "code": "MSCI 211",
+        "name": "Organizational Behaviour",
+        "ratings": "179",
+        "useful": "31%",
+        "easy": "82%",
+        "liked": "47%"
+    },
+    {
+        "code": "PHYS 112",
+        "name": "Physics 2",
+        "ratings": "179",
+        "useful": "63%",
+        "easy": "47%",
+        "liked": "58%"
+    },
+    {
+        "code": "MUSIC 140",
+        "name": "Popular Music and Culture",
+        "ratings": "174",
+        "useful": "58%",
+        "easy": "87%",
+        "liked": "94%"
+    },
+    {
+        "code": "PSYCH 207",
+        "name": "Cognitive Processes",
+        "ratings": "174",
+        "useful": "74%",
+        "easy": "74%",
+        "liked": "75%"
+    },
+    {
+        "code": "MATH 145",
+        "name": "Algebra (Advanced Level)",
+        "ratings": "173",
+        "useful": "95%",
+        "easy": "24%",
+        "liked": "95%"
+    },
+    {
+        "code": "EARTH 121",
+        "name": "Introductory Earth Sciences",
+        "ratings": "171",
+        "useful": "32%",
+        "easy": "83%",
+        "liked": "53%"
+    },
+    {
+        "code": "STAT 206",
+        "name": "Statistics for Software Engineering",
+        "ratings": "169",
+        "useful": "71%",
+        "easy": "54%",
+        "liked": "59%"
+    },
+    {
+        "code": "ECE 100A",
+        "name": "Electrical and Computer Engineering Practice",
+        "ratings": "167",
+        "useful": "31%",
+        "easy": "89%",
+        "liked": "35%"
+    },
+    {
+        "code": "CHEM 266L",
+        "name": "Organic Chemistry Laboratory",
+        "ratings": "166",
+        "useful": "86%",
+        "easy": "73%",
+        "liked": "77%"
+    },
+    {
+        "code": "CS 100",
+        "name": "Introduction to Computing through Applications",
+        "ratings": "165",
+        "useful": "68%",
+        "easy": "83%",
+        "liked": "65%"
+    },
+    {
+        "code": "FR 151",
+        "name": "Basic French 1",
+        "ratings": "161",
+        "useful": "76%",
+        "easy": "85%",
+        "liked": "80%"
+    },
+    {
+        "code": "ENGL 210F",
+        "name": "Genres of Business Communication",
+        "ratings": "159",
+        "useful": "30%",
+        "easy": "74%",
+        "liked": "22%"
+    },
+    {
+        "code": "ECE 103",
+        "name": "Discrete Mathematics",
+        "ratings": "158",
+        "useful": "87%",
+        "easy": "33%",
+        "liked": "70%"
+    },
+    {
+        "code": "ECE 250",
+        "name": "Algorithms and Data Structures",
+        "ratings": "156",
+        "useful": "97%",
+        "easy": "54%",
+        "liked": "82%"
+    },
+    {
+        "code": "BIOL 240L",
+        "name": "Microbiology Laboratory",
+        "ratings": "155",
+        "useful": "81%",
+        "easy": "53%",
+        "liked": "62%"
+    },
+    {
+        "code": "MATH 147",
+        "name": "Calculus 1 (Advanced Level)",
+        "ratings": "153",
+        "useful": "93%",
+        "easy": "41%",
+        "liked": "93%"
+    },
+    {
+        "code": "LS 101",
+        "name": "Introduction to Legal Studies",
+        "ratings": "152",
+        "useful": "73%",
+        "easy": "67%",
+        "liked": "60%"
+    },
+    {
+        "code": "PSYCH 211",
+        "name": "Developmental Psychology",
+        "ratings": "152",
+        "useful": "81%",
+        "easy": "73%",
+        "liked": "83%"
+    },
+    {
+        "code": "COOP 2",
+        "name": "Co-operative Work Term",
+        "ratings": "151",
+        "useful": "94%",
+        "easy": "82%",
+        "liked": "95%"
+    },
+    {
+        "code": "ECE 240",
+        "name": "Electronic Circuits 1",
+        "ratings": "149",
+        "useful": "86%",
+        "easy": "17%",
+        "liked": "59%"
+    },
+    {
+        "code": "PHYS 122",
+        "name": "Waves, Electricity and Magnetism",
+        "ratings": "149",
+        "useful": "74%",
+        "easy": "38%",
+        "liked": "55%"
+    },
+    {
+        "code": "ARBUS 101",
+        "name": "Introduction to Business in North America",
+        "ratings": "143",
+        "useful": "52%",
+        "easy": "67%",
+        "liked": "44%"
+    },
+    {
+        "code": "ECE 358",
+        "name": "Computer Networks",
+        "ratings": "143",
+        "useful": "89%",
+        "easy": "60%",
+        "liked": "78%"
+    },
+    {
+        "code": "ENVS 200",
+        "name": "Field Ecology",
+        "ratings": "143",
+        "useful": "69%",
+        "easy": "51%",
+        "liked": "65%"
+    },
+    {
+        "code": "MTE 100",
+        "name": "Mechatronics Engineering",
+        "ratings": "142",
+        "useful": "80%",
+        "easy": "82%",
+        "liked": "89%"
+    },
+    {
+        "code": "WKRPT 300",
+        "name": "Work-term Report",
+        "ratings": "142",
+        "useful": "8%",
+        "easy": "28%",
+        "liked": "1%"
+    },
+    {
+        "code": "ECE 155",
+        "name": "Engineering Design with Embedded Systems",
+        "ratings": "141",
+        "useful": "58%",
+        "easy": "71%",
+        "liked": "43%"
+    },
+    {
+        "code": "GENE 121",
+        "name": "Digital Computation",
+        "ratings": "141",
+        "useful": "92%",
+        "easy": "69%",
+        "liked": "86%"
+    },
+    {
+        "code": "PLAN 100",
+        "name": "The Evolution of Planning",
+        "ratings": "139",
+        "useful": "81%",
+        "easy": "79%",
+        "liked": "86%"
+    },
+    {
+        "code": "BIOL 150",
+        "name": "Organismal and Evolutionary Ecology",
+        "ratings": "137",
+        "useful": "52%",
+        "easy": "67%",
+        "liked": "69%"
+    },
+    {
+        "code": "INTST 101",
+        "name": "Introduction to International Studies",
+        "ratings": "137",
+        "useful": "56%",
+        "easy": "90%",
+        "liked": "75%"
+    },
+    {
+        "code": "ENGL 119",
+        "name": "Communications in Mathematics & Computer Science",
+        "ratings": "134",
+        "useful": "36%",
+        "easy": "84%",
+        "liked": "34%"
+    },
+    {
+        "code": "ECON 201",
+        "name": "Microeconomic Theory for Business and Policy",
+        "ratings": "131",
+        "useful": "59%",
+        "easy": "73%",
+        "liked": "61%"
+    },
+    {
+        "code": "AMATH 250",
+        "name": "Introduction to Differential Equations",
+        "ratings": "129",
+        "useful": "86%",
+        "easy": "75%",
+        "liked": "71%"
+    },
+    {
+        "code": "ECE 205",
+        "name": "Advanced Calculus 1 for Electrical and Computer Engineers",
+        "ratings": "129",
+        "useful": "90%",
+        "easy": "50%",
+        "liked": "74%"
+    },
+    {
+        "code": "PHYS 112L",
+        "name": "Physics 2 Laboratory",
+        "ratings": "129",
+        "useful": "17%",
+        "easy": "22%",
+        "liked": "12%"
+    },
+    {
+        "code": "ACTSC 231",
+        "name": "Introductory Financial Mathematics",
+        "ratings": "127",
+        "useful": "91%",
+        "easy": "51%",
+        "liked": "67%"
+    },
+    {
+        "code": "JAPAN 101R",
+        "name": "First-Year Japanese 1",
+        "ratings": "127",
+        "useful": "88%",
+        "easy": "75%",
+        "liked": "91%"
+    },
+    {
+        "code": "MTE 111",
+        "name": "Structure and Properties of Materials",
+        "ratings": "127",
+        "useful": "54%",
+        "easy": "32%",
+        "liked": "25%"
+    },
+    {
+        "code": "PD 20",
+        "name": "Engineering Workplace Skills I: Developing Reasoned Conclusions",
+        "ratings": "126",
+        "useful": "17%",
+        "easy": "83%",
+        "liked": "14%"
+    },
+    {
+        "code": "SPAN 101",
+        "name": "Introduction to Spanish 1",
+        "ratings": "126",
+        "useful": "91%",
+        "easy": "70%",
+        "liked": "83%"
+    },
+    {
+        "code": "HLTH 101",
+        "name": "Introduction to Health 1",
+        "ratings": "124",
+        "useful": "83%",
+        "easy": "85%",
+        "liked": "85%"
+    },
+    {
+        "code": "SCI 206",
+        "name": "The Physics of How Things Work",
+        "ratings": "124",
+        "useful": "61%",
+        "easy": "85%",
+        "liked": "88%"
+    },
+    {
+        "code": "PSYCH 253",
+        "name": "Social Psychology",
+        "ratings": "123",
+        "useful": "84%",
+        "easy": "73%",
+        "liked": "89%"
+    },
+    {
+        "code": "ECE 224",
+        "name": "Embedded Microprocessor Systems",
+        "ratings": "122",
+        "useful": "85%",
+        "easy": "25%",
+        "liked": "61%"
+    },
+    {
+        "code": "MTE 140",
+        "name": "Algorithms and Data Structures",
+        "ratings": "122",
+        "useful": "98%",
+        "easy": "82%",
+        "liked": "91%"
+    },
+    {
+        "code": "CS 458",
+        "name": "Computer Security and Privacy",
+        "ratings": "121",
+        "useful": "93%",
+        "easy": "54%",
+        "liked": "88%"
+    },
+    {
+        "code": "ECE 100B",
+        "name": "Electrical and Computer Engineering Practice",
+        "ratings": "121",
+        "useful": "17%",
+        "easy": "95%",
+        "liked": "36%"
+    },
+    {
+        "code": "ECE 207",
+        "name": "Signals and Systems",
+        "ratings": "121",
+        "useful": "86%",
+        "easy": "50%",
+        "liked": "52%"
+    },
+    {
+        "code": "MATH 213",
+        "name": "Signals, Systems, and Differential Equations",
+        "ratings": "121",
+        "useful": "53%",
+        "easy": "28%",
+        "liked": "46%"
+    },
+    {
+        "code": "SE 350",
+        "name": "Operating Systems",
+        "ratings": "121",
+        "useful": "96%",
+        "easy": "24%",
+        "liked": "91%"
+    },
+    {
+        "code": "BUS 111W",
+        "name": "Introduction to Business Organization (WLU)",
+        "ratings": "119",
+        "useful": "58%",
+        "easy": "45%",
+        "liked": "34%"
+    },
+    {
+        "code": "ECE 290",
+        "name": "Engineering Profession, Ethics, and Law",
+        "ratings": "119",
+        "useful": "40%",
+        "easy": "69%",
+        "liked": "39%"
+    },
+    {
+        "code": "CS 146",
+        "name": "Elementary Algorithm Design and Data Abstraction (Advanced Level)",
+        "ratings": "118",
+        "useful": "91%",
+        "easy": "46%",
+        "liked": "89%"
+    },
+    {
+        "code": "FR 192A",
+        "name": "French Language 1: Module 1",
+        "ratings": "118",
+        "useful": "87%",
+        "easy": "76%",
+        "liked": "76%"
+    },
+    {
+        "code": "MATH 109",
+        "name": "Mathematics for Accounting",
+        "ratings": "118",
+        "useful": "61%",
+        "easy": "93%",
+        "liked": "74%"
+    },
+    {
+        "code": "STAT 441",
+        "name": "Statistical Learning - Classification",
+        "ratings": "118",
+        "useful": "82%",
+        "easy": "6%",
+        "liked": "19%"
+    },
+    {
+        "code": "MTHEL 199",
+        "name": "Special Topics",
+        "ratings": "118",
+        "useful": "54%",
+        "easy": "96%",
+        "liked": "80%"
+    },
+    {
+        "code": "CHEM 237",
+        "name": "Introductory Biochemistry",
+        "ratings": "116",
+        "useful": "76%",
+        "easy": "28%",
+        "liked": "44%"
+    },
+    {
+        "code": "ME 100",
+        "name": "Introduction to Mechanical Engineering Practice 1",
+        "ratings": "116",
+        "useful": "91%",
+        "easy": "76%",
+        "liked": "84%"
+    },
+    {
+        "code": "PSYCH 261",
+        "name": "Physiological Psychology",
+        "ratings": "115",
+        "useful": "80%",
+        "easy": "34%",
+        "liked": "71%"
+    },
+    {
+        "code": "MTE 120",
+        "name": "Circuits",
+        "ratings": "114",
+        "useful": "92%",
+        "easy": "24%",
+        "liked": "75%"
+    },
+    {
+        "code": "STAT 330",
+        "name": "Mathematical Statistics",
+        "ratings": "114",
+        "useful": "71%",
+        "easy": "47%",
+        "liked": "57%"
+    },
+    {
+        "code": "ARBUS 200",
+        "name": "Entrepreneurship Principles and Practices",
+        "ratings": "113",
+        "useful": "33%",
+        "easy": "76%",
+        "liked": "35%"
+    },
+    {
+        "code": "BIOL 110",
+        "name": "Introductory Zoology",
+        "ratings": "112",
+        "useful": "63%",
+        "easy": "44%",
+        "liked": "79%"
+    },
+    {
+        "code": "AFM 231",
+        "name": "Business Law",
+        "ratings": "111",
+        "useful": "84%",
+        "easy": "66%",
+        "liked": "70%"
+    },
+    {
+        "code": "ARTS 130",
+        "name": "Inquiry and Communication",
+        "ratings": "108",
+        "useful": "60%",
+        "easy": "78%",
+        "liked": "73%"
+    },
+    {
+        "code": "CS 330",
+        "name": "Management Information Systems",
+        "ratings": "108",
+        "useful": "39%",
+        "easy": "73%",
+        "liked": "44%"
+    },
+    {
+        "code": "SYDE 182",
+        "name": "Physics 2 (Dynamics)",
+        "ratings": "108",
+        "useful": "74%",
+        "easy": "29%",
+        "liked": "41%"
+    },
+    {
+        "code": "WKRPT 400",
+        "name": "Work-term Report",
+        "ratings": "108",
+        "useful": "8%",
+        "easy": "43%",
+        "liked": "5%"
+    },
+    {
+        "code": "CS 486",
+        "name": "Introduction to Artificial Intelligence",
+        "ratings": "107",
+        "useful": "93%",
+        "easy": "55%",
+        "liked": "92%"
+    },
+    {
+        "code": "SPCOM 111",
+        "name": "Leadership, Communication, and Collaboration",
+        "ratings": "107",
+        "useful": "42%",
+        "easy": "50%",
+        "liked": "39%"
+    },
+    {
+        "code": "AFM 121",
+        "name": "Introduction to Global Financial Markets",
+        "ratings": "106",
+        "useful": "95%",
+        "easy": "35%",
+        "liked": "75%"
+    },
+    {
+        "code": "MTE 119",
+        "name": "Statics",
+        "ratings": "106",
+        "useful": "86%",
+        "easy": "68%",
+        "liked": "80%"
+    },
+    {
+        "code": "MATH 215",
+        "name": "Linear Algebra for Engineering",
+        "ratings": "104",
+        "useful": "84%",
+        "easy": "86%",
+        "liked": "79%"
+    },
+    {
+        "code": "BIOL 359",
+        "name": "Evolution 1: Mechanisms",
+        "ratings": "103",
+        "useful": "78%",
+        "easy": "73%",
+        "liked": "83%"
+    },
+    {
+        "code": "CS 488",
+        "name": "Introduction to Computer Graphics",
+        "ratings": "103",
+        "useful": "46%",
+        "easy": "58%",
+        "liked": "50%"
+    },
+    {
+        "code": "ECE 190",
+        "name": "Engineering Profession and Practice",
+        "ratings": "103",
+        "useful": "25%",
+        "easy": "93%",
+        "liked": "54%"
+    },
+    {
+        "code": "ENVS 278",
+        "name": "Applied Statistics for Environmental Research",
+        "ratings": "103",
+        "useful": "71%",
+        "easy": "31%",
+        "liked": "34%"
+    },
+    {
+        "code": "BIOL 373",
+        "name": "Principles of Human Physiology 2",
+        "ratings": "102",
+        "useful": "97%",
+        "easy": "40%",
+        "liked": "87%"
+    },
+    {
+        "code": "PLAN 102",
+        "name": "Professional Communication",
+        "ratings": "102",
+        "useful": "49%",
+        "easy": "66%",
+        "liked": "32%"
+    },
+    {
+        "code": "BIOL 308",
+        "name": "Principles of Molecular Biology",
+        "ratings": "101",
+        "useful": "78%",
+        "easy": "12%",
+        "liked": "42%"
+    },
+    {
+        "code": "BIOL 241",
+        "name": "Introduction to Applied Microbiology",
+        "ratings": "100",
+        "useful": "69%",
+        "easy": "65%",
+        "liked": "49%"
+    },
+    {
+        "code": "CS 456",
+        "name": "Computer Networks",
+        "ratings": "100",
+        "useful": "83%",
+        "easy": "79%",
+        "liked": "66%"
+    },
+    {
+        "code": "PLAN 105",
+        "name": "Introduction to Planning Analysis",
+        "ratings": "100",
+        "useful": "82%",
+        "easy": "72%",
+        "liked": "63%"
+    },
+    {
+        "code": "ARBUS 202",
+        "name": "Professional and Business Ethics",
+        "ratings": "99",
+        "useful": "37%",
+        "easy": "86%",
+        "liked": "60%"
+    },
+    {
+        "code": "ECE 380",
+        "name": "Analog Control Systems",
+        "ratings": "99",
+        "useful": "84%",
+        "easy": "26%",
+        "liked": "67%"
+    },
+    {
+        "code": "STAT 211",
+        "name": "Introductory Statistics and Sampling for Accounting",
+        "ratings": "99",
+        "useful": "57%",
+        "easy": "49%",
+        "liked": "43%"
+    },
+    {
+        "code": "ARTS 140",
+        "name": "Information and Analysis",
+        "ratings": "98",
+        "useful": "58%",
+        "easy": "78%",
+        "liked": "67%"
+    },
+    {
+        "code": "ECE 242",
+        "name": "Electronic Circuits 2",
+        "ratings": "98",
+        "useful": "75%",
+        "easy": "15%",
+        "liked": "65%"
+    },
+    {
+        "code": "ARBUS 102",
+        "name": "Accounting Information for Managers",
+        "ratings": "97",
+        "useful": "77%",
+        "easy": "40%",
+        "liked": "41%"
+    },
+    {
+        "code": "MTHEL 131",
+        "name": "Introduction to Actuarial Practice",
+        "ratings": "97",
+        "useful": "69%",
+        "easy": "59%",
+        "liked": "42%"
+    },
+    {
+        "code": "PLAN 104",
+        "name": "Perspectives on Planning",
+        "ratings": "97",
+        "useful": "80%",
+        "easy": "55%",
+        "liked": "49%"
+    },
+    {
+        "code": "MATH 146",
+        "name": "Linear Algebra 1 (Advanced Level)",
+        "ratings": "96",
+        "useful": "85%",
+        "easy": "50%",
+        "liked": "92%"
+    },
+    {
+        "code": "SE 380",
+        "name": "Introduction to Feedback Control",
+        "ratings": "96",
+        "useful": "44%",
+        "easy": "14%",
+        "liked": "49%"
+    },
+    {
+        "code": "SYDE 111",
+        "name": "Calculus 1",
+        "ratings": "96",
+        "useful": "90%",
+        "easy": "42%",
+        "liked": "74%"
+    },
+    {
+        "code": "CS 444",
+        "name": "Compiler Construction",
+        "ratings": "94",
+        "useful": "99%",
+        "easy": "80%",
+        "liked": "29%"
+    },
+    {
+        "code": "EARTH 122",
+        "name": "Introductory Environmental Sciences",
+        "ratings": "94",
+        "useful": "47%",
+        "easy": "92%",
+        "liked": "69%"
+    },
+    {
+        "code": "SYDE 113",
+        "name": "Elementary Engineering Mathematics",
+        "ratings": "94",
+        "useful": "87%",
+        "easy": "53%",
+        "liked": "52%"
+    },
+    {
+        "code": "MATH 148",
+        "name": "Calculus 2 (Advanced Level)",
+        "ratings": "92",
+        "useful": "91%",
+        "easy": "35%",
+        "liked": "89%"
+    },
+    {
+        "code": "SE 463",
+        "name": "Software Requirements Specification and Analysis",
+        "ratings": "92",
+        "useful": "16%",
+        "easy": "47%",
+        "liked": "11%"
+    },
+    {
+        "code": "SE 465",
+        "name": "Software Testing and Quality Assurance",
+        "ratings": "92",
+        "useful": "49%",
+        "easy": "91%",
+        "liked": "41%"
+    },
+    {
+        "code": "STAT 331",
+        "name": "Applied Linear Models",
+        "ratings": "92",
+        "useful": "89%",
+        "easy": "55%",
+        "liked": "72%"
+    },
+    {
+        "code": "FR 192B",
+        "name": "French Language 1: Module 2",
+        "ratings": "91",
+        "useful": "80%",
+        "easy": "70%",
+        "liked": "79%"
+    },
+    {
+        "code": "GEOG 181",
+        "name": "Designing Effective Maps",
+        "ratings": "91",
+        "useful": "78%",
+        "easy": "64%",
+        "liked": "70%"
+    },
+    {
+        "code": "PHIL 226",
+        "name": "Biomedical Ethics",
+        "ratings": "91",
+        "useful": "65%",
+        "easy": "61%",
+        "liked": "71%"
+    },
+    {
+        "code": "AFM 291",
+        "name": "Intermediate Financial Accounting 1",
+        "ratings": "90",
+        "useful": "97%",
+        "easy": "38%",
+        "liked": "60%"
+    },
+    {
+        "code": "ECE 318",
+        "name": "Communication Systems 1",
+        "ratings": "90",
+        "useful": "81%",
+        "easy": "22%",
+        "liked": "61%"
+    },
+    {
+        "code": "PD 10",
+        "name": "Professional Responsibility in Computing",
+        "ratings": "89",
+        "useful": "50%",
+        "easy": "78%",
+        "liked": "22%"
+    },
+    {
+        "code": "COOP 3",
+        "name": "Co-operative Work Term",
+        "ratings": "88",
+        "useful": "92%",
+        "easy": "85%",
+        "liked": "94%"
+    },
+    {
+        "code": "ECE 200A",
+        "name": "Electrical and Computer Engineering Practice",
+        "ratings": "88",
+        "useful": "13%",
+        "easy": "93%",
+        "liked": "41%"
+    },
+    {
+        "code": "FINE 130",
+        "name": "Introduction to Digital Imaging",
+        "ratings": "88",
+        "useful": "63%",
+        "easy": "79%",
+        "liked": "74%"
+    },
+    {
+        "code": "ME 351",
+        "name": "Fluid Mechanics 1",
+        "ratings": "87",
+        "useful": "75%",
+        "easy": "27%",
+        "liked": "62%"
+    },
+    {
+        "code": "PD 5",
+        "name": "Project Management",
+        "ratings": "87",
+        "useful": "37%",
+        "easy": "74%",
+        "liked": "25%"
+    },
+    {
+        "code": "ENGL 108D",
+        "name": "Digital Lives",
+        "ratings": "86",
+        "useful": "37%",
+        "easy": "86%",
+        "liked": "80%"
+    },
+    {
+        "code": "MATH 227",
+        "name": "Calculus 3 for Honours Physics",
+        "ratings": "86",
+        "useful": "55%",
+        "easy": "56%",
+        "liked": "56%"
+    },
+    {
+        "code": "ECE 192",
+        "name": "Engineering Economics and Impact on Society",
+        "ratings": "85",
+        "useful": "24%",
+        "easy": "79%",
+        "liked": "18%"
+    },
+    {
+        "code": "GEOG 102",
+        "name": "Global Environmental Systems: Processes and Change",
+        "ratings": "85",
+        "useful": "75%",
+        "easy": "74%",
+        "liked": "58%"
+    },
+    {
+        "code": "KIN 217",
+        "name": "Human Biochemistry",
+        "ratings": "85",
+        "useful": "77%",
+        "easy": "8%",
+        "liked": "42%"
+    },
+    {
+        "code": "PLAN 110",
+        "name": "Visual Approaches to Design and Communication",
+        "ratings": "85",
+        "useful": "95%",
+        "easy": "80%",
+        "liked": "91%"
+    },
+    {
+        "code": "REC 100",
+        "name": "Introduction to the Study of Recreation and Leisure",
+        "ratings": "85",
+        "useful": "53%",
+        "easy": "88%",
+        "liked": "69%"
+    },
+    {
+        "code": "AHS 107",
+        "name": "Sociology of Activity, Health, and Well-being",
+        "ratings": "84",
+        "useful": "27%",
+        "easy": "93%",
+        "liked": "40%"
+    },
+    {
+        "code": "PHYS 124",
+        "name": "Modern Physics",
+        "ratings": "84",
+        "useful": "84%",
+        "easy": "19%",
+        "liked": "81%"
+    },
+    {
+        "code": "ACTSC 371",
+        "name": "Introduction to Investments",
+        "ratings": "83",
+        "useful": "78%",
+        "easy": "63%",
+        "liked": "63%"
+    },
+    {
+        "code": "KIN 100",
+        "name": "Human Anatomy: Limbs and Trunk",
+        "ratings": "83",
+        "useful": "97%",
+        "easy": "38%",
+        "liked": "93%"
+    },
+    {
+        "code": "CHEM 267",
+        "name": "Basic Organic Chemistry 2",
+        "ratings": "82",
+        "useful": "80%",
+        "easy": "20%",
+        "liked": "49%"
+    },
+    {
+        "code": "KIN 100L",
+        "name": "Human Anatomy Lab",
+        "ratings": "82",
+        "useful": "100%",
+        "easy": "41%",
+        "liked": "96%"
+    },
+    {
+        "code": "MATH 114",
+        "name": "Linear Algebra for Science",
+        "ratings": "82",
+        "useful": "90%",
+        "easy": "59%",
+        "liked": "76%"
+    },
+    {
+        "code": "ME 115",
+        "name": "Structure and Properties of Materials",
+        "ratings": "82",
+        "useful": "85%",
+        "easy": "59%",
+        "liked": "49%"
+    },
+    {
+        "code": "ME 219",
+        "name": "Mechanics of Deformable Solids 1",
+        "ratings": "82",
+        "useful": "87%",
+        "easy": "45%",
+        "liked": "77%"
+    },
+    {
+        "code": "PHYS 234",
+        "name": "Quantum Physics 1",
+        "ratings": "82",
+        "useful": "87%",
+        "easy": "42%",
+        "liked": "78%"
+    },
+    {
+        "code": "SYDE 252",
+        "name": "Linear Systems and Signals",
+        "ratings": "82",
+        "useful": "77%",
+        "easy": "23%",
+        "liked": "52%"
+    },
+    {
+        "code": "ECE 316",
+        "name": "Probability Theory and Statistics",
+        "ratings": "81",
+        "useful": "76%",
+        "easy": "26%",
+        "liked": "53%"
+    },
+    {
+        "code": "WKRPT 200M",
+        "name": "Work-term Report",
+        "ratings": "81",
+        "useful": "7%",
+        "easy": "50%",
+        "liked": "2%"
+    },
+    {
+        "code": "BIOL 165",
+        "name": "Diversity of Life",
+        "ratings": "80",
+        "useful": "48%",
+        "easy": "42%",
+        "liked": "57%"
+    },
+    {
+        "code": "CHEM 140",
+        "name": "Introduction to Scientific Calculations",
+        "ratings": "80",
+        "useful": "88%",
+        "easy": "68%",
+        "liked": "49%"
+    },
+    {
+        "code": "PD 8",
+        "name": "Intercultural Skills",
+        "ratings": "80",
+        "useful": "31%",
+        "easy": "86%",
+        "liked": "31%"
+    },
+    {
+        "code": "CS 234",
+        "name": "Data Types and Structures",
+        "ratings": "79",
+        "useful": "72%",
+        "easy": "65%",
+        "liked": "58%"
+    },
+    {
+        "code": "BET 100",
+        "name": "Foundations of Entrepreneurial Practice",
+        "ratings": "78",
+        "useful": "31%",
+        "easy": "57%",
+        "liked": "35%"
+    },
+    {
+        "code": "PHYS 131L",
+        "name": "Mechanics Laboratory",
+        "ratings": "78",
+        "useful": "50%",
+        "easy": "47%",
+        "liked": "35%"
+    },
+    {
+        "code": "SE 464",
+        "name": "Software Design and Architectures",
+        "ratings": "78",
+        "useful": "37%",
+        "easy": "83%",
+        "liked": "22%"
+    },
+    {
+        "code": "ECE 200B",
+        "name": "Electrical and Computer Engineering Practice",
+        "ratings": "77",
+        "useful": "20%",
+        "easy": "92%",
+        "liked": "30%"
+    },
+    {
+        "code": "BIOL 303",
+        "name": "Introductory Developmental Biology and Embryology",
+        "ratings": "76",
+        "useful": "69%",
+        "easy": "19%",
+        "liked": "50%"
+    },
+    {
+        "code": "BIOL 309",
+        "name": "Analytical Methods in Molecular Biology",
+        "ratings": "76",
+        "useful": "95%",
+        "easy": "24%",
+        "liked": "62%"
+    },
+    {
+        "code": "GEOG 281",
+        "name": "Introduction to Geographic Information Systems (GIS)",
+        "ratings": "76",
+        "useful": "89%",
+        "easy": "61%",
+        "liked": "80%"
+    },
+    {
+        "code": "PLAN 103",
+        "name": "Planning, Administration, and Finance",
+        "ratings": "76",
+        "useful": "93%",
+        "easy": "57%",
+        "liked": "64%"
+    },
+    {
+        "code": "ECE 254",
+        "name": "Operating Systems and Systems Programming",
+        "ratings": "75",
+        "useful": "94%",
+        "easy": "63%",
+        "liked": "87%"
+    },
+    {
+        "code": "SYDE 161",
+        "name": "Introduction to Design",
+        "ratings": "75",
+        "useful": "64%",
+        "easy": "56%",
+        "liked": "48%"
+    },
+    {
+        "code": "ECON 202",
+        "name": "Macroeconomic Theory 1",
+        "ratings": "74",
+        "useful": "73%",
+        "easy": "73%",
+        "liked": "70%"
+    },
+    {
+        "code": "FR 152",
+        "name": "Basic French 2",
+        "ratings": "74",
+        "useful": "78%",
+        "easy": "83%",
+        "liked": "82%"
+    },
+    {
+        "code": "GER 101",
+        "name": "Elementary German 1",
+        "ratings": "74",
+        "useful": "77%",
+        "easy": "59%",
+        "liked": "76%"
+    },
+    {
+        "code": "PD 21",
+        "name": "Engineering Workplace Skills II: Developing Effective Plans",
+        "ratings": "74",
+        "useful": "20%",
+        "easy": "84%",
+        "liked": "12%"
+    },
+    {
+        "code": "SE 102",
+        "name": "Seminar",
+        "ratings": "74",
+        "useful": "37%",
+        "easy": "97%",
+        "liked": "64%"
+    },
+    {
+        "code": "SYDE 101L",
+        "name": "Communications in Systems Design Engineering-Visualization",
+        "ratings": "74",
+        "useful": "90%",
+        "easy": "58%",
+        "liked": "86%"
+    },
+    {
+        "code": "SYDE 351",
+        "name": "Systems Models 1",
+        "ratings": "74",
+        "useful": "45%",
+        "easy": "19%",
+        "liked": "36%"
+    },
+    {
+        "code": "BIOL 120",
+        "name": "Introduction to Plant Structure and Function",
+        "ratings": "73",
+        "useful": "42%",
+        "easy": "62%",
+        "liked": "49%"
+    },
+    {
+        "code": "ECE 327",
+        "name": "Digital Hardware Systems",
+        "ratings": "73",
+        "useful": "82%",
+        "easy": "32%",
+        "liked": "71%"
+    },
+    {
+        "code": "ECE 390",
+        "name": "Engineering Design, Economics, and Impact on Society",
+        "ratings": "73",
+        "useful": "34%",
+        "easy": "82%",
+        "liked": "26%"
+    },
+    {
+        "code": "ECON 344",
+        "name": "Principles of Marketing",
+        "ratings": "73",
+        "useful": "51%",
+        "easy": "86%",
+        "liked": "62%"
+    },
+    {
+        "code": "SE 390",
+        "name": "Design Project Planning",
+        "ratings": "73",
+        "useful": "52%",
+        "easy": "88%",
+        "liked": "53%"
+    },
+    {
+        "code": "SYDE 121",
+        "name": "Digital Computation",
+        "ratings": "73",
+        "useful": "98%",
+        "easy": "58%",
+        "liked": "82%"
+    },
+    {
+        "code": "ARBUS 100",
+        "name": "Introduction to Arts and Business",
+        "ratings": "72",
+        "useful": "31%",
+        "easy": "94%",
+        "liked": "29%"
+    },
+    {
+        "code": "KOREA 101R",
+        "name": "First-Year Korean 1",
+        "ratings": "72",
+        "useful": "86%",
+        "easy": "64%",
+        "liked": "96%"
+    },
+    {
+        "code": "STV 100",
+        "name": "Society, Technology and Values: Introduction",
+        "ratings": "71",
+        "useful": "16%",
+        "easy": "81%",
+        "liked": "52%"
+    },
+    {
+        "code": "STV 202",
+        "name": "Design and Society",
+        "ratings": "71",
+        "useful": "27%",
+        "easy": "82%",
+        "liked": "51%"
+    },
+    {
+        "code": "SYDE 181",
+        "name": "Physics 1 (Statics)",
+        "ratings": "71",
+        "useful": "79%",
+        "easy": "50%",
+        "liked": "58%"
+    },
+    {
+        "code": "ARTS 190",
+        "name": "First-Year Topics in Arts Disciplines",
+        "ratings": "70",
+        "useful": "44%",
+        "easy": "81%",
+        "liked": "51%"
+    },
+    {
+        "code": "ECE 457A",
+        "name": "Cooperative and Adaptive Algorithms",
+        "ratings": "70",
+        "useful": "85%",
+        "easy": "61%",
+        "liked": "84%"
+    },
+    {
+        "code": "CS 241E",
+        "name": "Foundations of Sequential Programs (Enriched)",
+        "ratings": "69",
+        "useful": "93%",
+        "easy": "39%",
+        "liked": "96%"
+    },
+    {
+        "code": "CHEM 237L",
+        "name": "Introductory Biochemistry Laboratory",
+        "ratings": "68",
+        "useful": "89%",
+        "easy": "59%",
+        "liked": "63%"
+    },
+    {
+        "code": "CS 466",
+        "name": "Algorithm Design and Analysis",
+        "ratings": "68",
+        "useful": "63%",
+        "easy": "46%",
+        "liked": "66%"
+    },
+    {
+        "code": "ECE 108",
+        "name": "Discrete Mathematics and Logic 1",
+        "ratings": "68",
+        "useful": "51%",
+        "easy": "56%",
+        "liked": "59%"
+    },
+    {
+        "code": "ME 321",
+        "name": "Kinematics and Dynamics of Machines",
+        "ratings": "68",
+        "useful": "77%",
+        "easy": "35%",
+        "liked": "56%"
+    },
+    {
+        "code": "PHYS 175",
+        "name": "Introduction to the Universe",
+        "ratings": "68",
+        "useful": "85%",
+        "easy": "78%",
+        "liked": "90%"
+    },
+    {
+        "code": "REC 280",
+        "name": "Introduction to Tourism",
+        "ratings": "68",
+        "useful": "26%",
+        "easy": "88%",
+        "liked": "59%"
+    },
+    {
+        "code": "SYDE 101",
+        "name": "Communications in Systems Design Engineering-Written and Oral",
+        "ratings": "68",
+        "useful": "32%",
+        "easy": "95%",
+        "liked": "28%"
+    },
+    {
+        "code": "CO 487",
+        "name": "Applied Cryptography",
+        "ratings": "67",
+        "useful": "90%",
+        "easy": "66%",
+        "liked": "88%"
+    },
+    {
+        "code": "HLTH 102",
+        "name": "Introduction to Health 2",
+        "ratings": "67",
+        "useful": "81%",
+        "easy": "93%",
+        "liked": "94%"
+    },
+    {
+        "code": "KIN 104",
+        "name": "Fundamentals of Kinesiology",
+        "ratings": "67",
+        "useful": "81%",
+        "easy": "69%",
+        "liked": "78%"
+    },
+    {
+        "code": "PSYCH 291",
+        "name": "Basic Research Methods",
+        "ratings": "67",
+        "useful": "92%",
+        "easy": "65%",
+        "liked": "63%"
+    },
+    {
+        "code": "BUS 121W",
+        "name": "Functional Areas of the Organization (WLU)",
+        "ratings": "66",
+        "useful": "43%",
+        "easy": "40%",
+        "liked": "24%"
+    },
+    {
+        "code": "PSCI 100",
+        "name": "Power, Politics, and Policy: An Introduction",
+        "ratings": "66",
+        "useful": "76%",
+        "easy": "72%",
+        "liked": "68%"
+    },
+    {
+        "code": "AFM 123",
+        "name": "Accounting Information for Managers",
+        "ratings": "65",
+        "useful": "81%",
+        "easy": "49%",
+        "liked": "48%"
+    },
+    {
+        "code": "ECE 351",
+        "name": "Compilers",
+        "ratings": "65",
+        "useful": "86%",
+        "easy": "86%",
+        "liked": "83%"
+    },
+    {
+        "code": "MTE 202",
+        "name": "Ordinary Differential Equations",
+        "ratings": "65",
+        "useful": "97%",
+        "easy": "48%",
+        "liked": "74%"
+    },
+    {
+        "code": "PHIL 215",
+        "name": "Professional and Business Ethics",
+        "ratings": "65",
+        "useful": "56%",
+        "easy": "71%",
+        "liked": "72%"
+    },
+    {
+        "code": "ECE 356",
+        "name": "Database Systems",
+        "ratings": "64",
+        "useful": "86%",
+        "easy": "56%",
+        "liked": "61%"
+    },
+    {
+        "code": "ME 230",
+        "name": "Control of Properties of Materials",
+        "ratings": "64",
+        "useful": "78%",
+        "easy": "28%",
+        "liked": "38%"
+    },
+    {
+        "code": "MTE 201",
+        "name": "Experimental Measurement & Statistical Analysis",
+        "ratings": "64",
+        "useful": "76%",
+        "easy": "74%",
+        "liked": "52%"
+    },
+    {
+        "code": "MUSIC 246",
+        "name": "Soundtracks: Music in Film",
+        "ratings": "64",
+        "useful": "52%",
+        "easy": "92%",
+        "liked": "92%"
+    }
+]

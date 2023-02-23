@@ -1,7 +1,14 @@
 import './App.css';
 import background from './Background-Bottom.png'
+import data from './data.json';
+import Form from './form.js'
+
+import { useState } from 'react';
 
 function App() {
+  
+  const [data, setData] = useState('data');
+
   return (
     <div>
       <div id="heading">
@@ -12,9 +19,12 @@ function App() {
         <h2 id="subtitles"> Designed By: Kevin Lau | Data Source: UWFlow </h2>
       </div>
       
-      <div class="bd-search">
+      <p id="info">Welcome To The UW Course Tracker! Enter your subject below, and we'll help you choose the best course!!!</p>
+      
+      <Form></Form>
+      
 
-      </div>
+      <p>{data[0].code}</p>
       
     </div>
     

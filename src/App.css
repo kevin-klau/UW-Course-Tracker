@@ -71,13 +71,67 @@ html {
 
 #subtitles{
   margin-left: 20px;
-  margin-right: -500px;
+  margin-right: 500px;
   color:black;
   font-family: "Anderson Grotesk Bold";
   font-size: 35px;
   padding-top: 20px;
   text-align:center;
 }
+
+#form{
+  align-items: center;
+  justify-content: center;
+}
+
+#input{
+  margin-top: px;
+  width: 40%;
+  font-size: 35px;
+  height: 80px;
+  text-align:center;
+  font-family: "Anderson Grotesk";
+  border-color: black;
+  color:black;
+  border-width: 3px;
+}
+
+#inputbutton{
+  font-size: 35px;
+  height: 80px;
+  width: 80px;
+  margin-left: 25px;
+  border-color: rgb(255, 208, 0);
+  border-width: 3px;
+  --bs-btn-hover-bg: black;
+  --bs-btn-color: rgb(255, 208, 0);
+  --bs-btn-active-bg: black;
+  --bs-btn-hover-color: rgb(255, 208, 0);
+}
+
+#info{
+  margin-top: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-family: "Anderson Grotesk";
+  text-align:center;
+  font-size: 30px;
+  color:black;
+}
+
+.container {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 body {
   overflow-y: scroll;
