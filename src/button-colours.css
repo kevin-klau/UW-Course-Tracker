@@ -1,0 +1,98 @@
+.ART{
+    border-color: rgb(231, 129,0);
+    --bs-btn-hover-bg: rgb(231, 129,0);
+    --bs-btn-color: rgb(231, 129,0);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(231, 129,0);
+    --bs-btn-hover-color: White;
+    --bs-btn-hover-border-color: rgb(231, 129,0);
+    --bs-btn-active-border-color: rgb(231, 129,0);
+  }
+  
+  .ENG{
+    border-color: rgb(87,5,139);
+    --bs-btn-hover-bg: rgb(87,5,139);
+    --bs-btn-color: rgb(87,5,139);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(87,5,139);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: rgb(87,5,139);
+    --bs-btn-active-border-color: rgb(87,5,139);
+  }
+  
+  .ENV{
+    border-color: rgb(180, 190, 0);
+    --bs-btn-hover-bg: rgb(180, 190, 0);
+    --bs-btn-color: rgb(180, 190, 0);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(180, 190, 0);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: rgb(180, 190, 0);
+    --bs-btn-active-border-color: rgb(180, 190, 0);
+  }
+  
+  .HEA{
+    border-color: rgb(0, 152, 165);
+    --bs-btn-hover-bg: rgb(0, 152, 165);
+    --bs-btn-color: rgb(0, 152, 165);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(0, 152, 165);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: rgb(0, 152, 165);
+    --bs-btn-active-border-color: rgb(0, 152, 165);
+  }
+  
+  .MAT{
+    border-color: rgb(198, 0, 120);
+    --bs-btn-hover-bg: rgb(198, 0, 120);
+    --bs-btn-color: rgb(198, 0, 120);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(198, 0, 120);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: rgb(198, 0, 120);
+    --bs-btn-active-border-color: rgb(198, 0, 120);
+  }
+  
+  .REN{
+    border-color: rgb(19, 145, 36);
+    --bs-btn-hover-bg: rgb(19, 145, 36);
+    --bs-btn-color: rgb(19, 145, 36);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(19, 145, 36);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: rgb(19, 145, 36);
+    --bs-btn-active-border-color: rgb(19, 145, 36);
+  }
+  
+  .SCI{
+    border-color: rgb(0,115,206);
+    --bs-btn-hover-bg: rgb(0,115,206);
+    --bs-btn-color: rgb(0,115,206);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(0,115,206);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: rgb(0,115,206);
+    --bs-btn-active-border-color: rgb(0,115,206);
+  }
+  
+  .VPA{
+    border-color: rgb(9, 0, 131);
+    --bs-btn-hover-bg: rgb(9, 0, 131);
+    --bs-btn-color: rgb(9, 0, 131);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(9, 0, 131);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: rgb(9, 0, 131);
+    --bs-btn-active-border-color: rgb(9, 0, 131);
+  }
+  
+  .WLU{
+    border-color: rgb(139, 28, 167);
+    --bs-btn-hover-bg: rgb(139, 28, 167);
+    --bs-btn-color: rgb(139, 28, 167);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(139, 28, 167);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: rgb(139, 28, 167);
+    --bs-btn-active-border-color: rgb(139, 28, 167);
+  }
