@@ -10,7 +10,7 @@ function App() {
   const [data, setData] = useState('data');
 
   return (
-    <div>
+    <div id="everything">
       <div id="heading">
         <h1 id="title">UW Course Tracker<div id="stick-out"></div></h1>
       </div>

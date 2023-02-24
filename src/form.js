@@ -56,40 +56,48 @@ export default function Form(){
             setAlert(true);
         }else{
             setAlert(false);
-            Selected(results[0].item);
+            Selected(results[0].item.course,results[0].item.faculty,results[0].item.name);
         }
     }
     
-    const [selectedCourse, setSelectedCourse] = useState({});
+    const [selectedCourse, setSelectedCourse] = useState({
+        course:"",
+        faculty:"",
+        name:""
+    });
 
     // Function to handle when they finally choose a subject
-    function Selected({ prop }){
+    function Selected(course, faculty, name){
         setRevealInfo(true);
-        setSelectedCourse ({prop});
+        setSelectedCourse ({course:course, faculty:faculty, name:name});
     }
 
 
     
     return(
         <div>
-            <form id="form" class="d-flex container" role="search" onSubmit={Submitted} style={{position:'relative'}}>
-                <input onChange={MostRelevant} id="input" class="form-control me-2 d-flex clear" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
-                <button id="inputbutton" class="btn btn-outline-success" type="submit">🔎︎</button>
+            <form id="form" className="d-flex container" role="search" onSubmit={Submitted} style={{position:'relative'}}>
                 <div className={`fade ${alert ? 'show' : 'hide'}`} style={{ position: 'absolute', top: 5, left: -40, display:'flex', textAlign:'Center'}}>
-                        <div id="alert" class="alert alert-danger" role="alert">
+                        <div id="alert" className="alert alert-danger" role="alert">
                             Invalid Course Subject
                         </div>
                 </div>
+                <input onChange={MostRelevant} id="input" className="form-control me-2 d-flex clear" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
+                <button id="inputbutton" className="btn btn-outline-success" type="submit">🔎︎</button>
             </form>
-            <div class="container">
+            <div className="container">
                 {results.map((result) => (
-                <button id="SearchResults" class={result.item.faculty+" btn btn-outline-success"} style={{borderWidth:"3px"}} onclick={() => Selected(result.item)}>{result.item.course}</button>
+                <button id="SearchResults" divKey={result.item.course} className={result.item.faculty+" btn btn-outline-success"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
                 ))}
             </div>
 
-        <div>
-            {revealInfo ? <Stats props={selectedCourse}></Stats> : <div/>}
-        </div>
+            <div>
+                {revealInfo ? (
+                    <div>
+                    <Stats props={selectedCourse}></Stats> 
+                    </div>
+                ): <div/>}
+            </div>
             
 
         </div>

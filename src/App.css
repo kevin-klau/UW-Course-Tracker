@@ -144,7 +144,6 @@ html {
   width:300px;
   font-family: "Anderson Grotesk";
   font-size: 25px;
-
   margin-right: 50px;
 }
 
@@ -171,6 +170,7 @@ html {
   -webkit-align-items: center;
   align-items: center;
   justify-content: center;
+  position:relative;
 }
 
 body {
