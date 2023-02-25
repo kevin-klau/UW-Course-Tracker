@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/uw-course-tracker/static/css/main.6c938e56.css",
-    "main.js": "/uw-course-tracker/static/js/main.5696a531.js",
-    "static/js/787.7e2ee6b6.chunk.js": "/uw-course-tracker/static/js/787.7e2ee6b6.chunk.js",
-    "static/media/Background-Top.png": "/uw-course-tracker/static/media/Background-Top.e04b8288607420f3724e.png",
-    "static/media/Background-Bottom.png": "/uw-course-tracker/static/media/Background-Bottom.2a1b8d4dd70766ab7c5d.png",
-    "static/media/AndersonGrotesk.otf": "/uw-course-tracker/static/media/AndersonGrotesk.9edce63c942a0d57cb20.otf",
-    "static/media/AndersonGrotesk-Bold.otf": "/uw-course-tracker/static/media/AndersonGrotesk-Bold.a37c283a3da6d72e2272.otf",
-    "static/media/AndersonGrotesk-Ultrabold.otf": "/uw-course-tracker/static/media/AndersonGrotesk-Ultrabold.fdf3e56037c2324c673b.otf",
-    "index.html": "/uw-course-tracker/index.html",
-    "main.6c938e56.css.map": "/uw-course-tracker/static/css/main.6c938e56.css.map",
-    "main.5696a531.js.map": "/uw-course-tracker/static/js/main.5696a531.js.map",
-    "787.7e2ee6b6.chunk.js.map": "/uw-course-tracker/static/js/787.7e2ee6b6.chunk.js.map"
+    "main.css": "/UW-Course-Tracker/static/css/main.06e440fe.css",
+    "main.js": "/UW-Course-Tracker/static/js/main.000d9671.js",
+    "static/js/787.7e2ee6b6.chunk.js": "/UW-Course-Tracker/static/js/787.7e2ee6b6.chunk.js",
+    "static/media/Background-Top.png": "/UW-Course-Tracker/static/media/Background-Top.e04b8288607420f3724e.png",
+    "static/media/Background-Bottom.png": "/UW-Course-Tracker/static/media/Background-Bottom.2a1b8d4dd70766ab7c5d.png",
+    "static/media/AndersonGrotesk.otf": "/UW-Course-Tracker/static/media/AndersonGrotesk.9edce63c942a0d57cb20.otf",
+    "static/media/AndersonGrotesk-Bold.otf": "/UW-Course-Tracker/static/media/AndersonGrotesk-Bold.a37c283a3da6d72e2272.otf",
+    "static/media/AndersonGrotesk-Ultrabold.otf": "/UW-Course-Tracker/static/media/AndersonGrotesk-Ultrabold.fdf3e56037c2324c673b.otf",
+    "index.html": "/UW-Course-Tracker/index.html",
+    "main.06e440fe.css.map": "/UW-Course-Tracker/static/css/main.06e440fe.css.map",
+    "main.000d9671.js.map": "/UW-Course-Tracker/static/js/main.000d9671.js.map",
+    "787.7e2ee6b6.chunk.js.map": "/UW-Course-Tracker/static/js/787.7e2ee6b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c938e56.css",
-    "static/js/main.5696a531.js"
+    "static/css/main.06e440fe.css",
+    "static/js/main.000d9671.js"
   ]
 }
