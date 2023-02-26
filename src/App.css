@@ -151,6 +151,12 @@ html {
   font-size: 100px;
 }
 
+#custom-tooltip{
+  background-color: white;
+  
+}
+
+
 .fade {
   opacity: 0;
   transition: opacity 0.1s ease-out;
