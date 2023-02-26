@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/UW-Course-Tracker/static/css/main.8031d9f1.css",
-    "main.js": "/UW-Course-Tracker/static/js/main.a42fc9ee.js",
+    "main.css": "/UW-Course-Tracker/static/css/main.dc2aa607.css",
+    "main.js": "/UW-Course-Tracker/static/js/main.78a9df4f.js",
     "static/js/787.7e2ee6b6.chunk.js": "/UW-Course-Tracker/static/js/787.7e2ee6b6.chunk.js",
     "static/media/Background-Top.png": "/UW-Course-Tracker/static/media/Background-Top.e04b8288607420f3724e.png",
     "static/media/Background-Bottom.png": "/UW-Course-Tracker/static/media/Background-Bottom.2a1b8d4dd70766ab7c5d.png",
@@ -9,12 +9,12 @@
     "static/media/AndersonGrotesk-Bold.otf": "/UW-Course-Tracker/static/media/AndersonGrotesk-Bold.a37c283a3da6d72e2272.otf",
     "static/media/AndersonGrotesk-Ultrabold.otf": "/UW-Course-Tracker/static/media/AndersonGrotesk-Ultrabold.fdf3e56037c2324c673b.otf",
     "index.html": "/UW-Course-Tracker/index.html",
-    "main.8031d9f1.css.map": "/UW-Course-Tracker/static/css/main.8031d9f1.css.map",
-    "main.a42fc9ee.js.map": "/UW-Course-Tracker/static/js/main.a42fc9ee.js.map",
+    "main.dc2aa607.css.map": "/UW-Course-Tracker/static/css/main.dc2aa607.css.map",
+    "main.78a9df4f.js.map": "/UW-Course-Tracker/static/js/main.78a9df4f.js.map",
     "787.7e2ee6b6.chunk.js.map": "/UW-Course-Tracker/static/js/787.7e2ee6b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8031d9f1.css",
-    "static/js/main.a42fc9ee.js"
+    "static/css/main.dc2aa607.css",
+    "static/js/main.78a9df4f.js"
   ]
 }
