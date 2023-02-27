@@ -1,0 +1,278 @@
+#ARTinfo{
+  color:rgb(231, 129,0);
+  font-family: 'Anderson Grotesk';
+  font-size: 18px; 
+  margin-bottom:2px;
+}
+
+#ARTname{
+    color:rgb(231, 129,0);
+    font-size: 18px;
+    width: 250px;
+    margin-bottom: 8px;    
+}
+
+#ARTcode{
+    color:rgb(231, 129,0);
+    font-size: 25px;
+    width: 250px;
+    font-family: 'Anderson Grotesk';
+    padding-top: 10px;
+    margin-bottom:-5px;
+}
+
+#ARTbox{
+    background-color:white;
+    width:270px;
+    padding-left:13px;
+    border: 2px solid rgb(231, 129,0);
+    border-radius:5px;
+}
+
+#ENGinfo{
+  color:rgb(87,5,139);
+  font-family: 'Anderson Grotesk';
+  font-size: 18px; 
+  margin-bottom:2px;
+}
+
+#ENGname{
+    color:rgb(87,5,139);
+    font-size: 18px;
+    width: 250px;
+    margin-bottom: 8px;    
+}
+
+#ENGcode{
+    color:rgb(87,5,139);
+    font-size: 25px;
+    width: 250px;
+    font-family: 'Anderson Grotesk';
+    padding-top: 10px;
+    margin-bottom:-5px;
+}
+
+#ENGbox{
+    background-color:white;
+    width:270px;
+    padding-left:13px;
+    border: 2px solid rgb(87,5,139);
+    border-radius:5px;
+}
+
+#ENVinfo{
+    color:rgb(180, 190, 0);
+    font-family: 'Anderson Grotesk';
+    font-size: 18px; 
+    margin-bottom:2px;
+  }
+  
+  #ENVname{
+      color:rgb(180, 190, 0);
+      font-size: 18px;
+      width: 250px;
+      margin-bottom: 8px;    
+  }
+  
+  #ENVcode{
+      color:rgb(180, 190, 0);
+      font-size: 25px;
+      width: 250px;
+      font-family: 'Anderson Grotesk';
+      padding-top: 10px;
+      margin-bottom:-5px;
+  }
+  
+  #ENVbox{
+      background-color:white;
+      width:270px;
+      padding-left:13px;
+      border: 2px solid rgb(180, 190, 0);
+      border-radius:5px;
+  }
+
+  #HEAinfo{
+    color:rgb(0, 152, 165);
+    font-family: 'Anderson Grotesk';
+    font-size: 18px; 
+    margin-bottom:2px;
+  }
+  
+  #HEAname{
+      color:rgb(0, 152, 165);
+      font-size: 18px;
+      width: 250px;
+      margin-bottom: 8px;    
+  }
+  
+  #HEAcode{
+      color:rgb(0, 152, 165);
+      font-size: 25px;
+      width: 250px;
+      font-family: 'Anderson Grotesk';
+      padding-top: 10px;
+      margin-bottom:-5px;
+  }
+  
+  #HEAbox{
+      background-color:white;
+      width:270px;
+      padding-left:13px;
+      border: 2px solid rgb(0, 152, 165);
+      border-radius:5px;
+  }
+
+  #MATinfo{
+    color:rgb(198, 0, 120);
+    font-family: 'Anderson Grotesk';
+    font-size: 18px; 
+    margin-bottom:2px;
+  }
+  
+  #MATname{
+      color:rgb(198, 0, 120);
+      font-size: 18px;
+      width: 250px;
+      margin-bottom: 8px;    
+  }
+  
+  #MATcode{
+      color:rgb(198, 0, 120);
+      font-size: 25px;
+      width: 250px;
+      font-family: 'Anderson Grotesk';
+      padding-top: 10px;
+      margin-bottom:-5px;
+  }
+  
+  #MATbox{
+      background-color:white;
+      width:270px;
+      padding-left:13px;
+      border: 2px solid rgb(198, 0, 120);
+      border-radius:5px;
+  }
+  
+  #RENinfo{
+    color:rgb(19, 145, 36);
+    font-family: 'Anderson Grotesk';
+    font-size: 18px; 
+    margin-bottom:2px;
+  }
+  
+  #RENname{
+      color:rgb(19, 145, 36);
+      font-size: 18px;
+      width: 250px;
+      margin-bottom: 8px;    
+  }
+  
+  #RENcode{
+      color:rgb(19, 145, 36);
+      font-size: 25px;
+      width: 250px;
+      font-family: 'Anderson Grotesk';
+      padding-top: 10px;
+      margin-bottom:-5px;
+  }
+  
+  #RENbox{
+      background-color:white;
+      width:270px;
+      padding-left:13px;
+      border: 2px solid rgb(19, 145, 36);
+      border-radius:5px;
+  }
+
+  #SCIinfo{
+    color:rgb(0,115,206);
+    font-family: 'Anderson Grotesk';
+    font-size: 18px; 
+    margin-bottom:2px;
+  }
+  
+  #SCIname{
+      color:rgb(0,115,206);
+      font-size: 18px;
+      width: 250px;
+      margin-bottom: 8px;    
+  }
+  
+  #SCIcode{
+      color:rgb(0,115,206);
+      font-size: 25px;
+      width: 250px;
+      font-family: 'Anderson Grotesk';
+      padding-top: 10px;
+      margin-bottom:-5px;
+  }
+  
+  #SCIbox{
+      background-color:white;
+      width:270px;
+      padding-left:13px;
+      border: 2px solid rgb(0,115,206);
+      border-radius:5px;
+  }
+
+  #VPAinfo{
+    color:rgb(9, 0, 131);
+    font-family: 'Anderson Grotesk';
+    font-size: 18px; 
+    margin-bottom:2px;
+  }
+  
+  #VPAname{
+      color:rgb(9, 0, 131);
+      font-size: 18px;
+      width: 250px;
+      margin-bottom: 8px;    
+  }
+  
+  #VPAcode{
+      color:rgb(9, 0, 131);
+      font-size: 25px;
+      width: 250px;
+      font-family: 'Anderson Grotesk';
+      padding-top: 10px;
+      margin-bottom:-5px;
+  }
+  
+  #VPAbox{
+      background-color:white;
+      width:270px;
+      padding-left:13px;
+      border: 2px solid rgb(9, 0, 131);
+      border-radius:5px;
+  }
+  
+  #WLUinfo{
+    color:rgb(139, 28, 167);
+    font-family: 'Anderson Grotesk';
+    font-size: 18px; 
+    margin-bottom:2px;
+  }
+  
+  #WLUname{
+      color:rgb(139, 28, 167);
+      font-size: 18px;
+      width: 250px;
+      margin-bottom: 8px;    
+  }
+  
+  #WLUcode{
+      color:rgb(139, 28, 167);
+      font-size: 25px;
+      width: 250px;
+      font-family: 'Anderson Grotesk';
+      padding-top: 10px;
+      margin-bottom:-5px;
+  }
+  
+  #WLUbox{
+      background-color:white;
+      width:270px;
+      padding-left:13px;
+      border: 2px solid rgb(139, 28, 167);
+      border-radius:5px;
+  }

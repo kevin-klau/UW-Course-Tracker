@@ -126,6 +126,11 @@ html {
   --bs-btn-active-color: rgb(255,213,79);
 }
 
+#Buttons{
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
 #SearchResults{
   margin-left: 10px;
   margin-right: 10px;
@@ -134,10 +139,9 @@ html {
   /*width:100%;*/
   font-family: "Anderson Grotesk";
   text-align: center;
-  margin-top: 50px;
   font-size: 30px;
   border-radius: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 30px;
 }
 
 #alert{
@@ -147,12 +151,8 @@ html {
   margin-right: 50px;
 }
 
-#chart{
-  font-size: 100px;
-}
-
-#custom-tooltip{
-  background-color: white;
+#statistics{
+  margin-left: 70px;
   
 }
 
@@ -181,6 +181,7 @@ html {
   align-items: center;
   justify-content: center;
   position:relative;
+  flex-wrap: wrap;
 }
 
 body {
