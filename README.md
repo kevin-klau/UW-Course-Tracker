@@ -10,8 +10,7 @@ Enter your subject code (ie. MATH or ARTS or CO or ENGL), and we will display wh
 You can also preview the course info to help you make your choice!!!
 
 ### Features that will be added
-* Soon, the data will be displayed on a graph
 * More info about each course will be added
-* Updated UI
+* Better Looking UI
 
 
