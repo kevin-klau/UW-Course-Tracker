@@ -1,7 +1,7 @@
 #ARTinfo{
   color:rgb(231, 129,0);
   font-family: 'Anderson Grotesk';
-  font-size: 18px; 
+  font-size: 15px; 
   margin-bottom:2px;
 }
 
@@ -25,14 +25,14 @@
     background-color:white;
     width:270px;
     padding-left:13px;
-    border: 2px solid rgb(231, 129,0);
+    border: 1.5px solid rgb(231, 129,0);
     border-radius:5px;
 }
 
 #ENGinfo{
   color:rgb(87,5,139);
   font-family: 'Anderson Grotesk';
-  font-size: 18px; 
+  font-size: 15px; 
   margin-bottom:2px;
 }
 
@@ -63,7 +63,7 @@
 #ENVinfo{
     color:rgb(180, 190, 0);
     font-family: 'Anderson Grotesk';
-    font-size: 18px; 
+    font-size: 15px; 
     margin-bottom:2px;
   }
   
@@ -94,7 +94,7 @@
   #HEAinfo{
     color:rgb(0, 152, 165);
     font-family: 'Anderson Grotesk';
-    font-size: 18px; 
+    font-size: 15px; 
     margin-bottom:2px;
   }
   
@@ -125,7 +125,7 @@
   #MATinfo{
     color:rgb(198, 0, 120);
     font-family: 'Anderson Grotesk';
-    font-size: 18px; 
+    font-size: 15px; 
     margin-bottom:2px;
   }
   
@@ -156,7 +156,7 @@
   #RENinfo{
     color:rgb(19, 145, 36);
     font-family: 'Anderson Grotesk';
-    font-size: 18px; 
+    font-size: 15px; 
     margin-bottom:2px;
   }
   
@@ -187,7 +187,7 @@
   #SCIinfo{
     color:rgb(0,115,206);
     font-family: 'Anderson Grotesk';
-    font-size: 18px; 
+    font-size: 15px; 
     margin-bottom:2px;
   }
   
@@ -218,7 +218,7 @@
   #VPAinfo{
     color:rgb(9, 0, 131);
     font-family: 'Anderson Grotesk';
-    font-size: 18px; 
+    font-size: 15px; 
     margin-bottom:2px;
   }
   
@@ -249,7 +249,7 @@
   #WLUinfo{
     color:rgb(139, 28, 167);
     font-family: 'Anderson Grotesk';
-    font-size: 18px; 
+    font-size: 15px; 
     margin-bottom:2px;
   }
   
