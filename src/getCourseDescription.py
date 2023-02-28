@@ -12,7 +12,7 @@ def find_desc(course):
     course=remove(course).lower()
     # Set up options to run Chrome headless
     options = Options()
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
 
     # Set up the webdriver
     driver = webdriver.Chrome(options=options)

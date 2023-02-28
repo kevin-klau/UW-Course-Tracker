@@ -73,8 +73,8 @@ function DataChart ({ data, faculty, onClick }){
 
     return(
         <ScatterChart
-            width={600}
-            height={500}
+            width={500}
+            height={450}
             margin={{
                 top: 20,
                 right: 20,
@@ -127,7 +127,15 @@ export default function Stats({ props }){
         faculty: props.faculty,
     }));
 
-    function handlePointClick ({code, name, faculty, liked, useful, easy, ratings}){
+    async function handlePointClick ({code, name, faculty, liked, useful, easy, ratings}){
+        const response = await fetch ('/process_input',{
+            method: 'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({code})
+        });
+        const data = await response.json();
         setSelectedCourse({
             code: code,
             name: name,
@@ -136,15 +144,15 @@ export default function Stats({ props }){
             useful: useful,
             easy: easy,
             ratings: ratings,
-            description: "This looks ugly but I'll fix the formatting after I finish the data fetching" // Use the correct key name
-        })
+            description: data.output, // Use the correct key name
+        });
     }
 
     return(
         <>
         <div id="courseTitles">
-                <h1 style={{fontSize:'75px', marginBottom:'0px', color:lightFillColor}}> {props.course}  </h1>
-                <h2 style={{fontSize: '50px', color:fillColor}}> {props.name}</h2>   
+                <h1 style={{fontSize:'60px', marginBottom:'0px', color:lightFillColor}}> {props.course}  </h1>
+                <h2 style={{fontSize: '40px', color:fillColor}}> {props.name}</h2>   
         </div>
         <div id="displayedInfo" style={{marginLeft:'20px'}}>
             <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick}/> 
