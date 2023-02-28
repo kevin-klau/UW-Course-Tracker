@@ -136,7 +136,7 @@ export default function Stats({ props }){
             useful: useful,
             easy: easy,
             ratings: ratings,
-            description: "no info yet" // Use the correct key name
+            description: "This looks ugly but I'll fix the formatting after I finish the data fetching" // Use the correct key name
         })
     }
 
