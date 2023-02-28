@@ -36,7 +36,7 @@ export default function Form(){
     const fuse = new Fuse(Courses, options);
     
     // Setting up the top searches
-    const [results, setResults] = useState(fuse.search("A").slice(0,5));
+    const [results, setResults] = useState(fuse.search("EC").slice(0,5));
 
     // Function to include results
     function MostRelevant(e){
@@ -68,7 +68,9 @@ export default function Form(){
 
     // Function to handle when they finally choose a subject
     function Selected(course, faculty, name){
+        // Set revealInfo to true and update the selected course
         setRevealInfo(true);
+        window.location.hash = "#nextInfo";
         setSelectedCourse ({course:course, faculty:faculty, name:name});
     }
 
@@ -90,14 +92,11 @@ export default function Form(){
                 <button id="SearchResults" divKey={result.item.course} className={result.item.faculty+" btn btn-outline-success"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
                 ))}
             </div>
-
-            <div>
-                {revealInfo ? (
-                    <div>
-                    <Stats props={selectedCourse}></Stats> 
-                    </div>
-                ): <div/>}
-            </div>
+                <div id = "nextInfo" >
+                    {revealInfo ? (
+                        <Stats props={selectedCourse}></Stats> 
+                    ): <div/>}
+                </div>
             
 
         </div>

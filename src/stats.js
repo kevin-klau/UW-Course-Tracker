@@ -1,11 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import './App.css';
 import './chartColors.css'
 import data from './datafull.json';
 import {ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip} from "recharts";
+import CardInfo from './theCards.js';
 
+let theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'black' };
+let fillColor='black';
+let lightFillColor='grey';
 
-function DataChart ({ data, faculty }){
+function DataChart ({ data, faculty, onClick }){
 
     const CustomTooltip = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
@@ -28,9 +32,6 @@ function DataChart ({ data, faculty }){
         fontFamily: 'Anderson Grotesk',
     };
 
-    let theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'black' };
-    let fillColor='black';
-    let lightFillColor='grey';
     if (faculty === "ART"){
         theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(231, 129, 0)' };
         fillColor='rgb(231, 129, 0)';
@@ -93,7 +94,7 @@ function DataChart ({ data, faculty }){
                 itemStyle={chartStyle}
                 content={CustomTooltip}
             />
-            <Scatter data={data} fill={fillColor} />
+            <Scatter data={data} fill={fillColor} onClick={({ payload }) => onClick(payload)} />
         </ScatterChart>
     );
 }
@@ -101,10 +102,21 @@ function DataChart ({ data, faculty }){
 export default function Stats({ props }){
     const [filteredInfo, setFilteredInfo] = useState([]);
 
+    const [selectedCourse, setSelectedCourse] = useState({
+        code: "Selected a Course On The Graph!",
+        name: "Course Name",
+        faculty: "Faculty",
+        liked: "N/A",
+        useful: "N/A",
+        easy: "N/A",
+        ratings: "N/A",
+        description:"Course Description"
+    });
+
     useEffect(() => {
         setFilteredInfo(data.filter(item => item.code.substring(0, props.course.length+1) ===(props.course+" ")));
     }, [props]);
-    
+
     const scatterPlotData = filteredInfo.map(item => (Number(item.ratings) >= 5 && {
         code: item.code,
         name: item.name,
@@ -115,15 +127,30 @@ export default function Stats({ props }){
         faculty: props.faculty,
     }));
 
-    return(
-        <div id="statistics">
-            <div style={{textAlign:'center', flexWrap: 'wrap', position:'relative'}}>
-                <h1 style={{display: 'inline-block', fontSize:'75px'}}> {props.course} &nbsp; </h1>
-                <h2 style={{display: 'inline-block', fontSize: '50px'}}> {props.name}</h2>   
-            </div>
+    function handlePointClick ({code, name, faculty, liked, useful, easy, ratings}){
+        setSelectedCourse({
+            code: code,
+            name: name,
+            faculty: faculty,
+            liked: liked,
+            useful: useful,
+            easy: easy,
+            ratings: ratings,
+            description: "no info yet" // Use the correct key name
+        })
+    }
 
-            <DataChart data={scatterPlotData} faculty={props.faculty}/> 
+    return(
+        <>
+        <div id="courseTitles">
+                <h1 style={{fontSize:'75px', marginBottom:'0px', color:lightFillColor}}> {props.course}  </h1>
+                <h2 style={{fontSize: '50px', color:fillColor}}> {props.name}</h2>   
         </div>
+        <div id="displayedInfo" style={{marginLeft:'20px'}}>
+            <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick}/> 
+            <CardInfo info={selectedCourse}></CardInfo>   
+        </div>
+        </>
 
     );
 

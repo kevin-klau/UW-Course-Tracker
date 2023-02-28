@@ -1,3 +1,5 @@
+// Whoever's looking at this code, I manually had to input this info cuz I had no idea how to automate this
+
 export const Courses =[
     { course: "AFM", faculty: "ART", name: "Accounting & Financial Management"},
     { course: "ASL", faculty: "ART", name: "American Sign Language"},
