@@ -127,15 +127,7 @@ export default function Stats({ props }){
         faculty: props.faculty,
     }));
 
-    async function handlePointClick ({code, name, faculty, liked, useful, easy, ratings}){
-        const response = await fetch ('/process_input',{
-            method: 'POST',
-            headers:{
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({code})
-        });
-        const data = await response.json();
+    function handlePointClick ({code, name, faculty, liked, useful, easy, ratings}){
         setSelectedCourse({
             code: code,
             name: name,
@@ -144,7 +136,7 @@ export default function Stats({ props }){
             useful: useful,
             easy: easy,
             ratings: ratings,
-            description: data.output, // Use the correct key name
+            description: "Updated Course Description" // Use the correct key name
         });
     }
 
