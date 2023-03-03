@@ -1,6 +1,5 @@
 import './App.css';
-import background from './Background-Bottom.png'
-import data from './data.json';
+import background from './Images/Background-Bottom.png'
 import Form from './form.js'
 
 import { useState } from 'react';

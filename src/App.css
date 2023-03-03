@@ -43,7 +43,7 @@ html {
 
 #heading {
   font-family: "Anderson Grotesk UltraBold", sans-serif;
-  background-image: url("Background-Top.png");
+  background-image: url("./Images/Background-Top.png");
   background-position: center;
   background-size: cover;
   width: 100%;
