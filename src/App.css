@@ -168,8 +168,6 @@ html {
 
 #mainCard{
   margin-left: 30px;
-  border: 2px solid rgb(9, 0, 131);
-  box-shadow: 2px 2px 0.5px 0.5px rgb(139, 135, 204);
   border-radius: 20px;
   width: 500px;
   height: 450px;

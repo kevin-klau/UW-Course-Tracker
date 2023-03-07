@@ -103,7 +103,7 @@ export default function Stats({ props }){
     const [filteredInfo, setFilteredInfo] = useState([]);
 
     const [selectedCourse, setSelectedCourse] = useState({
-        code: "Selected a Course On The Graph!",
+        code: "Click on a Course!",
         name: "Course Name",
         faculty: "Faculty",
         liked: "N/A",
@@ -148,7 +148,7 @@ export default function Stats({ props }){
         </div>
         <div id="displayedInfo" style={{marginLeft:'20px'}}>
             <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick}/> 
-            <CardInfo info={selectedCourse}></CardInfo>   
+            <CardInfo info={selectedCourse} faculty={props.faculty}></CardInfo>   
         </div>
         </>
 
