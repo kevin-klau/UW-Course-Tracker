@@ -167,11 +167,11 @@ html {
 }
 
 #mainCard{
-  margin-left: 30px;
+  margin-left: 40px;
   border-radius: 20px;
   width: 500px;
-  height: 450px;
-  margin-top:-20px;
+  height: 470px;
+  margin-top:-10px;
 }
 
 #displayedInfo{

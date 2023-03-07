@@ -31,7 +31,7 @@ function DataChart ({ data, faculty, onClick }){
     const chartStyle={
         fontFamily: 'Anderson Grotesk',
     };
-
+    
     if (faculty === "ART"){
         theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(231, 129, 0)' };
         fillColor='rgb(231, 129, 0)';
@@ -143,12 +143,12 @@ export default function Stats({ props }){
     return(
         <>
         <div id="courseTitles">
-                <h1 style={{fontSize:'60px', marginBottom:'0px', color:lightFillColor}}> {props.course}  </h1>
+                <h1 style={{fontSize:'80px', marginBottom:'0px', color:fillColor}}> {props.course}  </h1>
                 <h2 style={{fontSize: '40px', color:fillColor}}> {props.name}</h2>   
         </div>
         <div id="displayedInfo" style={{marginLeft:'20px'}}>
             <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick}/> 
-            <CardInfo info={selectedCourse} faculty={props.faculty}></CardInfo>   
+            <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty}></CardInfo>   
         </div>
         </>
 

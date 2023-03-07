@@ -94,7 +94,7 @@ export default function Form(){
             </div>
                 <div id = "nextInfo" >
                     {revealInfo ? (
-                        <Stats id={selectedCourse.code} props={selectedCourse}></Stats> 
+                        <Stats key={selectedCourse.code} props={selectedCourse}></Stats> 
                     ): <div/>}
                 </div>
             

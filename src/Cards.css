@@ -7,14 +7,16 @@
 
 #cardRatings{
     font-size: 25px;
-    padding-left: 10px; 
+    padding-left: 15px; 
     font-family: "Anderson Grotesk";
 }
 #cardName{
     font-size: 20px;
     padding-left: 20px; 
+    width: 460px;
     margin-top: -35px;
-    font-family: "Anderson Grotesk";
+    font-family: "Anderson Grotesk Bold";
+    padding-bottom: 3px;
 }
 
 #horizontalLine {
@@ -26,6 +28,39 @@
     padding: 0;
 }
 
+.meter { 
+    margin-left: 20px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+    width:450px;
+    border-radius: 20px;
+    margin-top: -3px;
+    margin-bottom: 10px;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    border-radius: 20px;
+    animation: progressBar 1s ease-in-out;
+    animation-fill-mode:both;
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.cardHeaders {
+    font-family: "Anderson Grotesk Bold";
+    padding-left: 20px;
+    font-size: 25px;
+}
+
 .ART{
     border-width: 2px;
     border: solid;
@@ -33,25 +68,9 @@
     box-shadow: 0px 0px 1px 1px rgb(255, 213, 165);
 }
 
-.ARTtext{
-    color:rgb(231, 129, 0);
-}
-
-.ARTlighttext{
-    color:rgb(239, 164, 67);
-}
-  
 .ENG{
     border: 2px solid rgb(87,5,139);
     box-shadow: 0px 0px 1px 1px rgb(208, 180, 239);
-}
-
-.ENGtext{
-    color: rgb(87,5,139);
-}
-
-.ENGlighttext{
-    color: rgb(132, 66, 173);
 }
 
 .ENV{
@@ -59,52 +78,18 @@
     box-shadow: 0px 0px 1px 1px rgb(208, 234, 120);
 }
 
-.ENVtext{
-    color: rgb(180, 190, 0);
-}
-
-.ENVlighttext{
-    color: rgb(225, 233, 82);
-}
-
 .HEA{
     border: 2px solid rgb(0, 152, 165);
     box-shadow: 0px 0px 1px 1px rgb(151, 223, 239);
 }
 
-.HEAtext{
-    color: rgb(0, 152, 165);
-}
-
-.HEAlighttext{
-    color: rgb(78, 197, 207);
-}
-
-
 .MAT{
     border: 2px solid rgb(198, 0, 120);
     box-shadow: 0px 0px 1px 1px rgb(255, 190, 239);
 }
-
-.MATtext{
-    color: rgb(198, 0, 120);
-}
-
-.MATlighttext{
-    color: rgb(222, 72, 162);
-}
-
 .REN{
     border: 2px solid rgb(19, 145, 36);
     box-shadow: 0px 0px 1px 1px rgb(169, 226, 176);
-}
-
-.RENtext{
-    color: rgb(19, 145, 36);
-}
-
-.RENlighttext{
-    color: rgb(72, 187, 88);
 }
 
 .SCI{
@@ -112,36 +97,12 @@
     box-shadow: 0px 0px 1px 1px rgb(180, 213, 255);
 }
 
-.SCItext{
-    color: rgb(0,115,206);
-}
-
-.SCIlighttext{
-    color: rgb(58, 152, 230);
-}
-
 .VPA{
     border: 2px solid rgb(9, 0, 131);
     box-shadow: 0px 0px 1px 1px rgb(139, 135, 204);
 }
 
-.VPAtext{
-    color: rgb(9, 0, 131);
-}
-
-.VPAlighttext{
-    color: rgb(63, 57, 157);
-}
-
 .WLU{
     border: 2px solid rgb(139, 28, 167);
     box-shadow: 0px 0px 1px 1px rgb(201, 120, 221);
-}
-
-.WLUtext{
-    color: rgb(139, 28, 167);
-}
-
-.WLUlighttext{
-    color: rgb(184, 81, 209);
 }
