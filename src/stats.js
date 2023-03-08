@@ -15,12 +15,8 @@ function DataChart ({ data, faculty, onClick }){
         if (active && payload && payload.length) {
           return (
             <div id={payload[0].payload.faculty+"box"}>
-              <p id={payload[0].payload.faculty+"code"}  ><strong>{payload[0].payload.code}</strong></p>
-              <p id={payload[0].payload.faculty+"name"}><strong>{payload[0].payload.name}</strong></p>
-              <p id={payload[0].payload.faculty+"info"} ><strong>Easy: </strong> {payload[0].payload.easy}%</p>
-              <p id={payload[0].payload.faculty+"info"} ><strong>Useful: </strong> {payload[0].payload.useful}%</p>
-              <p id={payload[0].payload.faculty+"info"} ><strong>Liked: </strong> {payload[0].payload.liked}%</p>
-              <p id={payload[0].payload.faculty+"info"} style={{paddingBottom:'10px'}}><strong>Ratings: </strong> {payload[0].payload.ratings}</p>
+              <p id={payload[0].payload.faculty+"code"}><strong>{payload[0].payload.code}</strong></p>
+              <p id={payload[0].payload.faculty+"name"} style={{width:"240px"}}><strong>{payload[0].payload.name}</strong></p>
             </div>
           );
         }
