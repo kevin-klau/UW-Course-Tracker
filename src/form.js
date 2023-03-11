@@ -92,11 +92,11 @@ export default function Form(){
                 <button id="SearchResults" divKey={result.item.course} className={result.item.faculty+" btn btn-outline-success"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
                 ))}
             </div>
-                <div key={selectedCourse.code} id = "nextInfo" >
-                    {revealInfo ? (
+                {/*<div key={selectedCourse.code} id = "nextInfo" >
+                    {revealInfo ? (*/}
                         <Stats key={selectedCourse.code} props={selectedCourse}></Stats> 
-                    ): <div/>}
-                </div>
+                    {/*}): <div/>}
+                </div>*/}
             
 
         </div>

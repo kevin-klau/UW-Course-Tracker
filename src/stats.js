@@ -4,6 +4,7 @@ import './chartColors.css'
 import data from './datafull.json';
 import {ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip} from "recharts";
 import CardInfo from './theCards.js';
+import './button-colours.css';
 
 let theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'black' };
 let fillColor='black';
@@ -136,16 +137,24 @@ export default function Stats({ props }){
         });
     }
 
+    if (props.course === '' && props.name === ''){
+        props.course = 'Course Code';
+        props.name = 'Course Name';
+        props.faculty = 'NAFac';
+    }
+
     return(
         <>
-        <div id="courseTitles">
-                <h1 style={{fontSize:'80px', marginBottom:'0px', color:fillColor}}> {props.course}  </h1>
-                <h2 style={{fontSize: '40px', color:fillColor}}> {props.name}</h2>   
-        </div>
-        <div id="displayedInfo" style={{marginLeft:'20px'}}>
-            <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick}/> 
-            <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty}></CardInfo>   
-        </div>
+        
+            <div id='returnButton'><button id='backUpButton' className = {props.faculty +" btn btn-outline-success"}>Search Again</button></div>
+            <div id="courseTitles">
+                    <h1 style={{fontSize:'80px', marginBottom:'0px', color:fillColor}}> {props.course}  </h1>
+                    <h2 style={{fontSize: '40px', color:fillColor}}> {props.name}</h2>   
+            </div>
+            <div id="displayedInfo" style={{marginLeft:'20px'}}>
+                <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick}/> 
+                <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty}></CardInfo>   
+            </div>
         </>
 
     );

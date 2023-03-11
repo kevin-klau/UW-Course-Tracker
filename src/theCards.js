@@ -44,9 +44,13 @@ export default function CardInfo({ info, faculty }){
         lightTextColor='rgb(184, 81, 209)';
     }
 
+    if (faculty === 'NAFac'){
+        faculty = 'NA';
+    }
+
     return(
-        <div id="mainCard" class={faculty}>
-            <h1 id="cardCode" class={faculty + "text"} style={{display: "inline-block", color: fillColor}}>{info.code}</h1>
+        <div id="mainCard" className={faculty}>
+            <h1 id="cardCode" style={{display: "inline-block", color: fillColor}}>{info.code}</h1>
             <div style={{display: "inline-block", color: lightFillColor}}>
                 {info.ratings === "N/A" ? <div/>: <p id="cardRatings" style={{color: lightTextColor}}>{info.ratings} Ratings</p>}
             </div>            

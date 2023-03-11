@@ -106,3 +106,19 @@
     border: 2px solid rgb(139, 28, 167);
     box-shadow: 0px 0px 1px 1px rgb(201, 120, 221);
 }
+
+.NA{
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 1px 1px rgb(107, 107, 107);
+}
+
+.NAFac{
+    border-color: rgb(0, 0, 0);
+    --bs-btn-hover-bg: rgb(0, 0, 0);
+    --bs-btn-color: rgb(0, 0, 0);
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: rgb(0, 0, 0);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: rgb(0, 0, 0);
+    --bs-btn-active-border-color: rgb(0, 0, 0);
+}

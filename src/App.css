@@ -160,6 +160,8 @@ html {
   flex-wrap: wrap;
   position: relative;
   padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 #nextInfo{
@@ -179,6 +181,17 @@ html {
   justify-content: center;
   position:relative;
   display: flex; 
+}
+
+#returnButton{
+  text-align: center;
+  position: relative;
+  top: 100px;
+  left: -400px;
+}
+
+#backUpButton{
+  font-size: 25px;
 }
 
 .fade {
