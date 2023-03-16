@@ -148,7 +148,7 @@ export default function Stats({ props }){
         
             <div id='returnButton'><button id='backUpButton' className = {props.faculty +" btn btn-outline-success"}>Search Again</button></div>
             <div id="courseTitles">
-                    <h1 style={{fontSize:'80px', marginBottom:'0px', color:fillColor}}> {props.course}  </h1>
+                    <h1 style={{fontSize:'80px', marginBottom:'0px', color:fillColor, width:'50%', marginLeft: '25vw'}}> {props.course}  </h1>
                     <h2 style={{fontSize: '40px', color:fillColor}}> {props.name}</h2>   
             </div>
             <div id="displayedInfo" style={{marginLeft:'20px'}}>

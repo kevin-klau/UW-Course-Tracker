@@ -128,7 +128,7 @@ html {
 
 #Buttons{
   margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 #SearchResults{
@@ -164,9 +164,6 @@ html {
   align-items: center;
 }
 
-#nextInfo{
-  height: 100vh;
-}
 
 #mainCard{
   margin-left: 40px;
@@ -186,7 +183,7 @@ html {
 #returnButton{
   text-align: center;
   position: relative;
-  top: 100px;
+  top: 80px;
   left: -400px;
 }
 
