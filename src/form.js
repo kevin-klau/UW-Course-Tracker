@@ -69,8 +69,8 @@ export default function Form(){
     // Function to handle when they finally choose a subject
     function Selected(course, faculty, name){
         // Set revealInfo to true and update the selected course
+        document.getElementById('returnButton').scrollIntoView();
         setRevealInfo(true);
-        window.location.hash = "#nextInfo";
         setSelectedCourse ({course:course, faculty:faculty, name:name});
     }
 
@@ -94,7 +94,7 @@ export default function Form(){
             </div>
                 {/*<div key={selectedCourse.code} id = "nextInfo" >
                     {revealInfo ? (*/}
-                        <Stats key={selectedCourse.code} props={selectedCourse}></Stats> 
+                        <Stats id="stat" key={selectedCourse.code} props={selectedCourse}></Stats> 
                     {/*}): <div/>}
                 </div>*/}
             

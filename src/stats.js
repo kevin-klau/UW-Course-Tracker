@@ -137,6 +137,10 @@ export default function Stats({ props }){
         });
     }
 
+    function clickSearchAgain (){
+        document.getElementById('heading').scrollIntoView();
+    }
+
     if (props.course === '' && props.name === ''){
         props.course = 'Course Code';
         props.name = 'Course Name';
@@ -145,15 +149,19 @@ export default function Stats({ props }){
 
     return(
         <>
-        
-            <div id='returnButton'><button id='backUpButton' className = {props.faculty +" btn btn-outline-success"}>Search Again</button></div>
+
+            
             <div id="courseTitles">
-                    <h1 style={{fontSize:'80px', marginBottom:'0px', color:fillColor, width:'50%', marginLeft: '25vw'}}> {props.course}  </h1>
+                <div className='row' style={{textAlign:'center'}}>
+                    <div className='col-lg-1'/>
+                    <div className='col-lg-2' id='returnButton'><button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +" btn btn-outline-success"} style={{marginTop:'4vh'}}>Search Again</button></div>
+                    <h1 className='col-lg-6' style={{fontSize:'80px', marginBottom:'0px', color:fillColor, textAlign:'center'}}> {props.course} </h1>
+                </div>
                     <h2 style={{fontSize: '40px', color:fillColor}}> {props.name}</h2>   
             </div>
             <div id="displayedInfo" style={{marginLeft:'20px'}}>
-                <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick}/> 
-                <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty}></CardInfo>   
+                <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} className='col-lg-6'/> 
+                <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>   
             </div>
         </>
 
