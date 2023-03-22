@@ -5,13 +5,13 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/process_input', methods=['POST'])
+@app.route('/api/myfunction', methods=['POST'])
 def process_input():
     # Extract the user input from the HTTP request
-    user_input = request.json['code']
-    
+    user_input = request.get_json()
+
     # Call your Python function with the user input
     output = getCourseDescription.find_desc(user_input)
     
     # Return the output as a JSON response
-    return jsonify({'output': output})
+    return jsonify(output)

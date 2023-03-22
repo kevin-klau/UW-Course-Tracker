@@ -110,6 +110,23 @@ export default function Stats({ props }){
         description:"Course Description"
     });
 
+    const [result, setResult] = useState("Insert Course Description");
+    
+    const handleRequest = async (user_input) => {
+        fetch('/api/myfunction', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify("math136")
+          })
+            .then(response => response.json())
+            .then(data => setResult(data))
+            .catch(error => console.error(error));
+
+            console.log("HIHI")
+    }
+
     useEffect(() => {
         setFilteredInfo(data.filter(item => item.code.substring(0, props.course.length+1) ===(props.course+" ")));
     }, [props]);
@@ -135,6 +152,7 @@ export default function Stats({ props }){
             ratings: ratings,
             description: "Updated Course Description" // Use the correct key name
         });
+        handleRequest(code);
     }
 
     function clickSearchAgain (){

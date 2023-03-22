@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import './Cards.css';
 
+
+
 export default function CardInfo({ info, faculty }){
     let fillColor = 'black';
     let lightFillColor = 'black'
@@ -47,6 +49,7 @@ export default function CardInfo({ info, faculty }){
     if (faculty === 'NAFac'){
         faculty = 'NA';
     }
+    
 
     return(
         <div id="mainCard" className={faculty}>
