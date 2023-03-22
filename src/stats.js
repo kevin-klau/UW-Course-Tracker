@@ -113,18 +113,23 @@ export default function Stats({ props }){
     const [result, setResult] = useState("Insert Course Description");
     
     const handleRequest = async (user_input) => {
-        fetch('/api/myfunction', {
+        fetch('/myfunction', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify("math136")
           })
-            .then(response => response.json())
-            .then(data => setResult(data))
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                  }
+                  return response.json();
+            })
+            .then(data => console.log(data.output))
             .catch(error => console.error(error));
 
-            console.log("HIHI")
+            
     }
 
     useEffect(() => {
@@ -179,7 +184,8 @@ export default function Stats({ props }){
             </div>
             <div id="displayedInfo" style={{marginLeft:'20px'}}>
                 <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} className='col-lg-6'/> 
-                <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>   
+                <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>  
+                <p>{result}</p>
             </div>
         </>
 

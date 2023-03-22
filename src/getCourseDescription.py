@@ -28,7 +28,7 @@ def find_desc(course):
     # Extract the description of the webpage
     desc = driver.find_element(By.CLASS_NAME, 'sc-pAyMl')
     
-    return desc.text
+    return desc.text+""
     
     # Quit the webdriver
     driver.quit()
