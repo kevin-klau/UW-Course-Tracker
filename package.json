@@ -1,6 +1,6 @@
 {
     "name": "uw-course-tracker",
-    "homepage": "https://kevin-klau.github.io/UW-Course-Tracker/",
+    "homepage": ".",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
