@@ -185,7 +185,7 @@ export default function Stats({ props }){
             <div id="displayedInfo" style={{marginLeft:'20px'}}>
                 <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} className='col-lg-6'/> 
                 <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>  
-                <p>{result}</p>
+                {/*<p>{result}</p>*/}
             </div>
         </>
 
