@@ -189,11 +189,18 @@ export default function Stats({ props }){
     const [oldData, setOldData] = useState();
     function submitCourseSearch(e){
         e.preventDefault();
+        
+        
         for (let i = 0; i < scatterPlotData.length; i++){
             const theCode = scatterPlotData[i].code.toUpperCase()
             const theCodeLength = theCode.length;
-            const userCode = userCourseChoice.toUpperCase()
+            let userCode = userCourseChoice.toUpperCase()
             const theUserLength = userCode.length;
+            if (faculty === "WLU"){
+                userCode = userCode + "W";
+                console.log(userCode)
+            }
+
             if (userCode.substring(theUserLength - 1, theUserLength) >= "A" && userCode.substring(theUserLength - 1, theUserLength) <= "Z"){
                 if (theCode.substring(theCodeLength - 4, theCodeLength) === userCode.substring(theUserLength - 4, theUserLength)){
                     handlePointClick(scatterPlotData[i]);

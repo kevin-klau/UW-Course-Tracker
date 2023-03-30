@@ -80,10 +80,9 @@ html {
 }
 
 #form{
-  align-items: center;
-  justify-content: center;
   margin-bottom: 10px;
   margin-top: 50px;
+  display:flex;
 }
 
 
@@ -99,16 +98,23 @@ html {
 }
 
 #input{
-  margin-top: px;
-  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 518px;
   font-size: 35px;
   height: 80px;
   text-align:center;
   font-family: "Anderson Grotesk";
   border-color: black;
   color:black;
-  border-width: 1.5px;
+  border-width: 2px;
   border-color: gray;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  margin-left: auto;
+  border-radius: 20px;
+  
 }
 
 #inputbutton{
@@ -124,6 +130,9 @@ html {
   --bs-btn-hover-border-color: rgb(255,255,255);
   --bs-btn-active-bg: white;
   --bs-btn-active-color: rgb(255,213,79);
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #Buttons{
@@ -145,10 +154,13 @@ html {
 }
 
 #alert{
-  width:300px;
+  width:200px;
   font-family: "Anderson Grotesk";
   font-size: 25px;
-  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #statistics{

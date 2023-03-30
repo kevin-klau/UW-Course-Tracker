@@ -78,14 +78,16 @@ export default function Form(){
     
     return(
         <div>
-            <form id="form" className="d-flex container" role="search" onSubmit={Submitted} style={{position:'relative'}}>
-                <div className={`fade ${alert ? 'show' : 'hide'}`} style={{ position: 'absolute', top: 5, left: -40, display:'flex', textAlign:'Center'}}>
+            <form id="form" className="row" role="search" onSubmit={Submitted} style={{position:'relative', alignItems:'center'}}>
+                <div className={`fade ${alert ? 'show' : 'hide'} col-lg-3`} style={{display:'flex', textAlign:'Center', alignItems:'Center', justifyContent:'center'}}>
                         <div id="alert" className="alert alert-danger" role="alert">
-                            Invalid Course Subject
+                            Invalid Course
                         </div>
                 </div>
-                <input onChange={MostRelevant} id="input" className="form-control me-2 d-flex clear" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
-                <button id="inputbutton" className="btn" type="submit">🔎︎</button>
+                <div className="col-lg-6 d-flex ">
+                    <input onChange={MostRelevant} id="input" className="form-control me-2 d-flex clear" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
+                    <button id="inputbutton" className="btn" type="submit">🔎︎</button>
+                </div>
             </form>
             <div id="Buttons" className="container">
                 {results.map((result) => (
