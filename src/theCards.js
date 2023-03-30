@@ -50,10 +50,13 @@ export default function CardInfo({ info, faculty }){
         faculty = 'NA';
     }
     
+    function routeUWFlow(){
+        window.open(`https://uwflow.com/course/${info.code.replace(/\s/g, '')}`);
+    }
 
     return(
         <div id="mainCard" className={faculty}>
-            <h1 id="cardCode" style={{display: "inline-block", color: fillColor}}>{info.code}</h1>
+            <h1 id="cardCode" style={{display: "inline-block", color: fillColor}} onClick={routeUWFlow}>{info.code}</h1>
             <div style={{display: "inline-block", color: lightFillColor}}>
                 {info.ratings === "N/A" ? <div/>: <p id="cardRatings" style={{color: lightTextColor}}>{info.ratings} Ratings</p>}
             </div>            

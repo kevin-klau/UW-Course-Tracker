@@ -194,15 +194,25 @@ export default function Stats({ props }){
             const theCodeLength = theCode.length;
             const userCode = userCourseChoice.toUpperCase()
             const theUserLength = userCode.length;
-            if (theCode === userCode || 
-                theCode.substring(theCodeLength - 3, theCodeLength) === userCode.substring(theUserLength - 3, theUserLength)){
+            if (userCode.substring(theUserLength - 1, theUserLength) >= "A" && userCode.substring(theUserLength - 1, theUserLength) <= "Z"){
+                if (theCode.substring(theCodeLength - 4, theCodeLength) === userCode.substring(theUserLength - 4, theUserLength)){
+                    handlePointClick(scatterPlotData[i]);
+                    const data = [...oldData];
+                    data[i]={...data[i], color: lightFillColor}
+                    setScatterPlotData(data);
+                    document.getElementById('mainCard').scrollIntoView();
+                    break;
+                }
+            }else if (theCode === userCode || theCode.substring(theCodeLength - 3, theCodeLength) === userCode.substring(theUserLength - 3, theUserLength)){
                 handlePointClick(scatterPlotData[i]);
                 const data = [...oldData];
                 data[i]={...data[i], color: lightFillColor}
                 setScatterPlotData(data);
+                document.getElementById('mainCard').scrollIntoView();
                 break;
             }
         } 
+       
     }
 
     useEffect(() => {
@@ -253,10 +263,12 @@ export default function Stats({ props }){
                 setScatterPlotData(data);      
             }
         }  
+        document.getElementById('mainCard').scrollIntoView();
+
     }
 
     function clickSearchAgain (){
-        document.getElementById('heading').scrollIntoView();
+        document.getElementById('info').scrollIntoView();
     }
 
     if (props.course === '' && props.name === ''){
