@@ -294,7 +294,7 @@ export default function Stats({ props }){
                     </div>
                     <h1 className='col-lg-6' style={{fontSize:'80px', marginBottom:'0px', color:fillColor, textAlign:'center'}}> {props.course} </h1>
                     <form className='col-lg-3' id='searchButton container' onSubmit={submitCourseSearch}>
-                        <input id='searchCourseButton' className = {props.faculty +" btn"} style={{marginTop:'4vh'}} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
+                        <input type="text" id='searchCourseButton' className = {props.faculty +" btn"} style={{marginTop:'4vh'}} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
                         <button id="searchCourseButtonEnter" className = {props.faculty +" btn"} type="submit">🔎︎</button>
                     </form>
                 </div>

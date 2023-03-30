@@ -84,7 +84,7 @@ export default function Form(){
                             Invalid Course
                         </div>
                 </div>
-                <div className="col-lg-6 d-flex ">
+                <div className="col-lg-6 d-flex" style={{display:"flex"}}>
                     <input onChange={MostRelevant} id="input" className="form-control me-2 d-flex clear" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
                     <button id="inputbutton" className="btn" type="submit">🔎︎</button>
                 </div>

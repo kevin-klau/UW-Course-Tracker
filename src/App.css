@@ -215,10 +215,6 @@ html {
   border-width: 2px;
 }
 
-#searchCourseButton::placeholder{
-  font-size: 25px;
-  color: black;
-}
 
 #searchCourseButtonEnter{
   font-size: 25px;
