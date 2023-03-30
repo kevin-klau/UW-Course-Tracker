@@ -57,22 +57,22 @@ export default function CardInfo({ info, faculty }){
             <div style={{display: "inline-block", color: lightFillColor}}>
                 {info.ratings === "N/A" ? <div/>: <p id="cardRatings" style={{color: lightTextColor}}>{info.ratings} Ratings</p>}
             </div>            
-            <div id="horizontalLine" class={faculty}/>
+            <div id="horizontalLine" className={faculty}/>
             <h2 id="cardName" style={{color: fillColor}}>{info.name}</h2>
             
             <h3 className={"cardHeaders"} style={{color: fillColor}}><strong>Difficulty:</strong> {info.easy}%</h3>
-            <div key={info.name+1} class="meter" style={{display: "inline-block"}}>
-                <span key={info.name+1} style={{width: Number(info.easy)+"%"}}><span class="progress" style={{backgroundColor: fillColor}}></span><p>hihi</p></span>
+            <div key={info.name+1} className="meter" style={{display: "inline-block"}}>
+                <span key={info.name+1} style={{width: Number(info.easy)+"%"}}><span className="progress" style={{backgroundColor: fillColor}}></span><p>hihi</p></span>
             </div>
 
             <h3 className={"cardHeaders"} style={{color: fillColor}}>Usefulness: {info.useful}%</h3>
-            <div key={info.name+2} class="meter" style={{display: "inline-block"}}>
-                <span key={info.name+2} style={{width: Number(info.useful)+"%"}}><span class="progress" style={{backgroundColor: fillColor}}></span><p>hihi</p></span>
+            <div key={info.name+2} className="meter" style={{display: "inline-block"}}>
+                <span key={info.name+2} style={{width: Number(info.useful)+"%"}}><span className="progress" style={{backgroundColor: fillColor}}></span><p>hihi</p></span>
             </div>
 
             <h3 className={"cardHeaders"} style={{color: fillColor}}>Liked: {info.liked}%</h3>
-            <div key={info.name+3} class="meter" style={{display: "inline-block"}}>
-                <span key={info.name+3} style={{width: Number(info.liked)+"%"}}><span class="progress" style={{backgroundColor: fillColor}}></span><p>hihi</p></span>
+            <div key={info.name+3} className="meter" style={{display: "inline-block"}}>
+                <span key={info.name+3} style={{width: Number(info.liked)+"%"}}><span className="progress" style={{backgroundColor: fillColor}}></span><p>hihi</p></span>
             </div>
             
         </div>

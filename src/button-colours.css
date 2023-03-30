@@ -97,4 +97,15 @@
     --bs-btn-active-border-color: rgb(139, 28, 167);
   }
 
+  .NAFac{
+    border-color: black;
+    --bs-btn-hover-bg: black;
+    --bs-btn-color: black;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: black;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-active-border-color: black;
+  }
+
   

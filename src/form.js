@@ -85,16 +85,16 @@ export default function Form(){
                         </div>
                 </div>
                 <input onChange={MostRelevant} id="input" className="form-control me-2 d-flex clear" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
-                <button id="inputbutton" className="btn btn-outline-success" type="submit">🔎︎</button>
+                <button id="inputbutton" className="btn" type="submit">🔎︎</button>
             </form>
             <div id="Buttons" className="container">
                 {results.map((result) => (
-                <button id="SearchResults" divKey={result.item.course} className={result.item.faculty+" btn btn-outline-success"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
+                <button id="SearchResults" key={result.item.course} className={result.item.faculty+" btn"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
                 ))}
             </div>
                 {/*<div key={selectedCourse.code} id = "nextInfo" >
                     {revealInfo ? (*/}
-                        <Stats id="stat" key={selectedCourse.code} props={selectedCourse}></Stats> 
+                        <Stats id="stat" key={selectedCourse.course} props={selectedCourse}></Stats> 
                     {/*}): <div/>}
                 </div>*/}
             

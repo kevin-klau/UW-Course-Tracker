@@ -195,6 +195,28 @@ html {
   border-radius: 20px;
 }
 
+#searchCourseButton{
+  font-size: 25px;
+  width: 250px;
+  border-radius: 20px;
+  margin-left: -10vw;
+  border-width: 2px;
+}
+
+#searchCourseButton::placeholder{
+  font-size: 25px;
+  color: black;
+}
+
+#searchCourseButtonEnter{
+  font-size: 25px;
+  width: 53px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 25px;
+  border-width: 2px;
+}
+
 .fade {
   opacity: 0;
   transition: opacity 0.1s ease-out;
@@ -225,6 +247,8 @@ html {
 body {
   overflow-x: hidden;
 }
+
+
 
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }

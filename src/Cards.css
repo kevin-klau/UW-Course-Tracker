@@ -121,4 +121,5 @@
     --bs-btn-hover-color: white;
     --bs-btn-hover-border-color: rgb(0, 0, 0);
     --bs-btn-active-border-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 1px 1px rgb(107, 107, 107);
 }
