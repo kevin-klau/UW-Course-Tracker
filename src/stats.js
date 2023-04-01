@@ -5,6 +5,7 @@ import data from './datafull.json';
 import {ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Cell} from "recharts";
 import CardInfo from './theCards.js';
 import './button-colours.css';
+import TopStats from './topStats.js';
 
 let theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'black' };
 let fillColor='black';
@@ -304,6 +305,9 @@ export default function Stats({ props }){
                 <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} className='col-lg-6'/> 
                 <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>  
                 {/*<p>{result}</p>*/}
+            </div>
+            <div id="facultyInfo">
+                <TopStats data = {scatterPlotData} lightColor={lightFillColor} darkColor={fillColor}></TopStats>
             </div>
         </>
 
