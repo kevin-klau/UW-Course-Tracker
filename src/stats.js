@@ -150,39 +150,30 @@ export default function Stats({ props }){
     }
     let faculty = props.faculty;
     if (faculty === "ART"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(231, 129, 0)' };
         fillColor='rgb(231, 129, 0)';
         lightFillColor='rgb(255, 213, 165)';
     } else if (faculty === "ENG"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(87,5,139)' };
         fillColor='rgb(87,5,139)';
         lightFillColor='rgb(208, 180, 239)';
     } else if (faculty === "ENV"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(180, 190, 0)' };
         fillColor='rgb(180, 190, 0)';
         lightFillColor='rgb(208, 234, 120)';
     } else if (faculty === "HEA"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(0, 152, 165)' };
         fillColor='rgb(0, 152, 165)';
         lightFillColor='rgb(151, 223, 239)';
     } else if (faculty === "MAT"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(198, 0, 120)' };
         fillColor='rgb(198, 0, 120)';
         lightFillColor='rgb(255, 190, 239)';
     } else if (faculty === "REN"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(19, 145, 36)' };
         fillColor='rgb(19, 145, 36)';
         lightFillColor='rgb(169, 226, 176)';
     } else if (faculty === "SCI"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(0,115,206)' };
         fillColor='rgb(0,115,206)';
         lightFillColor='rgb(180, 213, 255)';
     } else if (faculty === "VPA"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(9, 0, 131)' };
         fillColor='rgb(9, 0, 131)';
         lightFillColor='rgb(139, 135, 204)';
     } else if (faculty === "WLU"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(139, 28, 167)' };
         fillColor='rgb(139, 28, 167)';
         lightFillColor='rgb(201, 120, 221)';
     }
@@ -317,13 +308,13 @@ export default function Stats({ props }){
                     <div className='col-lg-2' id='returnButton'>
                         <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +" btn"} style={{marginTop:'4vh'}}>Search Again</button>
                     </div>
-                    <h1 className='col-lg-6' style={{fontSize:'80px', marginBottom:'0px', color:fillColor, textAlign:'center'}}> {props.course} </h1>
+                    <h1 id="courseHeading" className={`col-lg-6 ${faculty+"text"}`}> {props.course} </h1>
                     <form className='col-lg-3' id='searchButton container' onSubmit={submitCourseSearch}>
-                        <input type="text" id='searchCourseButton' className = {props.faculty +" btn"} style={{marginTop:'4vh'}} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
+                        <input type="text" id='searchCourseButton' className = {props.faculty +" btn"} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
                         <button id="searchCourseButtonEnter" className = {props.faculty +" btn"} type="submit">🔎︎</button>
                     </form>
                 </div>
-                    <h2 style={{fontSize: '40px', color:fillColor}}> {props.name}</h2>   
+                    <h2 id="courseHeadingName" className={faculty + "text"}> {props.name}</h2>   
             </div>
             <div id="displayedInfo" style={{marginLeft:'20px'}}>
                 <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} className='col-lg-6'/> 
@@ -331,7 +322,7 @@ export default function Stats({ props }){
                 {/*<p>{result}</p>*/}
             </div>
             <div id="facultyInfo">
-                <TopStats course = {props.course} lightColor={lightFillColor} darkColor={fillColor}></TopStats>
+                <TopStats course={props.course} faculty={props.faculty} lightColor={lightFillColor} darkColor={fillColor}></TopStats>
             </div>
         </>
 

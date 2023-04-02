@@ -56,7 +56,7 @@ export default function CardInfo({ info, faculty }){
 
     return(
         <div id="mainCard" className={faculty}>
-            <h1 id="cardCode" style={{display: "inline-block", color: fillColor}} onClick={routeUWFlow}>{info.code}</h1>
+            <h1 id="cardCode" className={faculty+"text"} onClick={routeUWFlow}>{info.code}</h1>
             <div style={{display: "inline-block", color: lightFillColor}}>
                 {info.ratings === "N/A" ? <div/>: <p id="cardRatings" style={{color: lightTextColor}}>{info.ratings} Ratings</p>}
             </div>            
@@ -76,8 +76,7 @@ export default function CardInfo({ info, faculty }){
             <h3 className={"cardHeaders"} style={{color: fillColor}}>Liked: {info.liked}%</h3>
             <div key={info.name+3} className="meter" style={{display: "inline-block"}}>
                 <span key={info.name+3} style={{width: Number(info.liked)+"%"}}><span className="progress" style={{backgroundColor: fillColor}}></span><p>hihi</p></span>
-            </div>
-            
+            </div>            
         </div>
     );
 }

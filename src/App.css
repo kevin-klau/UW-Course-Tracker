@@ -212,6 +212,7 @@ html {
   width: 250px;
   border-radius: 20px;
   margin-left: -10vw;
+  margin-top: 4vh;
   border-width: 2px;
 }
 
@@ -228,6 +229,12 @@ html {
 #facultyInfo{
   height: 100vh;
   margin-top: 50px;
+}
+
+#facultyStatsRow1{
+  text-align:center;
+  align-items: center;
+  justify-content: center;
 }
 
 #facultyStatsTitle{
@@ -247,10 +254,30 @@ html {
   margin-top: 0px;
 }
 
+#courseHeading{
+  font-size:80px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#courseHeadingName{
+  font-size: 40px;
+}
+
+#cardCode{
+  display: inline-block;
+}
+
+#facultyStatsCard{
+  width: 80%;
+  border-radius: 10px;
+}
+
 .facultyStatsTitle{
   font-family: "Anderson Grotesk";
   font-size: 30px;
   margin-top: 10px;
+  border: none;
 }
 
 .fade {
@@ -284,7 +311,41 @@ body {
   overflow-x: hidden;
 }
 
+.ARTtext{
+  color: rgb(231, 129, 0);
+}
 
+.ENGtext{
+  color: rgb(87,5,139);
+}
+
+.ENVtext{
+ color: rgb(180, 190, 0);
+}
+
+.HEAtext{
+ color: rgb(0, 152, 165);
+}
+
+.MATtext{
+ color: rgb(198, 0, 120);
+}
+
+.RENtext{
+ color: rgb(19, 145, 36);
+}
+
+.SCItext{
+ color: rgb(0,115,206);
+}
+
+.VPAtext{
+ color: rgb(9, 0, 131);
+}
+
+.WLUtext{
+ color: rgb(139, 28, 167);
+}
 
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
