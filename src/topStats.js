@@ -59,11 +59,11 @@ export default function TopStats ({ course, faculty, lightColor, darkColor }){
             </div>
 
             <div id="facultyStatsRow1" className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6 d-flex flex-column  justify-content-center align-items-center">
                     <h1 className={`facultyStatsTitle ${faculty+"text"}`}> Easiest Courses</h1>
                     <VerticalDisplay course={mostEasy[0]} faculty={faculty} lightColor={lightColor} darkColor={darkColor}></VerticalDisplay>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 d-flex flex-column  justify-content-center align-items-center">
                     <h1 className={`facultyStatsTitle ${faculty+"text"}`}> Most Useful Courses</h1>
                     <VerticalDisplay course={mostUseful[0]} faculty={faculty} lightColor={lightColor} darkColor={darkColor}></VerticalDisplay>
                 </div>
