@@ -74,7 +74,6 @@ export default function Form(){
         setSelectedCourse ({course:course, faculty:faculty, name:name});
     }
 
-
     
     return(
         <div>

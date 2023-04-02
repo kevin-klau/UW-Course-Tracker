@@ -224,10 +224,23 @@ export default function Stats({ props }){
     }
 
     useEffect(() => {
-        setFilteredInfo(data.filter(item => item.code.substring(0, props.course.length+1) ===(props.course+" ")));
+        setFilteredInfo(data.filter(item => item.code.substring(0, props.course.length+1) === (props.course+" ")));
     }, [props]);
 
-    const [scatterPlotData, setScatterPlotData] = useState ();
+    const [scatterPlotData, setScatterPlotData] = useState (null);
+    const [facultyData, setFacultyData] = useState([{
+        code: "Course Code",
+        name: "Course Name",
+        liked: "N/A",
+        easy: "N/A",
+        useful: "N/A",
+        ratings: "N/A",
+        faculty: "N/A",
+        color: "black",
+    }]);
+
+    console.log(props.course)
+
     useEffect(()=> {
         setScatterPlotData(filteredInfo.map(item => (Number(item.ratings) >= 5 && {
             code: item.code,
@@ -241,6 +254,17 @@ export default function Stats({ props }){
         })))
 
         setOldData(filteredInfo.map(item => (Number(item.ratings) >= 5 && {
+            code: item.code,
+            name: item.name,
+            liked: (Number(item.liked.substring(0,item.liked.length-1)) >= 0 && Number(item.liked.substring(0,item.liked.length-1)) <= 100) ? Number(item.liked.substring(0,item.liked.length-1)) : 0,
+            easy: (Number(item.easy.substring(0,item.easy.length-1)) >= 0 && Number(item.easy.substring(0,item.easy.length-1)) <= 100) ? Number(item.easy.substring(0,item.easy.length-1)) : 0,
+            useful: (Number(item.useful.substring(0,item.useful.length-1)) >= 0 && Number(item.useful.substring(0,item.useful.length-1)) <= 100) ? Number(item.useful.substring(0,item.useful.length-1)) : 0,
+            ratings: Number(item.ratings),
+            faculty: props.faculty,
+            color: fillColor
+        })))
+        
+        setFacultyData(filteredInfo.map(item => (Number(item.ratings) >= 5 && {
             code: item.code,
             name: item.name,
             liked: (Number(item.liked.substring(0,item.liked.length-1)) >= 0 && Number(item.liked.substring(0,item.liked.length-1)) <= 100) ? Number(item.liked.substring(0,item.liked.length-1)) : 0,
@@ -271,7 +295,7 @@ export default function Stats({ props }){
                 setScatterPlotData(data);      
             }
         }  
-        document.getElementById('mainCard').scrollIntoView();
+        //document.getElementById('mainCard').scrollIntoView();
 
     }
 
@@ -307,7 +331,7 @@ export default function Stats({ props }){
                 {/*<p>{result}</p>*/}
             </div>
             <div id="facultyInfo">
-                <TopStats data = {scatterPlotData} lightColor={lightFillColor} darkColor={fillColor}></TopStats>
+                <TopStats course = {props.course} lightColor={lightFillColor} darkColor={fillColor}></TopStats>
             </div>
         </>
 
