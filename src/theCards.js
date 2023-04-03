@@ -63,7 +63,7 @@ export default function CardInfo({ info, faculty }){
             <div id="horizontalLine" className={faculty}/>
             <h2 id="cardName" style={{color: fillColor}}>{info.name}</h2>
             
-            <h3 className={"cardHeaders"} style={{color: fillColor}}><strong>Difficulty:</strong> {info.easy}%</h3>
+            <h3 className={"cardHeaders"} style={{color: fillColor}}><strong>Easiness:</strong> {info.easy}%</h3>
             <div key={info.name+1} className="meter" style={{display: "inline-block"}}>
                 <span key={info.name+1} style={{width: Number(info.easy)+"%"}}><span className="progress" style={{backgroundColor: fillColor}}></span><p>hihi</p></span>
             </div>
