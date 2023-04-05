@@ -5,9 +5,6 @@ import Form from './form.js'
 import { useState } from 'react';
 
 function App() {
-  
-  const [data, setData] = useState('data');
-
   return (
     <div id="everything">
       <div id="heading">
@@ -21,9 +18,6 @@ function App() {
       <p id="info">Welcome To The UW Course Tracker! Enter your subject below, and we'll help you choose the best course!!!</p>
       
       <Form></Form>
-      
-
-      <p>{data[0].code}</p>
       
     </div>
     

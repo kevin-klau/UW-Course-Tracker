@@ -1,10 +1,10 @@
 import { useState, useEffect} from 'react';
 import './App.css';
-import './chartColors.css'
+import './facultyColors.css';
 import data from './datafull.json';
 import {ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Cell} from "recharts";
 import CardInfo from './theCards.js';
-import './button-colours.css';
+import './facultyColors.css';
 import TopStats from './topStats.js';
 
 let theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'black' };
@@ -12,7 +12,7 @@ let fillColor='black';
 let lightFillColor='grey';
 let notDefault = false;
 
-function DataChart ({ data, faculty, onClick }){
+function DataChart ({ data, faculty, onClick, fillColor, lightFillColor }){
 
 
     if (!notDefault && faculty !== "NAFac"){
@@ -33,70 +33,19 @@ function DataChart ({ data, faculty, onClick }){
         return null;
       };
 
-    const chartStyle={
-        fontFamily: 'Anderson Grotesk',
-    };
-    
-    if (faculty === "ART"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(231, 129, 0)' };
-        fillColor='rgb(231, 129, 0)';
-        lightFillColor='rgb(255, 213, 165)';
-    } else if (faculty === "ENG"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(87,5,139)' };
-        fillColor='rgb(87,5,139)';
-        lightFillColor='rgb(208, 180, 239)';
-    } else if (faculty === "ENV"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(180, 190, 0)' };
-        fillColor='rgb(180, 190, 0)';
-        lightFillColor='rgb(208, 234, 120)';
-    } else if (faculty === "HEA"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(0, 152, 165)' };
-        fillColor='rgb(0, 152, 165)';
-        lightFillColor='rgb(151, 223, 239)';
-    } else if (faculty === "MAT"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(198, 0, 120)' };
-        fillColor='rgb(198, 0, 120)';
-        lightFillColor='rgb(255, 190, 239)';
-    } else if (faculty === "REN"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(19, 145, 36)' };
-        fillColor='rgb(19, 145, 36)';
-        lightFillColor='rgb(169, 226, 176)';
-    } else if (faculty === "SCI"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(0,115,206)' };
-        fillColor='rgb(0,115,206)';
-        lightFillColor='rgb(180, 213, 255)';
-    } else if (faculty === "VPA"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(9, 0, 131)' };
-        fillColor='rgb(9, 0, 131)';
-        lightFillColor='rgb(139, 135, 204)';
-    } else if (faculty === "WLU"){
-        theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'rgb(139, 28, 167)' };
-        fillColor='rgb(139, 28, 167)';
-        lightFillColor='rgb(201, 120, 221)';
-    }
-
 
     return(
-        <ScatterChart
-            width={500}
-            height={450}
-            margin={{
-                top: 20,
-                right: 20,
-                bottom: 35,
-                left: 20,
-            }}
-            >
+        <ScatterChart width={500} height={450} margin={{top: 20, right: 20, bottom: 35, left: 20}}>
             <CartesianGrid strokeDasharray="10 0" stroke={lightFillColor} />
             <XAxis stroke={fillColor} label={{ value: "Easiness", dy:25, fontFamily:'Anderson Grotesk Bold', fill:fillColor }} dataKey="easy" type="number" name="Easiness" unit="%" tick={{ fontFamily: 'Anderson Grotesk Bold'}} tickCount={6}/>
             <YAxis stroke={fillColor} label={{ value: 'Usefulness', angle: -90, position: 'insideLeft', offset:'-8', fontFamily:'Anderson Grotesk Bold', dy:37, fill:fillColor}} dataKey="useful" type="number" name="Usefulness" unit="%" tick={{ fontFamily: 'Anderson Grotesk Bold' }} tickCount={6}/>
             <ZAxis dataKey="liked" type="number" range={[100, 300]} name="Ratings" unit="" />
             <Tooltip 
                 className="chart" 
-                cursor={ theColor } 
+                cursor={{ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: fillColor}} 
                 animationDuration={1000} 
                 animationEasing={'ease'} 
-                itemStyle={chartStyle}
+                itemStyle={{fontFamily: 'Anderson Grotesk'}}
                 content={CustomTooltip}
             />
             <Scatter data={data} onClick={({ payload }) => onClick(payload)}>
@@ -219,21 +168,11 @@ export default function Stats({ props }){
     }, [props]);
 
     const [scatterPlotData, setScatterPlotData] = useState (null);
-    const [facultyData, setFacultyData] = useState([{
-        code: "Course Code",
-        name: "Course Name",
-        liked: "N/A",
-        easy: "N/A",
-        useful: "N/A",
-        ratings: "N/A",
-        faculty: "N/A",
-        color: "black",
-    }]);
 
     console.log(props.course)
 
     useEffect(()=> {
-        setScatterPlotData(filteredInfo.map(item => (Number(item.ratings) >= 5 && {
+        let item = filteredInfo.map(item => (Number(item.ratings) >= 5 && {
             code: item.code,
             name: item.name,
             liked: (Number(item.liked.substring(0,item.liked.length-1)) >= 0 && Number(item.liked.substring(0,item.liked.length-1)) <= 100) ? Number(item.liked.substring(0,item.liked.length-1)) : 0,
@@ -242,29 +181,10 @@ export default function Stats({ props }){
             ratings: Number(item.ratings),
             faculty: props.faculty,
             color: fillColor
-        })))
+        }))
 
-        setOldData(filteredInfo.map(item => (Number(item.ratings) >= 5 && {
-            code: item.code,
-            name: item.name,
-            liked: (Number(item.liked.substring(0,item.liked.length-1)) >= 0 && Number(item.liked.substring(0,item.liked.length-1)) <= 100) ? Number(item.liked.substring(0,item.liked.length-1)) : 0,
-            easy: (Number(item.easy.substring(0,item.easy.length-1)) >= 0 && Number(item.easy.substring(0,item.easy.length-1)) <= 100) ? Number(item.easy.substring(0,item.easy.length-1)) : 0,
-            useful: (Number(item.useful.substring(0,item.useful.length-1)) >= 0 && Number(item.useful.substring(0,item.useful.length-1)) <= 100) ? Number(item.useful.substring(0,item.useful.length-1)) : 0,
-            ratings: Number(item.ratings),
-            faculty: props.faculty,
-            color: fillColor
-        })))
-        
-        setFacultyData(filteredInfo.map(item => (Number(item.ratings) >= 5 && {
-            code: item.code,
-            name: item.name,
-            liked: (Number(item.liked.substring(0,item.liked.length-1)) >= 0 && Number(item.liked.substring(0,item.liked.length-1)) <= 100) ? Number(item.liked.substring(0,item.liked.length-1)) : 0,
-            easy: (Number(item.easy.substring(0,item.easy.length-1)) >= 0 && Number(item.easy.substring(0,item.easy.length-1)) <= 100) ? Number(item.easy.substring(0,item.easy.length-1)) : 0,
-            useful: (Number(item.useful.substring(0,item.useful.length-1)) >= 0 && Number(item.useful.substring(0,item.useful.length-1)) <= 100) ? Number(item.useful.substring(0,item.useful.length-1)) : 0,
-            ratings: Number(item.ratings),
-            faculty: props.faculty,
-            color: fillColor
-        })))
+        setScatterPlotData(item);
+        setOldData(item)
     }, [filteredInfo, props.faculty])
 
     function handlePointClick ({code, name, faculty, liked, useful, easy, ratings}){
@@ -306,23 +226,23 @@ export default function Stats({ props }){
                 <div className='row' style={{textAlign:'center'}}>
                     <div className='col-lg-1'/>
                     <div className='col-lg-2' id='returnButton'>
-                        <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +" btn"} style={{marginTop:'4vh'}}>Search Again</button>
+                        <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"Button btn"}>Search Again</button>
                     </div>
                     <h1 id="courseHeading" className={`col-lg-6 ${faculty+"text"}`}> {props.course} </h1>
                     <form className='col-lg-3' id='searchButton container' onSubmit={submitCourseSearch}>
-                        <input type="text" id='searchCourseButton' className = {props.faculty +" btn"} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
-                        <button id="searchCourseButtonEnter" className = {props.faculty +" btn"} type="submit">🔎︎</button>
+                        <input type="text" id='searchCourseButton' className = {props.faculty +"Button btn"} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
+                        <button id="searchCourseButtonEnter" className = {props.faculty +"Button btn"} type="submit">🔎︎</button>
                     </form>
                 </div>
                     <h2 id="courseHeadingName" className={faculty + "text"}> {props.name}</h2>   
             </div>
-            <div id="displayedInfo" style={{marginLeft:'20px'}}>
-                <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} className='col-lg-6'/> 
+            <div id="displayedInfo">
+                <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} fillColor={fillColor} lightFillColor={lightFillColor} className='col-lg-6'/> 
                 <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>  
                 {/*<p>{result}</p>*/}
             </div>
             <div id="facultyInfo">
-                <TopStats course={props.course} faculty={props.faculty} lightColor={lightFillColor} darkColor={fillColor}></TopStats>
+                <TopStats course={props.course} faculty={props.faculty}></TopStats>
             </div>
         </>
 

@@ -4,7 +4,7 @@ import VerticalDisplay from './displayStatInfo.js';
 import data from './datafull.json';
 
 
-export default function TopStats ({ course, faculty, lightColor, darkColor }){
+export default function TopStats ({ course, faculty }){
     let theDataFiltered;
 
     let theFinalData = ([{
@@ -48,24 +48,21 @@ export default function TopStats ({ course, faculty, lightColor, darkColor }){
         console.log(mostUseful)
     }
     
-    
-    
-
     return (
         <>
             <div id="facultyStatsHeading">
                 <h1 id="facultyStatsTitle" className={faculty+"text"}> <strong>Faculty Stats</strong></h1>
-                <div id="facultyStatsHeaderLine" style= {{borderColor: darkColor, boxShadow: `0px 0px .5px .5px ${lightColor}`}}/>
+                <div id="facultyStatsHeaderLine" className={faculty+"Card"}/>
             </div>
 
             <div id="facultyStatsRow1" className="row">
                 <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
                     <h1 className={`facultyStatsTitle ${faculty+"text"}`}> Easiest Courses</h1>
-                    <VerticalDisplay course={mostEasy[0]} faculty={faculty} lightColor={lightColor} darkColor={darkColor}></VerticalDisplay>
+                    <VerticalDisplay course={mostEasy[0]} faculty={faculty}></VerticalDisplay>
                 </div>
                 <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
                     <h1 className={`facultyStatsTitle ${faculty+"text"}`}> Most Useful Courses</h1>
-                    <VerticalDisplay course={mostUseful[0]} faculty={faculty} lightColor={lightColor} darkColor={darkColor}></VerticalDisplay>
+                    <VerticalDisplay course={mostUseful[0]} faculty={faculty}></VerticalDisplay>
                 </div>
             </div>
         </>

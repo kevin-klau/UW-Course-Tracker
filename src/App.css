@@ -83,6 +83,8 @@ html {
   margin-bottom: 10px;
   margin-top: 50px;
   display:flex;
+  align-items: center;
+  position: relative;
 }
 
 
@@ -194,6 +196,7 @@ html {
   justify-content: center;
   position:relative;
   flex-wrap: wrap; 
+  margin-left: 20px;
 }
 
 #returnButton{
@@ -205,6 +208,7 @@ html {
   font-size: 25px;
   width: 200px;
   border-radius: 20px;
+  margin-top: 4vh;
 }
 
 #searchCourseButton{
@@ -245,11 +249,10 @@ html {
 
 #facultyStatsHeaderLine{
   width: 80%;
-  box-shadow: 0px 0px .5px .5px grey;
+  box-shadow: 0 0 0 0;
+  border-width: 1px;
   margin: 1em 0;
   padding: 0;
-  border: 1px solid;
-  border-color: black;
   margin-left: 10vw;
   margin-top: 0px;
 }
@@ -281,6 +284,71 @@ html {
   border: none;
 }
 
+#cardCode{
+  font-size: 55px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: "Anderson Grotesk Bold";
+}
+
+#cardRatings{
+  font-size: 25px;
+  padding-left: 15px; 
+  font-family: "Anderson Grotesk";
+}
+#cardName{
+  font-size: 20px;
+  padding-left: 20px; 
+  width: 460px;
+  margin-top: -35px;
+  font-family: "Anderson Grotesk Bold";
+  padding-bottom: 3px;
+}
+
+#horizontalLine {
+  border-width: 1px;
+  transform: translate(18px, -30px); 
+  width: 93%;
+  box-shadow: 0px 0px 0px 0px black;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.meter { 
+  margin-left: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+  width:450px;
+  border-radius: 20px;
+  margin-top: -3px;
+  margin-bottom: 10px;
+}
+
+.meter span {
+  display: block;
+  height: 100%;
+}
+
+.progress {
+  border-radius: 20px;
+  animation: progressBar 1s ease-in-out;
+  animation-fill-mode:both;
+}
+
+@keyframes progressBar {
+0% { width: 0; }
+100% { width: 100%; }
+}
+
+.cardHeaders {
+  font-family: "Anderson Grotesk Bold";
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+
+
 .fade {
   opacity: 0;
   transition: opacity 0.1s ease-out;
@@ -310,42 +378,6 @@ html {
 
 body {
   overflow-x: hidden;
-}
-
-.ARTtext{
-  color: rgb(231, 129, 0);
-}
-
-.ENGtext{
-  color: rgb(87,5,139);
-}
-
-.ENVtext{
- color: rgb(180, 190, 0);
-}
-
-.HEAtext{
- color: rgb(0, 152, 165);
-}
-
-.MATtext{
- color: rgb(198, 0, 120);
-}
-
-.RENtext{
- color: rgb(19, 145, 36);
-}
-
-.SCItext{
- color: rgb(0,115,206);
-}
-
-.VPAtext{
- color: rgb(9, 0, 131);
-}
-
-.WLUtext{
- color: rgb(139, 28, 167);
 }
 
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }

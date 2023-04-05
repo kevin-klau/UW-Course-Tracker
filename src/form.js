@@ -3,7 +3,7 @@ import { Courses } from './courselist.js';
 import { useEffect } from 'react';
 import Stats from './stats.js';
 import './App.css';
-import './button-colours.css';
+import './facultyColors.css';
 import Fuse from 'fuse.js';
 
 
@@ -17,10 +17,6 @@ import Fuse from 'fuse.js';
 
 
 export default function Form(){
-    
-    // Setting if the graphs and stuff should be revealed
-    const [revealInfo, setRevealInfo] = useState(false);
-
     // Setting User Input
     const [userInput, setUserInput] = useState('');
     
@@ -56,7 +52,7 @@ export default function Form(){
             setAlert(true);
         }else{
             setAlert(false);
-            Selected(results[0].item.course,results[0].item.faculty,results[0].item.name);
+            Selected(results[0].item.course, results[0].item.faculty, results[0].item.name);
         }
     }
     
@@ -70,14 +66,13 @@ export default function Form(){
     function Selected(course, faculty, name){
         // Set revealInfo to true and update the selected course
         document.getElementById('returnButton').scrollIntoView();
-        setRevealInfo(true);
         setSelectedCourse ({course:course, faculty:faculty, name:name});
     }
 
     
     return(
         <div>
-            <form id="form" className="row" role="search" onSubmit={Submitted} style={{position:'relative', alignItems:'center'}}>
+            <form id="form" className="row" role="search" onSubmit={Submitted}>
                 <div className={`fade ${alert ? 'show' : 'hide'} col-lg-3`} style={{display:'flex', textAlign:'Center', alignItems:'Center', justifyContent:'center'}}>
                         <div id="alert" className="alert alert-danger" role="alert">
                             Invalid Course
@@ -90,7 +85,7 @@ export default function Form(){
             </form>
             <div id="Buttons" className="container">
                 {results.map((result) => (
-                <button id="SearchResults" key={result.item.course} className={result.item.faculty+" btn"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
+                <button id="SearchResults" key={result.item.course} className={result.item.faculty+"Button btn"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
                 ))}
             </div>
                 {/*<div key={selectedCourse.code} id = "nextInfo" >
