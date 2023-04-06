@@ -5,10 +5,6 @@ import './facultyColors.css';
 
 
 export default function CardInfo({ info, faculty }){
-
-    if (faculty === 'NAFac'){
-        faculty = 'NA';
-    }
     
     function routeUWFlow(){
         window.open(`https://uwflow.com/course/${info.code.replace(/\s/g, '')}`);

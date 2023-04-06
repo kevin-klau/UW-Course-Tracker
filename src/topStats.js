@@ -16,6 +16,7 @@ export default function TopStats ({ course, faculty }){
         useful: "N/A",
         ratings: "N/A",
     }]);
+
     if (course !== "Course Code"){
         theDataFiltered = ((data.filter(item => item.code.substring(0, course.length+1) === (course+" "))));
         theFinalData = theDataFiltered.map(item => (Number(item.ratings) >= 5 && {
@@ -25,10 +26,9 @@ export default function TopStats ({ course, faculty }){
             liked: (Number(item.liked.substring(0,item.liked.length-1)) >= 0 && Number(item.liked.substring(0,item.liked.length-1)) <= 100) ? Number(item.liked.substring(0,item.liked.length-1)) : 0,
             easy: (Number(item.easy.substring(0,item.easy.length-1)) >= 0 && Number(item.easy.substring(0,item.easy.length-1)) <= 100) ? Number(item.easy.substring(0,item.easy.length-1)) : 0,
             useful: (Number(item.useful.substring(0,item.useful.length-1)) >= 0 && Number(item.useful.substring(0,item.useful.length-1)) <= 100) ? Number(item.useful.substring(0,item.useful.length-1)) : 0,
-            ratings: Number(item.ratings)}));
-            
+            ratings: Number(item.ratings)
+        }));       
     }
-
 
     let mostLiked = [...theFinalData];
     let leastLiked = [...theFinalData];
@@ -44,8 +44,6 @@ export default function TopStats ({ course, faculty }){
         leastUseful.sort((a, b) => (a.useful - b.useful));
         mostEasy.sort((a, b) => (b.easy - a.easy));
         leastEasy.sort((a, b) => (a.easy - b.easy));
-
-        console.log(mostUseful)
     }
     
     return (

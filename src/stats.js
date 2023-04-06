@@ -16,7 +16,6 @@ function DataChart ({ data, faculty, onClick, fillColor, lightFillColor }){
 
 
     if (!notDefault && faculty !== "NAFac"){
-        console.log("isnt!")
         notDefault=true
     }
 
@@ -31,7 +30,7 @@ function DataChart ({ data, faculty, onClick, fillColor, lightFillColor }){
         }
       
         return null;
-      };
+    };
 
 
     return(
@@ -50,7 +49,7 @@ function DataChart ({ data, faculty, onClick, fillColor, lightFillColor }){
             />
             <Scatter data={data} onClick={({ payload }) => onClick(payload)}>
                     {data?.map((entry) => (
-                        <Cell className="fade show" fill={entry.color ?? fillColor} stroke={entry.color ?? fillColor} />
+                        <Cell key={entry.code} className="fade show" fill={entry.color ?? fillColor} stroke={entry.color ?? fillColor} />
                     ))}
             </Scatter>
         </ScatterChart>
@@ -97,6 +96,7 @@ export default function Stats({ props }){
 
             
     }
+
     let faculty = props.faculty;
     if (faculty === "ART"){
         fillColor='rgb(231, 129, 0)';
@@ -139,7 +139,6 @@ export default function Stats({ props }){
             const theUserLength = userCode.length;
             if (faculty === "WLU"){
                 userCode = userCode + "W";
-                console.log(userCode)
             }
 
             if (userCode.substring(theUserLength - 1, theUserLength) >= "A" && userCode.substring(theUserLength - 1, theUserLength) <= "Z"){
@@ -168,8 +167,6 @@ export default function Stats({ props }){
     }, [props]);
 
     const [scatterPlotData, setScatterPlotData] = useState (null);
-
-    console.log(props.course)
 
     useEffect(()=> {
         let item = filteredInfo.map(item => (Number(item.ratings) >= 5 && {
@@ -207,7 +204,6 @@ export default function Stats({ props }){
             }
         }  
         //document.getElementById('mainCard').scrollIntoView();
-
     }
 
     function clickSearchAgain (){
@@ -245,9 +241,7 @@ export default function Stats({ props }){
                 <TopStats course={props.course} faculty={props.faculty}></TopStats>
             </div>
         </>
-
     );
-
 }
 
 /*{filteredInfo.map(item => (

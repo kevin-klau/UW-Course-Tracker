@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Courses } from './courselist.js';
-import { useEffect } from 'react';
 import Stats from './stats.js';
 import './App.css';
 import './facultyColors.css';
