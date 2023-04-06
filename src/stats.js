@@ -7,7 +7,6 @@ import CardInfo from './theCards.js';
 import './facultyColors.css';
 import TopStats from './topStats.js';
 
-let theColor={ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: 'black' };
 let fillColor='black';
 let lightFillColor='grey';
 let notDefault = false;
@@ -71,7 +70,7 @@ export default function Stats({ props }){
         description:"Course Description"
     });
 
-    const [result, setResult] = useState("Insert Course Description");
+    //const [result, setResult] = useState("Insert Course Description");
     
     const [userCourseChoice, setUserCourseChoice] = useState("");
 

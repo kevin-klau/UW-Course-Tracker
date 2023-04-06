@@ -2,7 +2,6 @@ import './App.css';
 import background from './Images/Background-Bottom.png'
 import Form from './form.js'
 
-import { useState } from 'react';
 
 function App() {
   return (
