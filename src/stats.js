@@ -224,7 +224,7 @@ export default function Stats({ props }){
                         <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"Button btn"}>Search Again</button>
                     </div>
                     <h1 id="courseHeading" className={`col-lg-6 ${faculty+"text"}`}> {props.course} </h1>
-                    <form className='col-lg-3' id='searchButton container' onSubmit={submitCourseSearch}>
+                    <form className='col-lg-3 container' id='searchButton' onSubmit={submitCourseSearch}>
                         <input type="text" id='searchCourseButton' className = {props.faculty +"Button btn"} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
                         <button id="searchCourseButtonEnter" className = {props.faculty +"Button btn"} type="submit">🔎︎</button>
                     </form>
@@ -232,7 +232,7 @@ export default function Stats({ props }){
                     <h2 id="courseHeadingName" className={faculty + "text"}> {props.name}</h2>   
             </div>
             <div id="displayedInfo">
-                <DataChart data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} fillColor={fillColor} lightFillColor={lightFillColor} className='col-lg-6'/> 
+                <DataChart id="theChart" data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} fillColor={fillColor} lightFillColor={lightFillColor} className='col-lg-6'/> 
                 <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>  
                 {/*<p>{result}</p>*/}
             </div>

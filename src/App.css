@@ -173,18 +173,20 @@ html {
   text-align: center;
   flex-wrap: wrap;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   justify-content: center;
   align-items: center;
 }
 
+#theChart{
+  margin-bottom: 10px;
+}
 
 #mainCard{
   margin-left: 40px;
   border-radius: 20px;
   width: 500px;
-  height: 470px;
-  margin-top:10px;
+  height: 400px;
 }
 
 #displayedInfo{
@@ -216,7 +218,6 @@ html {
   width: 250px;
   border-radius: 20px;
   margin-left: -10vw;
-  margin-top: 4vh;
   border-width: 2px;
 }
 
@@ -226,7 +227,6 @@ html {
   width: 53px;
   border-radius: 5px;
   margin-left: 10px;
-  margin-top: 4vh;
   border-width: 2px;
 }
 
