@@ -49,7 +49,7 @@ export default function TopStats ({ course, faculty }){
     return (
         <>
             <div id="facultyStatsHeading">
-                <h1 id="facultyStatsTitle" className={faculty+"text"}> <strong>Faculty Stats</strong></h1>
+                <h1 id="facultyStatsTitle" className={faculty+"text theFont"}> <strong>Faculty Stats</strong></h1>
                 <div id="facultyStatsHeaderLine" className={faculty+"Card"}/>
             </div>
 

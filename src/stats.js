@@ -23,7 +23,7 @@ function DataChart ({ data, faculty, onClick, fillColor, lightFillColor }){
           return (
             <div id={payload[0].payload.faculty+"box"}>
               <p id={payload[0].payload.faculty+"code"}><strong>{payload[0].payload.code}</strong></p>
-              <p id={payload[0].payload.faculty+"name"} style={{width:"240px"}}><strong>{payload[0].payload.name}</strong></p>
+              <p id={payload[0].payload.faculty+"name"} style={{width:"240px", lineHeight:"1.4"}}><strong>{payload[0].payload.name}</strong></p>
             </div>
           );
         }

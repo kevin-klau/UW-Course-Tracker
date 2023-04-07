@@ -73,18 +73,18 @@ export default function Form(){
         <div>
             <form id="form" className="row" role="search" onSubmit={Submitted}>
                 <div className={`fade ${alert ? 'show' : 'hide'} col-lg-3`} style={{display:'flex', textAlign:'Center', alignItems:'Center', justifyContent:'center'}}>
-                        <div id="alert" className="alert alert-danger" role="alert">
+                        <div id="alert" className="alert alert-danger theFont" role="alert">
                             Invalid Course
                         </div>
                 </div>
                 <div className="col-lg-6 d-flex" style={{display:"flex"}}>
-                    <input onChange={MostRelevant} id="input" className="form-control me-2 d-flex clear" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
+                    <input onChange={MostRelevant} id="input" className="form-control me-2 d-flex clear theFont" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
                     <button id="inputbutton" className="btn" type="submit">🔎︎</button>
                 </div>
             </form>
             <div id="Buttons" className="container">
                 {results.map((result) => (
-                <button id="SearchResults" key={result.item.course} className={result.item.faculty+"Button btn"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
+                <button id="SearchResults" key={result.item.course} className={result.item.faculty+"Button btn theFont"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
                 ))}
             </div>
                 {/*<div key={selectedCourse.code} id = "nextInfo" >

@@ -42,7 +42,6 @@ html {
 }
 
 #heading {
-  font-family: "Anderson Grotesk UltraBold", sans-serif;
   background-image: url("./Images/Background-Top.png");
   background-position: center;
   background-size: cover;
@@ -73,7 +72,6 @@ html {
   margin-left: 20px;
   margin-right: 500px;
   color:black;
-  font-family: "Anderson Grotesk Bold";
   font-size: 35px;
   padding-top: 20px;
   text-align:center;
@@ -93,7 +91,6 @@ html {
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 50px;
-  font-family: "Anderson Grotesk";
   text-align:center;
   font-size: 40px;
   color:black;
@@ -106,7 +103,6 @@ html {
   font-size: 35px;
   height: 80px;
   text-align:center;
-  font-family: "Anderson Grotesk";
   border-color: black;
   color:black;
   border-width: 2px;
@@ -148,7 +144,6 @@ html {
   padding-left:50px;
   padding-right: 50px;
   /*width:100%;*/
-  font-family: "Anderson Grotesk";
   text-align: center;
   font-size: 30px;
   border-radius: 50px;
@@ -157,7 +152,6 @@ html {
 
 #alert{
   width:200px;
-  font-family: "Anderson Grotesk";
   font-size: 25px;
   justify-content: center;
   align-items: center;
@@ -182,11 +176,24 @@ html {
   margin-bottom: 10px;
 }
 
-#mainCard{
+#mainCard1{
   margin-left: 40px;
   border-radius: 20px;
   width: 500px;
   height: 400px;
+}
+
+#mainCard2{
+  margin-left: 40px;
+  border-radius: 20px;
+  width: 500px;
+  height: 400px;
+}
+
+#courseDescriptionHeader{
+  font-size: 50px;
+  padding-left: 20px;
+  padding-top: 7px;
 }
 
 #displayedInfo{
@@ -211,6 +218,10 @@ html {
   width: 200px;
   border-radius: 20px;
   margin-top: 4vh;
+}
+#searchButton{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #searchCourseButton{
@@ -243,7 +254,6 @@ html {
 
 #facultyStatsTitle{
   text-align: center;
-  font-family: "Anderson Grotesk";
   font-size: 55px;
 }
 
@@ -255,6 +265,10 @@ html {
   padding: 0;
   margin-left: 10vw;
   margin-top: 0px;
+}
+
+#facultyStatsCode{
+  
 }
 
 #courseHeading{
@@ -284,24 +298,26 @@ html {
   border: none;
 }
 
+#courseNumbers{
+  height: 340px;
+}
+
 #cardCode{
   font-size: 55px;
   padding-left: 20px;
   padding-top: 10px;
-  font-family: "Anderson Grotesk Bold";
 }
 
 #cardRatings{
   font-size: 25px;
   padding-left: 15px; 
-  font-family: "Anderson Grotesk";
 }
+
 #cardName{
   font-size: 20px;
   padding-left: 20px; 
   width: 460px;
   margin-top: -35px;
-  font-family: "Anderson Grotesk Bold";
   padding-bottom: 3px;
 }
 
@@ -312,6 +328,42 @@ html {
   box-shadow: 0px 0px 0px 0px black;
   margin: 1em 0;
   padding: 0;
+}
+
+#horizontalLineDesc {
+  border-width: 1px;
+  transform: translate(18px, -30px); 
+  width: 93%;
+  box-shadow: 0px 0px 0px 0px black;
+  margin: 1.8em 0 0 0;
+  padding: 0;
+}
+
+#courseDescription{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+#recommendedTeacher{
+  font-size: 35px;
+  padding-left: 18px;
+
+}
+
+#courseDescriptionContainer{
+  height: 250px;
+}
+
+#ClickOnMe{
+  font-size: 28px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
 }
 
 .meter { 
@@ -348,7 +400,6 @@ html {
 }
 
 
-
 .fade {
   opacity: 0;
   transition: opacity 0.1s ease-out;
@@ -374,6 +425,18 @@ html {
   justify-content: center;
   position:relative;
   flex-wrap: wrap;
+}
+
+.theFont{
+  font-family: "Anderson Grotesk";
+}
+
+.theFontBold{
+  font-family: "Anderson Grotesk Bold";
+}
+
+.theFontUltraBold{
+  font-family: "Anderson Grotesk UltraBold";
 }
 
 body {

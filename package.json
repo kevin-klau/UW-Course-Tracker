@@ -1,7 +1,7 @@
 {
     "name": "uw-course-tracker",
     "homepage": ".",
-    "proxy":"http://127.0.0.1:5000/",
+    "proxy": "http://127.0.0.1:5000/",
     "version": "0.1.0",
     "private": false,
     "dependencies": {
@@ -11,6 +11,7 @@
         "d3-color": "^3.1.0",
         "fuse.js": "^6.6.2",
         "react": "^18.2.0",
+        "react-card-flip": "^1.2.0",
         "react-dom": "^18.2.0",
         "react-scripts": "5.0.1",
         "recharts": "^2.4.3",
