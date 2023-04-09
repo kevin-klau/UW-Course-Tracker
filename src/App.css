@@ -41,6 +41,15 @@ html {
   box-sizing: border-box;
 }
 
+/*body{
+  overflow-x: hidden; 
+  overflow-y: hidden;
+}*/
+
+body {
+  overflow-x: hidden;
+}
+
 #heading {
   background-image: url("./Images/Background-Top.png");
   background-position: center;
@@ -60,6 +69,55 @@ html {
   font-size: 73px;
   display: inline-block;
 }
+
+#info{
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  text-align:center;
+  font-size: 40px;
+  color:black;
+}
+
+#background{
+  background: url("./Images/Background-Top.png");
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+#contain{
+  margin: 30px 30px 30px 30px;
+  width: 100%;
+  background: rgba(14, 14, 37, 0.9);
+}
+
+#info{
+  text-align:center;
+  font-size: 40px;
+  /*color:white;*/
+}
+
+#title{
+  font-size: 85px;
+  color: white;
+  text-align: center;
+  margin-top: px;
+}
+
+#innerContainer{
+  margin: 50px 50px 50px 50px;
+  overflow: auto;
+  height: 200vh;
+}
+/* width 
+::-webkit-scrollbar {
+  width: 0px;
+}*/
 
 #back-bottom{
   width: 500px;
@@ -83,17 +141,6 @@ html {
   display:flex;
   align-items: center;
   position: relative;
-}
-
-
-#info{
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
-  text-align:center;
-  font-size: 40px;
-  color:black;
 }
 
 #input{
@@ -439,9 +486,7 @@ html {
   font-family: "Anderson Grotesk UltraBold";
 }
 
-body {
-  overflow-x: hidden;
-}
+
 
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }

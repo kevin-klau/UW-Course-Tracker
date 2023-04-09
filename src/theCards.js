@@ -38,7 +38,7 @@ export default function CardInfo({ info, faculty }){
                         <span key={info.name+3} style={{width: Number(info.liked)+"%"}}><span className={"progress " + faculty+"Background"}></span><p>hihi</p></span>
                     </div>   
                 </div>
-                <h4 id="ClickOnMe" class={faculty+"text theFont"}>Click Card To Find Out More Info!!!</h4>
+                <h4 id="ClickOnMe" class={faculty+"text theFont"}>Click The Card To Find Out More Info!!!</h4>
             </div>
             
             <div id="mainCard2" className={faculty+"Card theFont"} onClick={() => setFlip(!flip)}>
