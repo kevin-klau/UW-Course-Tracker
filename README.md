@@ -2,7 +2,7 @@
 
 
 Designed by: Kevin Lau | Data from: UW Flow<br>
-Last Updated: 2023-04-10<br>
+Last Updated: 2023-04-18<br>
 
 ## What it does
 Enter your subject code (ie. MATH or ARTS or CO or ENGL), and we will display which are the easiest and most useful courses you can take!!! <br>
