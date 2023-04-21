@@ -1,41 +1,45 @@
 .ARTtext{
-    color: rgb(231, 129, 0);
+    color: rgb(251 175 0);
 }
 
 .ENGtext{
-    color: rgb(87,5,139);
+    color: rgb(190 51 218);
 }
 
 .ENVtext{
-    color: rgb(180, 190, 0);
+    color: rgb(190 213 0);
 }
 
 .HEAtext{
-        color: rgb(0, 152, 165);
+    color: rgb(0 190 208);
 }
 
 .MATtext{
-    color: rgb(198, 0, 120);
+    color: rgb(255 99 170);
 }
 
 .RENtext{
-    color: rgb(19, 145, 36);
+    color: rgb(60, 171, 75);
 }
 
 .SCItext{
-    color: rgb(0,115,206);
+    color: rgb(99 160 255);
 }
 
 .VPAtext{
-    color: rgb(9, 0, 131);
+    color: rgb(77, 67, 215);
 }
 
 .WLUtext{
-    color: rgb(139, 28, 167);
+    color: rgb(178, 91, 199);
+}
+
+.NAFactext{
+    color: white;
 }
 
 .ARTLightText{
-    color: rgb(255, 213, 165);
+    color: rgb(255 213 165);
 }
 
 .ENGLightText{
@@ -99,292 +103,284 @@
 }
 
 .VPALightDarkText{
-    color: rgb(63, 57, 157);
+    color: rgb(119, 112, 221);
 }
 
 .WLULightDarkText{
-    color: rgb(184, 81, 209);
+    color: rgb(183, 136, 194);
 }
 
 .ARTBackground{
-    background-color: rgb(231, 129, 0);
+    background-color: rgb(251 175 0);
 }
 
 .ENGBackground{
-    background-color: rgb(87,5,139);
+    background-color: rgb(190 51 218);
 }
 
 .ENVBackground{
-    background-color: rgb(180, 190, 0);
+    background-color: rgb(190 213 0);
 }
 
 .HEABackground{
-    background-color: rgb(0, 152, 165);
+    background-color: rgb(0 190 208);
 }
 
 .MATBackground{
-    background-color: rgb(198, 0, 120);
+    background-color: rgb(255 99 170);
 }
 
 .RENBackground{
-    background-color: rgb(19, 145, 36);
+    background-color: rgb(60, 171, 75);
 }
 
 .SCIBackground{
-    background-color: rgb(0,115,206);
+    background-color: rgb(99 160 255);
 }
 
 .VPABackground{
-    background-color: rgb(9, 0, 131);
+    background-color: rgb(77, 67, 215);
 }
 
 .WLUBackground{
-    background-color: rgb(139, 28, 167);
+    background-color: rgb(178, 91, 199);
 }
 
 .NAFacBackground{
-    background-color:black;
+    background-color:white;
 }
 
 .ARTButton {
-    border: 2px solid rgb(231, 129,0);
-    --bs-btn-hover-bg: rgb(231, 129,0);
-    --bs-btn-color: rgb(231, 129,0);
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: rgb(231, 129,0);
-    --bs-btn-hover-color: White;
-    --bs-btn-hover-border-color: rgb(231, 129,0);
-    --bs-btn-active-border-color: rgb(231, 129,0);
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-hover-color: rgb(251 175 0);
+    --bs-btn-hover-border-color: rgb(251 175 0);
+    --bs-btn-active-bg: rgb(251 175 0);
+    --bs-btn-active-color: rgb(14, 14, 37);
+    --bs-btn-active-border-color: rgb(251 175 0);
 }
 
 .ARTButton::placeholder{
     font-size: 25px;
-    color: rgb(231, 129,0);
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 .ENGButton{
-    border: 2px solid rgb(87,5,139);
-    --bs-btn-hover-bg: rgb(87,5,139);
-    --bs-btn-color: rgb(87,5,139);
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: rgb(87,5,139);
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-border-color: rgb(87,5,139);
-    --bs-btn-active-border-color: rgb(87,5,139);
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-active-bg: rgb(190 51 218);
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: rgb(190 51 218);
+    --bs-btn-hover-border-color: rgb(190 51 218);
+    --bs-btn-active-border-color: rgb(190 51 218);
 }
 
 .ENGButton::placeholder{
     font-size: 25px;
-    color: rgb(87,5,139);
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 .ENVButton{
-    border: 2px solid rgb(180, 190, 0);
-    --bs-btn-hover-bg: rgb(180, 190, 0);
-    --bs-btn-color: rgb(180, 190, 0);
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: rgb(180, 190, 0);
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-border-color: rgb(180, 190, 0);
-    --bs-btn-active-border-color: rgb(180, 190, 0);
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-active-bg: rgb(190 213 0);
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: rgb(190 213 0);
+    --bs-btn-hover-border-color: rgb(190 213 0);
+    --bs-btn-active-border-color: rgb(190 213 0);
 }
 
 .ENVButton::placeholder{
     font-size: 25px;
-    color: rgb(180, 190, 0);
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 .HEAButton{
-    border: 2px solid rgb(0, 152, 165);
-    --bs-btn-hover-bg: rgb(0, 152, 165);
-    --bs-btn-color: rgb(0, 152, 165);
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: rgb(0, 152, 165);
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-border-color: rgb(0, 152, 165);
-    --bs-btn-active-border-color: rgb(0, 152, 165);
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-active-bg: rgb(0 190 208);
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: rgb(0 190 208);
+    --bs-btn-hover-border-color: rgb(0 190 208);
+    --bs-btn-active-border-color: rgb(0 190 208);
 }
 
 .HEAButton::placeholder{
     font-size: 25px;
-    color: rgb(0, 152, 165);
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 
 .MATButton{
-    border: 2px solid rgb(198, 0, 120);
-    --bs-btn-hover-bg: rgb(198, 0, 120);
-    --bs-btn-color: rgb(198, 0, 120);
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: rgb(198, 0, 120);
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-border-color: rgb(198, 0, 120);
-    --bs-btn-active-border-color: rgb(198, 0, 120);
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-active-bg: rgb(255 99 170);
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: rgb(255 99 170);
+    --bs-btn-hover-border-color: rgb(255 99 170);
+    --bs-btn-active-border-color: rgb(255 99 170);
 }
 
 .MATButton::placeholder{
     font-size: 25px;
-    color: rgb(198, 0, 120);
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 .RENButton{
-    border: 2px solid rgb(19, 145, 36);
-    --bs-btn-hover-bg: rgb(19, 145, 36);
-    --bs-btn-color: rgb(19, 145, 36);
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: rgb(19, 145, 36);
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-border-color: rgb(19, 145, 36);
-    --bs-btn-active-border-color: rgb(19, 145, 36);
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-active-bg: rgb(60, 171, 75);
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: rgb(60, 171, 75);
+    --bs-btn-hover-border-color: rgb(60, 171, 75);
+    --bs-btn-active-border-color: rgb(60, 171, 75);
 }
 
 
 .RENButton::placeholder{
     font-size: 25px;
-    color: rgb(19, 145, 36);
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 .SCIButton{
-    border: 2px solid rgb(0,115,206);
-    --bs-btn-hover-bg: rgb(0,115,206);
-    --bs-btn-color: rgb(0,115,206);
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: rgb(0,115,206);
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-border-color: rgb(0,115,206);
-    --bs-btn-active-border-color: rgb(0,115,206);
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-active-bg: rgb(99 160 255);
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: rgb(99 160 255);
+    --bs-btn-hover-border-color: rgb(99 160 255);
+    --bs-btn-active-border-color: rgb(99 160 255);
 }
 
 .SCIButton::placeholder{
     font-size: 25px;
-    color: rgb(0,115,206);
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 .VPAButton{
-    border: 2px solid rgb(9, 0, 131);
-    --bs-btn-hover-bg: rgb(9, 0, 131);
-    --bs-btn-color: rgb(9, 0, 131);
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: rgb(9, 0, 131);
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-border-color: rgb(9, 0, 131);
-    --bs-btn-active-border-color: rgb(9, 0, 131);
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-active-bg: rgb(77, 67, 215);
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: rgb(77, 67, 215);
+    --bs-btn-hover-border-color: rgb(77, 67, 215);
+    --bs-btn-active-border-color: rgb(77, 67, 215);
 }
 
 .VPAButton::placeholder{
     font-size: 25px;
-    color: rgb(9, 0, 131);
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 .WLUButton{
-    border: 2px solid rgb(139, 28, 167);
-    --bs-btn-hover-bg: rgb(139, 28, 167);
-    --bs-btn-color: rgb(139, 28, 167);
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: rgb(139, 28, 167);
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-border-color: rgb(139, 28, 167);
-    --bs-btn-active-border-color: rgb(139, 28, 167);
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-active-bg: rgb(178, 91, 199);
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: rgb(178, 91, 199);
+    --bs-btn-hover-border-color: rgb(178, 91, 199);
+    --bs-btn-active-border-color: rgb(178, 91, 199);
 }
 
-.VPAButton::placeholder{
+.WLUButton::placeholder{
     font-size: 25px;
-    color: rgb(139, 28, 167);
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 
 .NAFacButton{
-    --bs-btn-hover-bg: black;
-    --bs-btn-color: black;
-    --bs-btn-active-bg: white;
-    --bs-btn-active-color: black;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-border-color: black;
-    --bs-btn-active-border-color: black;
-    border: 2px solid black;
+    --bs-btn-hover-bg: white;
+    --bs-btn-color: white;
+    --bs-btn-active-bg: black;
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-border-color: white;
+    --bs-btn-active-border-color: white;
+    border: 2px solid white;
 }
 
 .NAFacButton::placeholder{
     font-size: 25px;
-    color: black;
+    color: white;
     font-family: 'Anderson Grotesk';
 }
 
 
 .ARTCard{
-    border: 2px solid rgb(231, 129, 0);
-    box-shadow: 0px 0px 1px 1px rgb(255, 213, 165);
+    border: 2px solid rgb(251 175 0);
+    box-shadow: 0px 0px 1px 1px rgb(231 129 0);
 }
 
 .ENGCard{
-    border: 2px solid rgb(87,5,139);
-    box-shadow: 0px 0px 1px 1px rgb(208, 180, 239);
+    border: 2px solid rgb(190 51 218);
+    box-shadow: 0px 0px 1px 1px rgb(129 0 180);
 }
 
 .ENVCard{
-    border: 2px solid rgb(180, 190, 0);
-    box-shadow: 0px 0px 1px 1px rgb(208, 234, 120);
+    border: 2px solid rgb(190 213 0);
+    box-shadow: 0px 0px 1px 1px rgb(180 190 0);
 }
 
 .HEACard{
-    border: 2px solid rgb(0, 152, 165);
-    box-shadow: 0px 0px 1px 1px rgb(151, 223, 239);
+    border: 2px solid rgb(0 190 208);
+    box-shadow: 0px 0px 1px 1px rgb(0, 152, 165);
 }
 
 .MATCard{
-    border: 2px solid rgb(198, 0, 120);
-    box-shadow: 0px 0px 1px 1px rgb(255, 190, 239);
+    border: 2px solid rgb(255 99 170);
+    box-shadow: 0px 0px 1px 1px rgb(198, 0, 120);
 }
+
 .RENCard{
-    border: 2px solid rgb(19, 145, 36);
-    box-shadow: 0px 0px 1px 1px rgb(169, 226, 176);
+    border: 2px solid rgb(60, 171, 75);
+    box-shadow: 0px 0px 1px 1px rgb(19, 145, 36);
 }
 
 .SCICard{
-    border: 2px solid rgb(0,115,206);
-    box-shadow: 0px 0px 1px 1px rgb(180, 213, 255);
+    border: 2px solid rgb(99 160 255);
+    box-shadow: 0px 0px 1px 1px rgb(0,115,206);
 }
 
 .VPACard{
-    border: 2px solid rgb(9, 0, 131);
-    box-shadow: 0px 0px 1px 1px rgb(139, 135, 204);
+    border: 2px solid rgb(77, 67, 215);
+    box-shadow: 0px 0px 1px 1px rgb(9, 0, 131);
 }
 
 .WLUCard{
-    border: 2px solid rgb(139, 28, 167);
-    box-shadow: 0px 0px 1px 1px rgb(201, 120, 221);
+    border: 2px solid rgb(178, 91, 199);
+    box-shadow: 0px 0px 1px 1px rgb(139, 28, 167);
 }
 
 .NAFacCard{
-    box-shadow: 0px 0px 1px 1px rgb(107, 107, 107);
-    border: 2px solid  rgb(0, 0, 0);
+    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
+    border: 2px solid  rgb(107, 107, 107);
 }
 
 #ARTinfo{
-    color:rgb(231, 129,0);
+    color:rgb(251 175 0);
     font-family: 'Anderson Grotesk';
     font-size: 15px; 
     margin-bottom:2px;
 }
 
 #ARTname{
-    color:rgb(231, 129,0);
+    color:rgb(251 175 00);
     font-size: 18px;
     width: 250px;
     margin-bottom: 8px;    
 }
 
 #ARTcode{
-    color:rgb(231, 129,0);
+    color:rgb(251 175 0);
     font-size: 25px;
     width: 250px;
     font-family: 'Anderson Grotesk';
@@ -393,29 +389,29 @@
 }
 
 #ARTbox{
-    background-color:white;
+    background-color:rgb(14, 14, 37, 0.9);
     width:270px;
     padding-left:13px;
-    border: 1.5px solid rgb(231, 129,0);
+    border: 1.5px solid rgb(251 175 0);
     border-radius:5px;
 }
 
 #ENGinfo{
-    color:rgb(87,5,139);
+    color:rgb(190 51 218);
     font-family: 'Anderson Grotesk';
     font-size: 15px; 
     margin-bottom:2px;
 }
 
 #ENGname{
-    color:rgb(87,5,139);
+    color:rgb(190 51 218);
     font-size: 18px;
     width: 250px;
     margin-bottom: 8px;    
 }
 
 #ENGcode{
-    color:rgb(87,5,139);
+    color:rgb(190 51 218);
     font-size: 25px;
     width: 250px;
     font-family: 'Anderson Grotesk';
@@ -424,29 +420,29 @@
 }
 
 #ENGbox{
-    background-color:white;
+    background-color:rgb(14, 14, 37, 0.9);
     width:270px;
     padding-left:13px;
-    border: 2px solid rgb(87,5,139);
+    border: 2px solid rgb(190 51 218);
     border-radius:5px;
 }
 
 #ENVinfo{
-    color:rgb(180, 190, 0);
+    color:rgb(190 213 0);
     font-family: 'Anderson Grotesk';
     font-size: 15px; 
     margin-bottom:2px;
 }
 
 #ENVname{
-    color:rgb(180, 190, 0);
+    color:rgb(190 213 0);
     font-size: 18px;
     width: 250px;
     margin-bottom: 8px;    
 }
 
 #ENVcode{
-    color:rgb(180, 190, 0);
+    color:rgb(190 213 0);
     font-size: 25px;
     width: 250px;
     font-family: 'Anderson Grotesk';
@@ -455,29 +451,29 @@
 }
 
 #ENVbox{
-    background-color:white;
+    background-color:rgb(14, 14, 37, 0.9);
     width:270px;
     padding-left:13px;
-    border: 2px solid rgb(180, 190, 0);
+    border: 2px solid rgb(190 213 0);
     border-radius:5px;
 }
 
 #HEAinfo{
-    color:rgb(0, 152, 165);
+    color:rgb(0 190 208);
     font-family: 'Anderson Grotesk';
     font-size: 15px; 
     margin-bottom:2px;
 }
 
 #HEAname{
-    color:rgb(0, 152, 165);
+    color:rgb(0 190 208);
     font-size: 18px;
     width: 250px;
     margin-bottom: 8px;    
 }
 
 #HEAcode{
-    color:rgb(0, 152, 165);
+    color:rgb(0 190 208);
     font-size: 25px;
     width: 250px;
     font-family: 'Anderson Grotesk';
@@ -486,29 +482,29 @@
 }
 
 #HEAbox{
-    background-color:white;
+    background-color:rgb(14, 14, 37, 0.9);
     width:270px;
     padding-left:13px;
-    border: 2px solid rgb(0, 152, 165);
+    border: 2px solid rgb(0 190 208);
     border-radius:5px;
 }
 
 #MATinfo{
-    color:rgb(198, 0, 120);
+    color:rgb(255 99 170);
     font-family: 'Anderson Grotesk';
     font-size: 15px; 
     margin-bottom:2px;
 }
 
 #MATname{
-    color:rgb(198, 0, 120);
+    color:rgb(255 99 170);
     font-size: 18px;
     width: 250px;
     margin-bottom: 8px;    
 }
 
 #MATcode{
-    color:rgb(198, 0, 120);
+    color:rgb(255 99 170);
     font-size: 25px;
     width: 250px;
     font-family: 'Anderson Grotesk';
@@ -517,29 +513,29 @@
 }
 
 #MATbox{
-    background-color:white;
+    background-color:rgb(14, 14, 37, 0.9);
     width:270px;
     padding-left:13px;
-    border: 2px solid rgb(198, 0, 120);
+    border: 2px solid rgb(255 99 170);
     border-radius:5px;
 }
 
 #RENinfo{
-    color:rgb(19, 145, 36);
+    color:rgb(60, 171, 75);
     font-family: 'Anderson Grotesk';
     font-size: 15px; 
     margin-bottom:2px;
 }
 
 #RENname{
-    color:rgb(19, 145, 36);
+    color:rgb(60, 171, 75);
     font-size: 18px;
     width: 250px;
     margin-bottom: 8px;    
 }
 
 #RENcode{
-    color:rgb(19, 145, 36);
+    color:rgb(60, 171, 75);
     font-size: 25px;
     width: 250px;
     font-family: 'Anderson Grotesk';
@@ -548,29 +544,29 @@
 }
 
 #RENbox{
-    background-color:white;
+    background-color:rgb(14, 14, 37, 0.9);
     width:270px;
     padding-left:13px;
-    border: 2px solid rgb(19, 145, 36);
+    border: 2px solid rgb(60, 171, 75);
     border-radius:5px;
 }
 
 #SCIinfo{
-    color:rgb(0,115,206);
+    color:rgb(99 160 255);
     font-family: 'Anderson Grotesk';
     font-size: 15px; 
     margin-bottom:2px;
 }
 
 #SCIname{
-    color:rgb(0,115,206);
+    color:rgb(99 160 255);
     font-size: 18px;
     width: 250px;
     margin-bottom: 8px;    
 }
 
 #SCIcode{
-    color:rgb(0,115,206);
+    color:rgb(99 160 255);
     font-size: 25px;
     width: 250px;
     font-family: 'Anderson Grotesk';
@@ -579,29 +575,29 @@
 }
 
 #SCIbox{
-    background-color:white;
+    background-color:rgb(14, 14, 37, 0.9);
     width:270px;
     padding-left:13px;
-    border: 2px solid rgb(0,115,206);
+    border: 2px solid rgb(99 160 255);
     border-radius:5px;
 }
 
 #VPAinfo{
-    color:rgb(9, 0, 131);
+    color:rgb(77, 67, 215);
     font-family: 'Anderson Grotesk';
     font-size: 15px; 
     margin-bottom:2px;
 }
 
 #VPAname{
-    color:rgb(9, 0, 131);
+    color:rgb(77, 67, 215);
     font-size: 18px;
     width: 250px;
     margin-bottom: 8px;    
 }
 
 #VPAcode{
-    color:rgb(9, 0, 131);
+    color:rgb(77, 67, 215);
     font-size: 25px;
     width: 250px;
     font-family: 'Anderson Grotesk';
@@ -610,29 +606,29 @@
 }
 
 #VPAbox{
-    background-color:white;
+    background-color:rgb(14, 14, 37, 0.9);
     width:270px;
     padding-left:13px;
-    border: 2px solid rgb(9, 0, 131);
+    border: 2px solid rgb(77, 67, 215);
     border-radius:5px;
 }
 
 #WLUinfo{
-    color:rgb(139, 28, 167);
+    color:rgb(178, 91, 199);
     font-family: 'Anderson Grotesk';
     font-size: 15px; 
     margin-bottom:2px;
 }
 
 #WLUname{
-    color:rgb(139, 28, 167);
+    color:rgb(178, 91, 199);
     font-size: 18px;
     width: 250px;
     margin-bottom: 8px;    
 }
 
 #WLUcode{
-    color:rgb(139, 28, 167);
+    color:rgb(178, 91, 199);
     font-size: 25px;
     width: 250px;
     font-family: 'Anderson Grotesk';
@@ -641,9 +637,9 @@
 }
 
 #WLUbox{
-    background-color:white;
+    background-color:rgb(14, 14, 37, 0.9);
     width:270px;
     padding-left:13px;
-    border: 2px solid rgb(139, 28, 167);
+    border: 2px solid rgb(178, 91, 199);
     border-radius:5px;
 }

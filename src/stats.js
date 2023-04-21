@@ -33,11 +33,11 @@ function DataChart ({ data, faculty, onClick, fillColor, lightFillColor }){
 
 
     return(
-        <ScatterChart width={500} height={450} margin={{top: 20, right: 20, bottom: 35, left: 20}}>
+        <ScatterChart width={450} height={380} margin={{top: 20, right: 20, bottom: 35, left: 20}}>
             <CartesianGrid strokeDasharray="10 0" stroke={lightFillColor} />
             <XAxis stroke={fillColor} label={{ value: "Easiness", dy:25, fontFamily:'Anderson Grotesk Bold', fill:fillColor }} dataKey="easy" type="number" name="Easiness" unit="%" tick={{ fontFamily: 'Anderson Grotesk Bold'}} tickCount={6}/>
             <YAxis stroke={fillColor} label={{ value: 'Usefulness', angle: -90, position: 'insideLeft', offset:'-8', fontFamily:'Anderson Grotesk Bold', dy:37, fill:fillColor}} dataKey="useful" type="number" name="Usefulness" unit="%" tick={{ fontFamily: 'Anderson Grotesk Bold' }} tickCount={6}/>
-            <ZAxis dataKey="liked" type="number" range={[100, 300]} name="Ratings" unit="" />
+            <ZAxis dataKey="liked" type="number" range={[75, 250]} name="Ratings" unit="" />
             <Tooltip 
                 className="chart" 
                 cursor={{ strokeDasharray: '12 12', strokeWidth: 1.5, stroke: fillColor}} 
@@ -98,32 +98,32 @@ export default function Stats({ props }){
 
     let faculty = props.faculty;
     if (faculty === "ART"){
-        fillColor='rgb(231, 129, 0)';
-        lightFillColor='rgb(255, 213, 165)';
+        lightFillColor='rgb(231, 129, 0)';
+        fillColor='rgb(251 175 0)';
     } else if (faculty === "ENG"){
-        fillColor='rgb(87,5,139)';
-        lightFillColor='rgb(208, 180, 239)';
+        lightFillColor='rgb(87,5,139)';
+        fillColor='rgb(190 51 218)';
     } else if (faculty === "ENV"){
-        fillColor='rgb(180, 190, 0)';
-        lightFillColor='rgb(208, 234, 120)';
+        lightFillColor='rgb(180, 190, 0)';
+        fillColor='rgb(190 213 0)';
     } else if (faculty === "HEA"){
-        fillColor='rgb(0, 152, 165)';
-        lightFillColor='rgb(151, 223, 239)';
+        lightFillColor='rgb(0, 152, 165)';
+        fillColor='rgb(151, 223, 239)';
     } else if (faculty === "MAT"){
-        fillColor='rgb(198, 0, 120)';
-        lightFillColor='rgb(255, 190, 239)';
+        lightFillColor='rgb(198, 0, 120)';
+        fillColor='rgb(255, 190, 239)';
     } else if (faculty === "REN"){
-        fillColor='rgb(19, 145, 36)';
-        lightFillColor='rgb(169, 226, 176)';
+        lightFillColor='rgb(19, 145, 36)';
+        fillColor='rgb(169, 226, 176)';
     } else if (faculty === "SCI"){
-        fillColor='rgb(0,115,206)';
-        lightFillColor='rgb(180, 213, 255)';
+        lightFillColor='rgb(0,115,206)';
+        fillColor='rgb(180, 213, 255)';
     } else if (faculty === "VPA"){
-        fillColor='rgb(9, 0, 131)';
-        lightFillColor='rgb(139, 135, 204)';
+        lightFillColor='rgb(9, 0, 131)';
+        fillColor='rgb(139, 135, 204)';
     } else if (faculty === "WLU"){
-        fillColor='rgb(139, 28, 167)';
-        lightFillColor='rgb(201, 120, 221)';
+        lightFillColor='rgb(139, 28, 167)';
+        fillColor='rgb(201, 120, 221)';
     }
 
     const [oldData, setOldData] = useState();
@@ -218,7 +218,7 @@ export default function Stats({ props }){
     return(
         <>
             <div id="courseTitles">
-                <div className='row' style={{textAlign:'center'}}>
+                <div className='row' style={{textAlign:'center', marginBottom:'-5px'}}>
                     <div className='col-lg-1'/>
                     <div className='col-lg-2' id='returnButton'>
                         <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"Button btn"}>Search Again</button>

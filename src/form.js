@@ -78,7 +78,7 @@ export default function Form(){
                         </div>
                 </div>
                 <div className="col-lg-6 d-flex" style={{display:"flex"}}>
-                    <input onChange={MostRelevant} id="input" className="form-control me-2 d-flex clear theFont" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
+                    <input onChange={MostRelevant} id="input" className="form-control me-2 d-flex clear theFont" type="search" placeholder="Enter Subject (ie. MATH)" aria-label="Search"></input>
                     <button id="inputbutton" className="btn" type="submit">🔎︎</button>
                 </div>
             </form>
@@ -87,15 +87,7 @@ export default function Form(){
                 <button id="SearchResults" key={result.item.course} className={result.item.faculty+"Button btn theFont"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
                 ))}
             </div>
-                {/*<div key={selectedCourse.code} id = "nextInfo" >
-                    {revealInfo ? (*/}
-                        <Stats id="stat" key={selectedCourse.course} props={selectedCourse}></Stats> 
-                    {/*}): <div/>}
-                </div>*/}
-            
-
+            <Stats id="stat" key={selectedCourse.course} props={selectedCourse}></Stats>
         </div>
-
     );
-
 }
