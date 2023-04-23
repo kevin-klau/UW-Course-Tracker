@@ -96,8 +96,9 @@ body{
   margin: 6vh 2.6vw 0px 2.6vw;
   height: 80vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   max-width: 90vw;
+  scroll-behavior: smooth;
 }
 
 #info{
@@ -255,9 +256,9 @@ body{
   text-align: center;
   flex-wrap: wrap;
   position: relative;
-  padding-bottom: 10px;
   justify-content: center;
   align-items: center;
+  width:85vw;
 }
 
 #theChart{
@@ -359,7 +360,7 @@ body{
 }
 
 #courseHeading{
-  font-size:65px;
+  font-size:80px;
   margin-bottom: 0px;
   text-align: center;
 }
@@ -367,6 +368,7 @@ body{
 #courseHeadingName{
   font-size: 30px;
   margin-bottom: -5px;
+  padding-bottom: 10px;
 }
 
 #cardCode{
@@ -525,6 +527,7 @@ body{
 .theFontUltraBold{
   font-family: "Anderson Grotesk UltraBold";
 }
+
 
 
 

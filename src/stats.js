@@ -7,7 +7,7 @@ import CardInfo from './theCards.js';
 import './facultyColors.css';
 import TopStats from './topStats.js';
 
-let fillColor='black';
+let fillColor='white';
 let lightFillColor='grey';
 let notDefault = false;
 
@@ -22,8 +22,8 @@ function DataChart ({ data, faculty, onClick, fillColor, lightFillColor }){
         if (active && payload && payload.length) {
           return (
             <div id={payload[0].payload.faculty+"box"}>
-              <p id={payload[0].payload.faculty+"code"}><strong>{payload[0].payload.code}</strong></p>
-              <p id={payload[0].payload.faculty+"name"} style={{width:"240px", lineHeight:"1.4"}}><strong>{payload[0].payload.name}</strong></p>
+              <p id={payload[0].payload.faculty+"code"} className="theFont"><strong>{payload[0].payload.code}</strong></p>
+              <p id={payload[0].payload.faculty+"name"} className="theFont"><strong>{payload[0].payload.name}</strong></p>
             </div>
           );
         }
@@ -217,28 +217,32 @@ export default function Stats({ props }){
 
     return(
         <>
-            <div id="courseTitles">
-                <div className='row' style={{textAlign:'center', marginBottom:'-5px'}}>
-                    <div className='col-lg-1'/>
-                    <div className='col-lg-2' id='returnButton'>
-                        <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"Button btn"}>Search Again</button>
+        <div style={{display:"flex", width:"200vw", height:"1000px", overflowX:'scroll'}}>
+            <div style={{display:"inline-block"}}>
+                <div id="courseTitles">
+                    <div className='row' style={{textAlign:'center', marginBottom:'-5px'}}>
+                        <div className='col-lg-1'/>
+                        <div className='col-lg-2' id='returnButton'>
+                            <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"Button btn"}>Search Again</button>
+                        </div>
+                        <h1 id="courseHeading" className={`col-lg-6 ${faculty+"text"} theFont`}> {props.course} </h1>
+                        <form className='col-lg-3 container' id='searchButton' onSubmit={submitCourseSearch}>
+                            <input type="text" id='searchCourseButton' className = {props.faculty +"Button btn"} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
+                            <button id="searchCourseButtonEnter" className = {props.faculty +"Button btn"} type="submit">🔎︎</button>
+                        </form>
                     </div>
-                    <h1 id="courseHeading" className={`col-lg-6 ${faculty+"text"}`}> {props.course} </h1>
-                    <form className='col-lg-3 container' id='searchButton' onSubmit={submitCourseSearch}>
-                        <input type="text" id='searchCourseButton' className = {props.faculty +"Button btn"} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
-                        <button id="searchCourseButtonEnter" className = {props.faculty +"Button btn"} type="submit">🔎︎</button>
-                    </form>
+                        <h2 id="courseHeadingName" className={faculty + "text theFont"}> {props.name}</h2>   
                 </div>
-                    <h2 id="courseHeadingName" className={faculty + "text"}> {props.name}</h2>   
+                <div id="displayedInfo">
+                    <DataChart id="theChart" data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} fillColor={fillColor} lightFillColor={lightFillColor} className='col-lg-6'/> 
+                    <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>  
+                    {/*<p>{result}</p>*/}
+                </div>
             </div>
-            <div id="displayedInfo">
-                <DataChart id="theChart" data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} fillColor={fillColor} lightFillColor={lightFillColor} className='col-lg-6'/> 
-                <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>  
-                {/*<p>{result}</p>*/}
-            </div>
-            <div id="facultyInfo">
+            <div id="facultyInfo" style={{display:"inline-block", width: '80vw'}}>
                 <TopStats course={props.course} faculty={props.faculty}></TopStats>
             </div>
+        </div>
         </>
     );
 }
