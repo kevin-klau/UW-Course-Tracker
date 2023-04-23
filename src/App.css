@@ -252,13 +252,27 @@ body{
   margin-left: 70px;
 }
 
+#secondPageContainer{
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  max-height: 83vh;
+  align-items: center;
+}
+
+#statisticsContainer{
+  display:inline-block;
+  min-width: 90vw;
+  margin-right: 100px;
+  margin-left: 0vw;
+}
+
 #courseTitles{
   text-align: center;
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
   align-items: center;
-  width:85vw;
 }
 
 #theChart{
@@ -306,7 +320,7 @@ body{
   font-size: 23px;
   width: 180px;
   border-radius: 20px;
-  margin-top: 3vh;
+  margin-top: 4.5vh;
 }
 #searchButton{
   margin-top: 20px;
@@ -331,7 +345,8 @@ body{
 
 #facultyInfo{
   height: 100vh;
-  margin-top: 50px;
+  display: inline-block;
+  min-width: 90vw;
 }
 
 #facultyStatsRow1{
@@ -360,8 +375,10 @@ body{
 }
 
 #courseHeading{
-  font-size:80px;
+  font-size: 70px;
   margin-bottom: 0px;
+  
+  margin-top: 20px;
   text-align: center;
 }
 

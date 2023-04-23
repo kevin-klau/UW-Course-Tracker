@@ -206,7 +206,7 @@ export default function Stats({ props }){
     }
 
     function clickSearchAgain (){
-        document.getElementById('info').scrollIntoView();
+        document.getElementById('title').scrollIntoView();
     }
 
     if (props.course === '' && props.name === ''){
@@ -217,17 +217,18 @@ export default function Stats({ props }){
 
     return(
         <>
-        <div style={{display:"flex", width:"200vw", height:"1000px", overflowX:'scroll'}}>
-            <div style={{display:"inline-block"}}>
+        <button style={{display:'inline-block'}}>〈</button>
+        <div id="secondPageContainer">
+            <div id="statisticsContainer">
                 <div id="courseTitles">
                     <div className='row' style={{textAlign:'center', marginBottom:'-5px'}}>
-                        <div className='col-lg-1'/>
-                        <div className='col-lg-2' id='returnButton'>
+                        <div className='col-xl-1'/>
+                        <div className='col-xl-2' id='returnButton'>
                             <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"Button btn"}>Search Again</button>
                         </div>
-                        <h1 id="courseHeading" className={`col-lg-6 ${faculty+"text"} theFont`}> {props.course} </h1>
-                        <form className='col-lg-3 container' id='searchButton' onSubmit={submitCourseSearch}>
-                            <input type="text" id='searchCourseButton' className = {props.faculty +"Button btn"} placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
+                        <h1 id="courseHeading" className={`col-xl-6 ${faculty+"text"} theFont`}> {props.course} </h1>
+                        <form className='col-xl-3 container' id='searchButton' onSubmit={submitCourseSearch}>
+                            <input type="text" id='searchCourseButton' className = {props.faculty +"Button btn"} autocomplete="off" placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
                             <button id="searchCourseButtonEnter" className = {props.faculty +"Button btn"} type="submit">🔎︎</button>
                         </form>
                     </div>
@@ -239,7 +240,7 @@ export default function Stats({ props }){
                     {/*<p>{result}</p>*/}
                 </div>
             </div>
-            <div id="facultyInfo" style={{display:"inline-block", width: '80vw'}}>
+            <div id="facultyInfo">
                 <TopStats course={props.course} faculty={props.faculty}></TopStats>
             </div>
         </div>
