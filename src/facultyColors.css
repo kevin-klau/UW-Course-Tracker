@@ -646,3 +646,48 @@
     border: 2px solid rgb(178, 91, 199);
     border-radius:5px;
 }
+
+.ARTHover:Hover{
+    color: rgb(255 213 165);
+    cursor:pointer;
+}
+
+.ENGHover:Hover{
+    color: rgb(208, 180, 239);
+    cursor:pointer;
+}
+
+.ENVHover:Hover{
+    color: rgb(208, 234, 120);
+    cursor:pointer;
+}
+
+.HEAHover:Hover{
+    color: rgb(151, 223, 239);
+    cursor:pointer;
+}
+
+.MATHover:Hover{
+    color: rgb(255, 190, 239);
+    cursor:pointer;
+}
+
+.RENHover:Hover{
+    color: rgb(169, 226, 176);
+    cursor:pointer;
+}
+
+.SCIHover:Hover{
+    color: rgb(180, 213, 255);
+    cursor:pointer;
+}
+
+.VPAHover:Hover{
+    color: rgb(139, 135, 204);
+    cursor:pointer;
+}
+
+.WLUHover:Hover{
+    color: rgb(201, 120, 221);
+    cursor:pointer;
+}

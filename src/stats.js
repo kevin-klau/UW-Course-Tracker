@@ -75,7 +75,7 @@ export default function Stats({ props }){
     const [userCourseChoice, setUserCourseChoice] = useState("");
 
     const handleRequest = async (user_input) => {
-        fetch('http://127.0.0.1:5000/', {
+       /* fetch('http://127.0.0.1:5000/', {
             method: 'OPTIONS',
              headers: {
                 'Access-Control-Request-Method': 'GET', // replace with the actual HTTP method
@@ -91,7 +91,7 @@ export default function Stats({ props }){
                   return response.json();
             })
             .then(data => console.log(data.output))
-            .catch(error => console.error(error));
+            .catch(error => console.error(error));*/
 
             
     }
@@ -101,23 +101,23 @@ export default function Stats({ props }){
         lightFillColor='rgb(231, 129, 0)';
         fillColor='rgb(251 175 0)';
     } else if (faculty === "ENG"){
-        lightFillColor='rgb(87,5,139)';
+        lightFillColor='rgb(129 0 180)';
         fillColor='rgb(190 51 218)';
     } else if (faculty === "ENV"){
         lightFillColor='rgb(180, 190, 0)';
-        fillColor='rgb(190 213 0)';
+        fillColor='rgb(208 234 120)';
     } else if (faculty === "HEA"){
-        lightFillColor='rgb(0, 152, 165)';
-        fillColor='rgb(151, 223, 239)';
+        lightFillColor='rgb(0 152 165)';
+        fillColor='rgb(0 190 208)';
     } else if (faculty === "MAT"){
-        lightFillColor='rgb(198, 0, 120)';
-        fillColor='rgb(255, 190, 239)';
+        lightFillColor='rgb(223 36 152)';
+        fillColor='rgb(255 99 170)';
     } else if (faculty === "REN"){
         lightFillColor='rgb(19, 145, 36)';
         fillColor='rgb(169, 226, 176)';
     } else if (faculty === "SCI"){
         lightFillColor='rgb(0,115,206)';
-        fillColor='rgb(180, 213, 255)';
+        fillColor='rgb(99 160 255)';
     } else if (faculty === "VPA"){
         lightFillColor='rgb(9, 0, 131)';
         fillColor='rgb(139, 135, 204)';
@@ -162,13 +162,13 @@ export default function Stats({ props }){
     }
 
     useEffect(() => {
-        setFilteredInfo(data.filter(item => item.code.substring(0, props.course.length+1) === (props.course+" ")));
+        setFilteredInfo(data.filter(item => item.code.substring(0, props.course.length+1) === (props.course+" ") && Number(item.ratings) >= 5));
     }, [props]);
 
     const [scatterPlotData, setScatterPlotData] = useState (null);
 
     useEffect(()=> {
-        let item = filteredInfo.map(item => (Number(item.ratings) >= 5 && {
+        let item = filteredInfo.map(item => ({
             code: item.code,
             name: item.name,
             liked: (Number(item.liked.substring(0,item.liked.length-1)) >= 0 && Number(item.liked.substring(0,item.liked.length-1)) <= 100) ? Number(item.liked.substring(0,item.liked.length-1)) : 0,
@@ -206,7 +206,26 @@ export default function Stats({ props }){
     }
 
     function clickSearchAgain (){
-        document.getElementById('title').scrollIntoView();
+        document.getElementById('title').scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+          });
+    }
+
+    function moveToFacultyStats() {
+        document.getElementById('facultyInfo').scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+          });;
+    }
+
+    function moveToBaseStats() {
+        document.getElementById('statisticsContainer').scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+          });
     }
 
     if (props.course === '' && props.name === ''){
@@ -217,32 +236,34 @@ export default function Stats({ props }){
 
     return(
         <>
-        <button style={{display:'inline-block'}}>〈</button>
-        <div id="secondPageContainer">
-            <div id="statisticsContainer">
-                <div id="courseTitles">
-                    <div className='row' style={{textAlign:'center', marginBottom:'-5px'}}>
-                        <div className='col-xl-1'/>
-                        <div className='col-xl-2' id='returnButton'>
-                            <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"Button btn"}>Search Again</button>
+        <div id="secondPageContainer" style={{display: 'flex'}}>
+            <button id="buttonLeft" onClick={moveToBaseStats}  className="btn theFont sideButton">〈</button>
+            <div id="secondPageInfo">
+                <div id="statisticsContainer" className="child">
+                    <div id="courseTitles">
+                        <div className='row' style={{textAlign:'center', marginBottom:'-5px', width:'84vw'}}>
+                            <div className='col-xl-3' id='returnButton'>
+                                <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"Button btn"}>Search Again</button>
+                            </div>
+                            <h1 id="courseHeading" className={`col-xl-6 ${faculty+"text"} theFont`}> {props.course} </h1>
+                            <form className='col-xl-3 container' id='searchButton' onSubmit={submitCourseSearch}>
+                                <input type="text" id='searchCourseButton' className = {props.faculty +"Button btn"} autocomplete="off" placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
+                                <button id="searchCourseButtonEnter" className = {props.faculty +"Button btn"} type="submit">🔎︎</button>
+                            </form>
                         </div>
-                        <h1 id="courseHeading" className={`col-xl-6 ${faculty+"text"} theFont`}> {props.course} </h1>
-                        <form className='col-xl-3 container' id='searchButton' onSubmit={submitCourseSearch}>
-                            <input type="text" id='searchCourseButton' className = {props.faculty +"Button btn"} autocomplete="off" placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
-                            <button id="searchCourseButtonEnter" className = {props.faculty +"Button btn"} type="submit">🔎︎</button>
-                        </form>
+                            <h2 id="courseHeadingName" className={faculty + "text theFont"}> {props.name}</h2>   
                     </div>
-                        <h2 id="courseHeadingName" className={faculty + "text theFont"}> {props.name}</h2>   
+                    <div id="displayedInfo">
+                        <DataChart id="theChart" data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} fillColor={fillColor} lightFillColor={lightFillColor} className='col-lg-6'/> 
+                        <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>  
+                        {/*<p>{result}</p>*/}
+                    </div>
                 </div>
-                <div id="displayedInfo">
-                    <DataChart id="theChart" data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} fillColor={fillColor} lightFillColor={lightFillColor} className='col-lg-6'/> 
-                    <CardInfo key={selectedCourse.code} info={selectedCourse} faculty={props.faculty} className='col-lg-6'></CardInfo>  
-                    {/*<p>{result}</p>*/}
+                <div id="facultyInfo" className="child">
+                    <TopStats course={props.course} faculty={props.faculty}></TopStats>
                 </div>
             </div>
-            <div id="facultyInfo">
-                <TopStats course={props.course} faculty={props.faculty}></TopStats>
-            </div>
+            <button id="buttonRight" onClick={moveToFacultyStats} className="btn theFont sideButton">〉</button>
         </div>
         </>
     );

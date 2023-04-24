@@ -99,6 +99,7 @@ body{
   overflow-y: scroll;
   max-width: 90vw;
   scroll-behavior: smooth;
+  scroll-snap-align: y mandatory;
 }
 
 #info{
@@ -255,9 +256,33 @@ body{
 #secondPageContainer{
   display: flex;
   overflow-x: scroll;
+  width: 90vw;
+  min-height:90vh;
+}
+
+.child{
+  scroll-snap-align: start;
+}
+
+#buttonLeft{
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+#buttonRight{
+  margin-left: 20px;
+  font-size: 50px;
+  padding-right: -50px;
+}
+
+#secondPageInfo{
+  display: flex;
+  overflow-x: scroll;
   overflow-y: hidden;
-  max-height: 83vh;
+  scroll-snap-type: x mandatory;
   align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #statisticsContainer{
@@ -265,6 +290,19 @@ body{
   min-width: 90vw;
   margin-right: 100px;
   margin-left: 0vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideButton{
+  --bs-btn-color: white;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-border-color: rgba(0,0,0,0);
+  --bs-btn-hover-bg: rgba(35, 35, 206, 0.1);
+  --bs-btn-active-bg: rgba(0,0,0,0);
+  --bs-btn-active-color: rgba(255,255,255,0.4);
+  --bs-btn-active-border-color: rgba(0,0,0,0);
+  border-radius: 10px;
 }
 
 #courseTitles{
@@ -301,14 +339,14 @@ body{
 
 #displayedInfo{
   display: flex;
+  align-items:center;
   -webkit-flex-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
   justify-content: center;
   position:relative;
   flex-wrap: wrap; 
-  margin-left: 20px;
+  width: 81vw;
 }
 
 #returnButton{
@@ -320,11 +358,13 @@ body{
   font-size: 23px;
   width: 180px;
   border-radius: 20px;
-  margin-top: 4.5vh;
-}
-#searchButton{
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#searchButton{
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #searchCourseButton{
@@ -344,9 +384,8 @@ body{
 }
 
 #facultyInfo{
-  height: 100vh;
   display: inline-block;
-  min-width: 90vw;
+  min-width: 80vw;
 }
 
 #facultyStatsRow1{
@@ -355,30 +394,55 @@ body{
   justify-content: center;
 }
 
+#facultyStatsRow2{
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 #facultyStatsTitle{
   text-align: center;
   font-size: 55px;
 }
 
 #facultyStatsHeaderLine{
-  width: 80%;
+  width: 90%;
   box-shadow: 0 0 0 0;
   border-width: 1px;
   margin: 1em 0;
   padding: 0;
-  margin-left: 10vw;
+  margin-left: vw;
   margin-top: 0px;
 }
 
 #facultyStatsCode{
-  
+  text-align: left;
+  font-size: 40px;
+} 
+
+#facultyStatsName{
+  font-size: 20px;
+  margin-top: -10px;
+  text-align: left;
+}
+
+#theCircle{
+  margin: auto auto auto auto;
+  max-width: 20vw;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#facultyStatsInfo{
+  padding-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #courseHeading{
   font-size: 70px;
   margin-bottom: 0px;
-  
-  margin-top: 20px;
   text-align: center;
 }
 
@@ -386,6 +450,7 @@ body{
   font-size: 30px;
   margin-bottom: -5px;
   padding-bottom: 10px;
+  width: 83vw;
 }
 
 #cardCode{
@@ -395,12 +460,12 @@ body{
 #facultyStatsCard{
   width: 80%;
   border-radius: 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 10px;
 }
 
 .facultyStatsTitle{
   font-family: "Anderson Grotesk";
-  font-size: 30px;
+  font-size: 40px;
   margin-top: 10px;
   border: none;
 }
@@ -414,6 +479,7 @@ body{
   padding-left: 20px;
   padding-top: 10px;
 }
+
 
 #cardRatings{
   font-size: 20px;

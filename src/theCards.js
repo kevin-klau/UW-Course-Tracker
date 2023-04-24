@@ -16,7 +16,7 @@ export default function CardInfo({ info, faculty }){
     <ReactCardFlip isFlipped={flip} flipDirection='horizontal'>
         <div id="mainCard1" className={faculty+"Card theFont"} onClick={() => setFlip(!flip)}>
             <div id="courseNumbers">
-                <h1 id="cardCode" className={faculty+"text theFontBold"} onClick={routeUWFlow}>{info.code}</h1>
+                <h1 id="cardCode" className={faculty+"text theFontBold " + faculty+"Hover"} onClick={routeUWFlow}>{info.code}</h1>
                 <div style={{display: "inline-block"}}>
                     {info.ratings === "N/A" ? <div/>: <p id="cardRatings" className={faculty+"LightDarkText theFontBold"}>{info.ratings} Ratings</p>}
                 </div>            

@@ -84,7 +84,11 @@ function App() {
   // Function to handle when they finally choose a subject
   function Selected(course, faculty, name){
       // Set revealInfo to true and update the selected course
-      document.getElementById('returnButton').scrollIntoView();
+      document.getElementById('secondPageInfo').scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center'
+      });
       setSelectedCourse ({course:course, faculty:faculty, name:name});
   }
 
@@ -92,7 +96,7 @@ function App() {
     <div id="background">
         <div id="contain">
           <div id="innerContainer">
-            <div id='thing'>
+            <div id='thing' className="child">
               <div><h1 id="title" className="theFontUltraBold">UW Course Tracker</h1>
               <p id="info" className="theFont">Welcome! Enter your subject below, and we'll help you pick a course!!!</p>
               <form id="form" className="row" role="search" onSubmit={Submitted}>
@@ -112,7 +116,7 @@ function App() {
                   ))}
               </div></div>
             </div>
-            <Stats id="stat" key={selectedCourse.course} props={selectedCourse}></Stats>
+            <div className="child"><Stats id="stat" key={selectedCourse.course} props={selectedCourse}></Stats></div>
           </div>
           <div style={{marginTop: 'auto', paddingLeft: '20px', paddingRight:'20px', paddingTop: '15px'}} className="row">
             <div className="col-sm-4"><h1 class="theFont personal">Designed By: Kevin Lau</h1></div>
