@@ -164,9 +164,29 @@
     --bs-btn-active-border-color: rgb(251 175 0);
 }
 
+input.ARTButton {
+    border: 2px solid rgb(251 175 0);
+    --bs-btn-color: rgb(251 175 0);
+    --bs-btn-hover-color: rgb(251 175 0);
+    --bs-btn-hover-border-color: rgb(251 175 0);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: rgb(251 175 0);
+    --bs-btn-active-border-color: rgb(251 175 0);
+}
+
+.ARTSideButton{
+    border: 2px solid rgb(251 175 0);
+    --bs-btn-color: rgb(251 175 0);
+    --bs-btn-hover-color: rgb(251 175 0);
+    --bs-btn-hover-border-color: rgb(251 175 0);
+    --bs-btn-active-bg: rgb(251 175 0);
+    --bs-btn-active-color: none;
+    --bs-btn-active-border-color: rgb(251 175 0);
+}
+
 .ARTButton::placeholder{
     font-size: 25px;
-    color: white;
+    color: rgb(251 175 0);
     font-family: 'Anderson Grotesk';
 }
 
@@ -180,9 +200,29 @@
     --bs-btn-active-border-color: rgb(190 51 218);
 }
 
+input.ENGButton {
+    border: 2px solid rgb(190 51 218);
+    --bs-btn-color: rgb(190 51 218);
+    --bs-btn-hover-color: rgb(190 51 218);
+    --bs-btn-hover-border-color: rgb(190 51 218);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: rgb(190 51 218);
+    --bs-btn-active-border-color: rgb(190 51 218);
+}
+
+.ENGSideButton{
+    border: 2px solid rgb(190 51 218);
+    --bs-btn-color: rgb(190 51 218);
+    --bs-btn-hover-color: rgb(190 51 218);
+    --bs-btn-hover-border-color: rgb(190 51 218);
+    --bs-btn-active-bg: rgb(190 51 218);
+    --bs-btn-active-color: none;
+    --bs-btn-active-border-color: rgb(190 51 218);
+}
+
 .ENGButton::placeholder{
     font-size: 25px;
-    color: white;
+    color: rgb(190 51 218);
     font-family: 'Anderson Grotesk';
 }
 
@@ -196,9 +236,29 @@
     --bs-btn-active-border-color: rgb(190 213 0);
 }
 
+input.ENVButton {
+    border: 2px solid rgb(190 213 0);
+    --bs-btn-color: rgb(190 213 0);
+    --bs-btn-hover-color: rgb(190 213 0);
+    --bs-btn-hover-border-color: rgb(190 213 0);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: rgb(190 213 0);
+    --bs-btn-active-border-color: rgb(190 213 0);
+}
+
+.ENVSideButton{
+    border: 2px solid rgb(190 213 0);
+    --bs-btn-color: rgb(190 213 0);
+    --bs-btn-hover-color: rgb(190 213 0);
+    --bs-btn-hover-border-color: rgb(190 213 0);
+    --bs-btn-active-bg: rgb(190 213 0);
+    --bs-btn-active-color: none;
+    --bs-btn-active-border-color: rgb(190 213 0);
+}
+
 .ENVButton::placeholder{
     font-size: 25px;
-    color: white;
+    color: rgb(190 213 0);
     font-family: 'Anderson Grotesk';
 }
 
@@ -212,12 +272,31 @@
     --bs-btn-active-border-color: rgb(0 190 208);
 }
 
-.HEAButton::placeholder{
-    font-size: 25px;
-    color: white;
-    font-family: 'Anderson Grotesk';
+input.HEAButton {
+    border: 2px solid rgb(0 190 208);
+    --bs-btn-color: rgb(0 190 208);
+    --bs-btn-hover-color: rgb(0 190 208);
+    --bs-btn-hover-border-color: rgb(0 190 208);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: rgb(0 190 208);
+    --bs-btn-active-border-color: rgb(0 190 208);
 }
 
+.HEASideButton{
+    border: 2px solid rgb(0 190 208);
+    --bs-btn-color: rgb(0 190 208);
+    --bs-btn-hover-color: rgb(0 190 208);
+    --bs-btn-hover-border-color: rgb(0 190 208);
+    --bs-btn-active-bg: rgb(0 190 208);
+    --bs-btn-active-color: none;
+    --bs-btn-active-border-color: rgb(0 190 208);
+}
+
+.HEAButton::placeholder{
+    font-size: 25px;
+    color: rgb(0 190 208);
+    font-family: 'Anderson Grotesk';
+}
 
 .MATButton{
     border: 2px solid white;
@@ -229,9 +308,29 @@
     --bs-btn-active-border-color: rgb(255 99 170);
 }
 
+input.MATButton {
+    border: 2px solid rgb(255 99 170);
+    --bs-btn-color: rgb(255 99 170);
+    --bs-btn-hover-color: rgb(255 99 170);
+    --bs-btn-hover-border-color: rgb(255 99 170);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: rgb(255 99 170);
+    --bs-btn-active-border-color: rgb(255 99 170);
+}
+
+.MATSideButton{
+    border: 2px solid rgb(255 99 170);
+    --bs-btn-color: rgb(255 99 170);
+    --bs-btn-hover-color: rgb(255 99 170);
+    --bs-btn-hover-border-color: rgb(255 99 170);
+    --bs-btn-active-bg: rgb(255 99 170);
+    --bs-btn-active-color: none;
+    --bs-btn-active-border-color: rgb(255 99 170);
+}
+
 .MATButton::placeholder{
     font-size: 25px;
-    color: white;
+    color: rgb(255 99 170);
     font-family: 'Anderson Grotesk';
 }
 
@@ -245,10 +344,29 @@
     --bs-btn-active-border-color: rgb(60, 171, 75);
 }
 
+input.RENButton {
+    border: 2px solid rgb(60, 171, 75);
+    --bs-btn-color: rgb(60, 171, 75);
+    --bs-btn-hover-color: rgb(60, 171, 75);
+    --bs-btn-hover-border-color: rgb(60, 171, 75);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: rgb(60, 171, 75);
+    --bs-btn-active-border-color: rgb(60, 171, 75);
+}
+
+.RENSideButton{
+    border: 2px solid rgb(60, 171, 75);
+    --bs-btn-color: rgb(60, 171, 75);
+    --bs-btn-hover-color: rgb(60, 171, 75);
+    --bs-btn-hover-border-color: rgb(60, 171, 75);
+    --bs-btn-active-bg: rgb(60, 171, 75);
+    --bs-btn-active-color: none;
+    --bs-btn-active-border-color: rgb(60, 171, 75);
+}
 
 .RENButton::placeholder{
     font-size: 25px;
-    color: white;
+    color: rgb(60, 171, 75);
     font-family: 'Anderson Grotesk';
 }
 
@@ -262,9 +380,29 @@
     --bs-btn-active-border-color: rgb(99 160 255);
 }
 
+input.SCIButton {
+    border: 2px solid rgb(99 160 255);
+    --bs-btn-color: rgb(99 160 255);
+    --bs-btn-hover-color: rgb(99 160 255);
+    --bs-btn-hover-border-color: rgb(99 160 255);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: rgb(99 160 255);
+    --bs-btn-active-border-color: rgb(99 160 255);
+}
+
+.SCISideButton{
+    border: 2px solid rgb(99 160 255);
+    --bs-btn-color: rgb(99 160 255);
+    --bs-btn-hover-color: rgb(99 160 255);
+    --bs-btn-hover-border-color: rgb(99 160 255);
+    --bs-btn-active-bg: rgb(99 160 255);
+    --bs-btn-active-color: none;
+    --bs-btn-active-border-color: rgb(99 160 255);
+}
+
 .SCIButton::placeholder{
     font-size: 25px;
-    color: white;
+    color: rgb(99 160 255);
     font-family: 'Anderson Grotesk';
 }
 
@@ -278,9 +416,29 @@
     --bs-btn-active-border-color: rgb(77, 67, 215);
 }
 
+input.VPAButton {
+    border: 2px solid rgb(77, 67, 215);
+    --bs-btn-color: rgb(77, 67, 215);
+    --bs-btn-hover-color: rgb(77, 67, 215);
+    --bs-btn-hover-border-color: rgb(77, 67, 215);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: rgb(77, 67, 215);
+    --bs-btn-active-border-color: rgb(77, 67, 215);
+}
+
+.VPASideButton{
+    border: 2px solid rgb(77, 67, 215);
+    --bs-btn-color: rgb(77, 67, 215);
+    --bs-btn-hover-color: rgb(77, 67, 215);
+    --bs-btn-hover-border-color: rgb(77, 67, 215);
+    --bs-btn-active-bg: rgb(77, 67, 215);
+    --bs-btn-active-color: none;
+    --bs-btn-active-border-color: rgb(77, 67, 215);
+}
+
 .VPAButton::placeholder{
     font-size: 25px;
-    color: white;
+    color: rgb(77, 67, 215);
     font-family: 'Anderson Grotesk';
 }
 
@@ -291,6 +449,26 @@
     --bs-btn-active-color: white;
     --bs-btn-hover-color: rgb(178, 91, 199);
     --bs-btn-hover-border-color: rgb(178, 91, 199);
+    --bs-btn-active-border-color: rgb(178, 91, 199);
+}
+
+input.WLUButton {
+    border: 2px solid rgb(178, 91, 199);
+    --bs-btn-color: rgb(178, 91, 199);
+    --bs-btn-hover-color: rgb(178, 91, 199);
+    --bs-btn-hover-border-color: rgb(178, 91, 199);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: rgb(178, 91, 199);
+    --bs-btn-active-border-color: rgb(178, 91, 199);
+}
+
+.WLUSideButton{
+    border: 2px solid rgb(178, 91, 199);
+    --bs-btn-color: rgb(178, 91, 199);
+    --bs-btn-hover-color: rgb(178, 91, 199);
+    --bs-btn-hover-border-color: rgb(178, 91, 199);
+    --bs-btn-active-bg: rgb(178, 91, 199);
+    --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(178, 91, 199);
 }
 
@@ -312,12 +490,31 @@
     border: 2px solid white;
 }
 
+input.NAFacButton {
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
+    --bs-btn-active-bg: rgba(0,0,0,0);
+    --bs-btn-active-color: white;
+    --bs-btn-active-border-color: white;
+}
+
+.NAFacSideButton{
+    border: 2px solid white;
+    --bs-btn-color: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: none;
+    --bs-btn-active-border-color: white;
+}
+
 .NAFacButton::placeholder{
     font-size: 25px;
     color: white;
     font-family: 'Anderson Grotesk';
 }
-
 
 .ARTCard{
     border: 2px solid rgb(251 175 0);
@@ -690,4 +887,64 @@
 .WLUHover:Hover{
     color: rgb(201, 120, 221);
     cursor:pointer;
+}
+
+#switchButton.ARTCard:hover{
+    border: 2px solid rgb(251 175 0);
+    box-shadow: 0px 0px 1px 1px rgb(231 129 0);
+    background-color: rgba(251, 175, 0, 0.1);
+}
+
+#switchButton.ENGCard:hover{
+    border: 2px solid rgb(190 51 218);
+    box-shadow: 0px 0px 1px 1px rgb(129 0 180);
+    background-color: rgba(190, 51, 218, 0.1);
+}
+
+#switchButton.ENVCard:hover{
+    border: 2px solid rgb(190 213 0);
+    box-shadow: 0px 0px 1px 1px rgb(180 190 0);
+    background-color: rgba(190, 213, 0, 0.1);
+}
+
+#switchButton.HEACard:hover{
+    border: 2px solid rgb(0 190 208);
+    box-shadow: 0px 0px 1px 1px rgb(0, 152, 165);
+    background-color: rgba(0, 190, 208, 0.1);
+}
+
+#switchButton.MATCard:hover{
+    border: 2px solid rgb(255 99 170);
+    box-shadow: 0px 0px 1px 1px rgb(198, 0, 120);
+    background-color: rgba(255, 99, 170, 0.1);
+}
+
+#switchButton.RENCard:hover{
+    border: 2px solid rgb(60, 171, 75);
+    box-shadow: 0px 0px 1px 1px rgb(19, 145, 36);
+    background-color: rgba(60, 171, 75, 0.1);
+}
+
+#switchButton.SCICard:hover{
+    border: 2px solid rgb(99 160 255);
+    box-shadow: 0px 0px 1px 1px rgb(0,115,206);
+    background-color: rgba(99, 160, 255, 0.1);
+}
+
+#switchButton.VPACard:hover{
+    border: 2px solid rgb(77, 67, 215);
+    box-shadow: 0px 0px 1px 1px rgb(9, 0, 131);
+    background-color: rgba(77, 67, 215, 0.1);
+}
+
+#switchButton.WLUCard:hover{
+    border: 2px solid rgb(178, 91, 199);
+    box-shadow: 0px 0px 1px 1px rgb(139, 28, 167);
+    background-color: rgba(178, 91, 199, 0.1);
+}
+
+#switchButton.NAFacCard:hover{
+    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
+    border: 2px solid  rgb(107, 107, 107);
+    background-color: rgba(255,255,255,0.1);
 }

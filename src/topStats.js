@@ -1,7 +1,8 @@
-//import { useState, useEffect} from 'react';
+import { useState, useEffect} from 'react';
 import './App.css';
 import VerticalDisplay from './displayStatInfo.js';
 import data from './datafull.json';
+
 
 
 export default function TopStats ({ course, faculty }){
@@ -139,7 +140,6 @@ export default function TopStats ({ course, faculty }){
         liked: "N/A"
     })
 
-    console.log(mostEasy.length);
 
     if (mostEasy.length >= 1){
         easy1 = mostEasy[0];
@@ -167,7 +167,37 @@ export default function TopStats ({ course, faculty }){
         unliked3 = leastLiked[2];
     }
 
-    
+    const [easyTitle, setEasyTitle] = useState("Easiest Courses");
+    const [usefulTitle, setUsefulTitle] = useState("Most Useful Courses");
+    const [likedTitle, setLikedTitle] = useState("Most Liked Couses");
+    const [easyInput, setEasyInput] = useState([easy1, easy2, easy3]);
+    const [usefulInput, setUsefulInput] = useState([useful1, useful2, useful3]);
+    const [likedInput, setLikedInput] = useState([liked1, liked2, liked3]);
+    const [easyOrHard, setEasyOrHard] = useState("Worst");
+    const [colorStyle, setColorStyle] = useState({color:'rgb(232, 74, 68)'})
+
+    function changeEasyHard(){
+        if (easyTitle === "Easiest Courses"){
+            setEasyTitle("Hardest Courses");
+            setUsefulTitle("Least Useful Courses");
+            setLikedTitle("Least Liked Courses");
+            setEasyInput([hard1, hard2, hard3]);
+            setUsefulInput([useless1, useless2, useless3]);
+            setLikedInput([unliked1, unliked2, unliked3]);
+            setEasyOrHard("Best")
+            setColorStyle({color:'rgb(33, 161, 72)'});
+        } else {
+            setEasyTitle("Easiest Courses");
+            setUsefulTitle("Most Useful Courses");
+            setLikedTitle("Most Liked Courses");
+            setEasyInput([easy1, easy2, easy3]);
+            setUsefulInput([useful1, useful2, useful3]);
+            setLikedInput([liked1, liked2, liked3]);
+            setEasyOrHard("Worst");
+            setColorStyle({color:'rgb(232, 74, 68)'});
+        }
+    }
+
     return (
         <>
         <div style={{width:'80vw', marginRight:'0px'}}>
@@ -178,22 +208,22 @@ export default function TopStats ({ course, faculty }){
 
             <div id="facultyStatsRow1" className="row">
                 <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                    <h1 className={`facultyStatsTitle theFontBold ${faculty+"text"}`}> Easiest Courses</h1>
-                    <VerticalDisplay course1={easy1} course2={easy2} course3={easy3} faculty={faculty} prop="easy"></VerticalDisplay>
+                    <h1 className={`facultyStatsTitle theFontBold ${faculty+"text"}`}>{easyTitle}</h1>
+                    <VerticalDisplay course1={easyInput[0]} course2={easyInput[1]} course3={easyInput[2]} faculty={faculty} prop="easy"></VerticalDisplay>
                 </div>
                 <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                    <h1 className={`facultyStatsTitle theFontBold ${faculty+"text"}`}> Most Useful Courses</h1>
-                    <VerticalDisplay course1={useful1} course2={useful2} course3={useful3} faculty={faculty} prop="useful"></VerticalDisplay>
+                    <h1 className={`facultyStatsTitle theFontBold ${faculty+"text"}`}>{usefulTitle}</h1>
+                    <VerticalDisplay course1={usefulInput[0]} course2={usefulInput[1]} course3={usefulInput[2]} faculty={faculty} prop="useful"></VerticalDisplay>
                 </div>
             </div>
             
             <div id="facultyStatsRow2" className="row">
                 <div className="col-lg-8 d-flex">
-                    <h1 className={`facultyStatsTitle theFontBold ${faculty+"text"}`}> Most Liked Courses</h1>
-                    <VerticalDisplay course1={liked1} course2={liked2} course3={liked3} faculty={faculty} prop="easy"></VerticalDisplay>
+                    <h1 className={`facultyStatsTitletheFontBold ${faculty+"text"}`} style={{marginTop:'auto', marginBottom:'auto'}}>{likedTitle}</h1>
+                    <VerticalDisplay course1={likedInput[0]} course2={likedInput[1]} course3={likedInput[2]} faculty={faculty} prop="liked"></VerticalDisplay>
                 </div>
                 <div className="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                    
+                    <button id="switchButton" className={faculty+"Card btn theFont"} onClick={changeEasyHard}><h1 className={faculty+"Text"} style={{fontSize: '35px', marginBottom:'0px', color:'white'}}>Switch To:<br /><strong style={colorStyle}>{easyOrHard}</strong></h1></button>
                 </div>
             </div>
          </div>

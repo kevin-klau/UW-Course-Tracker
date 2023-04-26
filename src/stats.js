@@ -119,7 +119,7 @@ export default function Stats({ props }){
         lightFillColor='rgb(0,115,206)';
         fillColor='rgb(99 160 255)';
     } else if (faculty === "VPA"){
-        lightFillColor='rgb(9, 0, 131)';
+        lightFillColor='rgb(77, 67, 215)';
         fillColor='rgb(139, 135, 204)';
     } else if (faculty === "WLU"){
         lightFillColor='rgb(139, 28, 167)';
@@ -243,12 +243,12 @@ export default function Stats({ props }){
                     <div id="courseTitles">
                         <div className='row' style={{textAlign:'center', marginBottom:'-5px', width:'84vw'}}>
                             <div className='col-xl-3' id='returnButton'>
-                                <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"Button btn"}>Search Again</button>
+                                <button onClick={() => clickSearchAgain()} id='backUpButton' className = {props.faculty +"SideButton btn"}>Search Again</button>
                             </div>
                             <h1 id="courseHeading" className={`col-xl-6 ${faculty+"text"} theFont`}> {props.course} </h1>
                             <form className='col-xl-3 container' id='searchButton' onSubmit={submitCourseSearch}>
                                 <input type="text" id='searchCourseButton' className = {props.faculty +"Button btn"} autocomplete="off" placeholder="Search Course!" onChange={(e) => setUserCourseChoice(e.target.value)}></input>
-                                <button id="searchCourseButtonEnter" className = {props.faculty +"Button btn"} type="submit">🔎︎</button>
+                                <button id="searchCourseButtonEnter" className = {props.faculty +"SideButton btn"} type="submit">🔎︎</button>
                             </form>
                         </div>
                             <h2 id="courseHeadingName" className={faculty + "text theFont"}> {props.name}</h2>   

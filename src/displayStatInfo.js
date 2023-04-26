@@ -1,4 +1,4 @@
-//import { useState, useEffect} from 'react';
+import { useState, useEffect} from 'react';
 import './App.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -48,20 +48,36 @@ function TheCircle ({ course , prop, faculty }){
     );
 }
 
+function Display ({ course, faculty, prop }){
+    return(
+        <div id="facultyStatsCard" className={faculty+"Card"}>
+            <div class="row" style={{marginTop:'auto', marginBottom:'auto'}}>
+                <div id="facultyStatsInfo" className="col-xl-9">
+                    <h1 id="facultyStatsCode" className={faculty+"text theFontBold"}>{course.code}</h1>
+                    <h4 id="facultyStatsName" className={faculty+"text"}> {course.name}</h4>
+                </div>
+                <div id="theCircle" className="col-xl-3">
+                    <TheCircle course={course} prop={prop} faculty={faculty} />
+                </div>
+            </div>
+        </div>
+    );
+}
+
 export default function VerticalDisplay ({ course1, course2, course3, faculty, prop }){
+
+    
 
     return (
         <>
-            <div id="facultyStatsCard" className={faculty+"Card"}>
-                <div class="row" style={{marginTop:'auto', marginBottom:'auto'}}>
-                    <div id="facultyStatsInfo" className="col-xl-9">
-                        <h1 id="facultyStatsCode" className={faculty+"text theFontBold"}>{course1.code}</h1>
-                        <h4 id="facultyStatsName" className={faculty+"text"}> {course1.name}</h4>
-                    </div>
-                    <div id="theCircle" className="col-xl-3">
-                        <TheCircle course={course1} prop={prop} faculty={faculty} />
-                    </div>
+            <div id="topStatsContainer">
+                <button id="topStatsButtonLeft" className={faculty+"text topStatsButton btn theFont"}>〈</button>
+                <div id="threeCoursesContainer">
+                    <div className="child"> <Display course={course1} faculty={faculty} prop={prop}/> </div>
+                    <div className="child"> <Display course={course2} faculty={faculty} prop={prop}/> </div>
+                    <div className="child"> <Display course={course3} faculty={faculty} prop={prop}/> </div>
                 </div>
+                <button id="topStatsButtonRight" className={faculty+"text topStatsButton btn theFont"}>〉</button>
             </div>
         </>
     );
