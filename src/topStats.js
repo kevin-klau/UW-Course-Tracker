@@ -206,19 +206,19 @@ export default function TopStats ({ course, faculty }){
                 <div id="facultyStatsHeaderLine" className={faculty+"Card"}/>
             </div>
 
-            <div id="facultyStatsRow1" className="row">
+            <div key={easyOrHard+"easy"} id="facultyStatsRow1" className="row">
                 <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
                     <h1 className={`facultyStatsTitle theFontBold ${faculty+"text"}`}>{easyTitle}</h1>
                     <VerticalDisplay course1={easyInput[0]} course2={easyInput[1]} course3={easyInput[2]} faculty={faculty} prop="easy"></VerticalDisplay>
                 </div>
-                <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                <div key={easyOrHard+"useful"} className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
                     <h1 className={`facultyStatsTitle theFontBold ${faculty+"text"}`}>{usefulTitle}</h1>
                     <VerticalDisplay course1={usefulInput[0]} course2={usefulInput[1]} course3={usefulInput[2]} faculty={faculty} prop="useful"></VerticalDisplay>
                 </div>
             </div>
             
             <div id="facultyStatsRow2" className="row">
-                <div className="col-lg-8 d-flex">
+                <div key={easyOrHard+"liked"} className="col-lg-8 d-flex">
                     <h1 className={`facultyStatsTitletheFontBold ${faculty+"text"}`} style={{marginTop:'auto', marginBottom:'auto'}}>{likedTitle}</h1>
                     <VerticalDisplay course1={likedInput[0]} course2={likedInput[1]} course3={likedInput[2]} faculty={faculty} prop="liked"></VerticalDisplay>
                 </div>

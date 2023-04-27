@@ -458,7 +458,7 @@ body{
 }
 
 #facultyStatsCard{
-  min-width: 27vw;
+  min-width: 29vw;
   border-radius: 10px;
   padding: 10px 20px 10px 10px;
   margin-top: auto;
@@ -556,7 +556,7 @@ body{
   display: flex;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
-  width: 28vw;
+  width: 30vw;
 }
 
 .topStatsButton{

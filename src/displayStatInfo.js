@@ -27,7 +27,7 @@ function TheCircle ({ course , prop, faculty }){
     
     return(
         <CircularProgressbar 
-            value={theInfo} 
+            value={theInfo * 0.99 + 1} 
             text={`${theInfo}%`}
             strokeWidth={7}
 
@@ -75,7 +75,7 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
             document.getElementById(prop+"2").scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest',
-                inline: 'center'
+                 
               });;
         } else if (view === 2){
             console.log("change")
@@ -83,7 +83,7 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
             document.getElementById(prop+"3").scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest',
-                inline: 'center'
+                 
               });;
         } else {
             console.log("change")
@@ -91,7 +91,7 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
             document.getElementById(prop+"1").scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest',
-                inline: 'center'
+                 
               });;
         }
     }
@@ -103,7 +103,7 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
             document.getElementById(prop+"2").scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest',
-                inline: 'center'
+                 
               });;
         } else if (view === 1){
             console.log("change")
@@ -111,7 +111,7 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
             document.getElementById(prop+"3").scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest',
-                inline: 'center'
+                 
               });;
         } else {
             console.log("change")
@@ -119,7 +119,7 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
             document.getElementById(prop+"1").scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest',
-                inline: 'center'
+                 
               });;
         }
     }
@@ -129,9 +129,9 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
             <div id="topStatsContainer">
                 <button id="topStatsButtonLeft" onClick={changeViewLeft} className={faculty+"text topStatsButton btn theFont"}>〈</button>
                 <div id="threeCoursesContainer">
-                    <div id={prop+"1"} className="child"> <Display course={course1} faculty={faculty} prop={prop}/> </div>
-                    <div id={prop+"2"} className="child"> <Display course={course2} faculty={faculty} prop={prop}/> </div>
-                    <div id={prop+"3"} className="child"> <Display course={course3} faculty={faculty} prop={prop}/> </div>
+                    <div id={prop+"1"} className="child" style={{marginTop:'auto', marginBottom:'auto'}}> <Display course={course1} faculty={faculty} prop={prop}/> </div>
+                    <div id={prop+"2"} className="child" style={{marginTop:'auto', marginBottom:'auto'}}> <Display course={course2} faculty={faculty} prop={prop}/> </div>
+                    <div id={prop+"3"} className="child" style={{marginTop:'auto', marginBottom:'auto'}}> <Display course={course3} faculty={faculty} prop={prop}/> </div>
                 </div>
                 <button id="topStatsButtonRight" onClick={changeViewRight} className={faculty+"text topStatsButton btn theFont"}>〉</button>
             </div>
