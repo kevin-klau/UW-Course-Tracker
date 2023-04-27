@@ -66,18 +66,74 @@ function Display ({ course, faculty, prop }){
 
 export default function VerticalDisplay ({ course1, course2, course3, faculty, prop }){
 
-    
+    const [view, setView] = useState(1);
+
+    function changeViewRight() {
+        if (view === 1){
+            console.log("change")
+            setView(2);
+            document.getElementById(prop+"2").scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+              });;
+        } else if (view === 2){
+            console.log("change")
+            setView(3);
+            document.getElementById(prop+"3").scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+              });;
+        } else {
+            console.log("change")
+            setView(1);
+            document.getElementById(prop+"1").scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+              });;
+        }
+    }
+
+    function changeViewLeft() {
+        if (view === 3){
+            console.log("change")
+            setView(2);
+            document.getElementById(prop+"2").scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+              });;
+        } else if (view === 1){
+            console.log("change")
+            setView(3);
+            document.getElementById(prop+"3").scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+              });;
+        } else {
+            console.log("change")
+            setView(1);
+            document.getElementById(prop+"1").scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+              });;
+        }
+    }
 
     return (
         <>
             <div id="topStatsContainer">
-                <button id="topStatsButtonLeft" className={faculty+"text topStatsButton btn theFont"}>〈</button>
+                <button id="topStatsButtonLeft" onClick={changeViewLeft} className={faculty+"text topStatsButton btn theFont"}>〈</button>
                 <div id="threeCoursesContainer">
-                    <div className="child"> <Display course={course1} faculty={faculty} prop={prop}/> </div>
-                    <div className="child"> <Display course={course2} faculty={faculty} prop={prop}/> </div>
-                    <div className="child"> <Display course={course3} faculty={faculty} prop={prop}/> </div>
+                    <div id={prop+"1"} className="child"> <Display course={course1} faculty={faculty} prop={prop}/> </div>
+                    <div id={prop+"2"} className="child"> <Display course={course2} faculty={faculty} prop={prop}/> </div>
+                    <div id={prop+"3"} className="child"> <Display course={course3} faculty={faculty} prop={prop}/> </div>
                 </div>
-                <button id="topStatsButtonRight" className={faculty+"text topStatsButton btn theFont"}>〉</button>
+                <button id="topStatsButtonRight" onClick={changeViewRight} className={faculty+"text topStatsButton btn theFont"}>〉</button>
             </div>
         </>
     );
