@@ -569,6 +569,10 @@ body{
   margin-top: 10px;
 }
 
+.threeCoursesMargins{
+  margin: auto 20px auto 20px;
+}
+
 .navCircle{
   width: 40px;
   height: 15px;

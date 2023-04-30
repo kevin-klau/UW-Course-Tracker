@@ -71,7 +71,6 @@ function Display ({ course, faculty, prop }){
 }
 
 export default function VerticalDisplay ({ course1, course2, course3, faculty, prop }){
-
     const [view, setView] = useState(1);
 
     function changeViewRight() {
@@ -106,6 +105,7 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
         document.getElementById(prop+"1").scrollIntoView({
             behavior: 'smooth',
             block: 'nearest',
+            inline: 'center'
         });
     }
 
@@ -117,6 +117,7 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
         document.getElementById(prop+"2").scrollIntoView({
             behavior: 'smooth',
             block: 'nearest',
+            inline: 'center'
         });
     }
 
@@ -128,6 +129,7 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
         document.getElementById(prop+"3").scrollIntoView({
             behavior: 'smooth',
             block: 'nearest',
+            inline: 'center'
         });
     }
 
@@ -137,9 +139,9 @@ export default function VerticalDisplay ({ course1, course2, course3, faculty, p
                 <div id="coursesButtonsContainer">
                     <button id="topStatsButtonLeft" onClick={changeViewLeft} className={faculty+"text topStatsButton btn theFont"}>〈</button>
                     <div id="threeCoursesContainer">
-                        <div id={prop+"1"} className="child" style={{marginTop:'auto', marginBottom:'auto'}}> <Display course={course1} faculty={faculty} prop={prop}/> </div>
-                        <div id={prop+"2"} className="child" style={{marginTop:'auto', marginBottom:'auto'}}> <Display course={course2} faculty={faculty} prop={prop}/> </div>
-                        <div id={prop+"3"} className="child" style={{marginTop:'auto', marginBottom:'auto'}}> <Display course={course3} faculty={faculty} prop={prop}/> </div>
+                        <div id={prop+"1"} className="child threeCoursesMargins"> <Display course={course1} faculty={faculty} prop={prop}/> </div>
+                        <div id={prop+"2"} className="child threeCoursesMargins"> <Display course={course2} faculty={faculty} prop={prop}/> </div>
+                        <div id={prop+"3"} className="child threeCoursesMargins"> <Display course={course3} faculty={faculty} prop={prop}/> </div>
                     </div>
                     <button id="topStatsButtonRight" onClick={changeViewRight} className={faculty+"text topStatsButton btn theFont"}>〉</button>
                 </div>

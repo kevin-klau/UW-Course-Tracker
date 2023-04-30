@@ -84,11 +84,13 @@ function App() {
   // Function to handle when they finally choose a subject
   function Selected(course, faculty, name){
       // Set revealInfo to true and update the selected course
-      document.getElementById('secondPageInfo').scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-        inline: 'center'
-      });
+      setTimeout(function() {
+        document.getElementById('secondPageInfo').scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+      }, 100);
       setSelectedCourse ({course:course, faculty:faculty, name:name});
   }
 
