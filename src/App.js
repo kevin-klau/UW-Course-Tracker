@@ -92,6 +92,10 @@ function App() {
       setSelectedCourse ({course:course, faculty:faculty, name:name});
   }
 
+  function routeUWFlowHome(){
+    window.open("https://uwflow.com/");
+}
+
   return (
     <div id="background">
         <div id="contain">
@@ -102,7 +106,7 @@ function App() {
               <form id="form" className="row" role="search" onSubmit={Submitted}>
                   <div className={`fade ${alert ? 'show' : 'hide'} col-lg-3`} style={{display:'flex', textAlign:'Center', alignItems:'Center', justifyContent:'center'}}>
                           <div id="alert" className="theFont" role="alert">
-                              Invalid Course
+                              Invalid Subject
                           </div>
                   </div>
                   <div className="col-lg-6 d-flex" style={{display:"flex", marginTop:'5px'}}>
@@ -121,7 +125,7 @@ function App() {
           <div style={{marginTop: 'auto', paddingLeft: '20px', paddingRight:'20px', paddingTop: '15px'}} className="row">
             <div className="col-sm-4"><h1 class="theFont personal">Designed By: Kevin Lau</h1></div>
             <div className="col-sm-4"><h1 class="theFont personal" style={{textAlign:'center'}}>Data Updated: 02-23-2023</h1></div>
-            <div className="col-sm-4"><h1 class="theFont personal" style={{textAlign:'right'}}>Data Source: UWFlow</h1></div>
+            <div className="col-sm-4" style={{display: 'flex', justifyContent:'right'}}><h1 class="theFont personal" style={{paddingRight:'4px'}}>Data Source: </h1><h1 class="theFont personal normHover" style={{textDecoration:'underline'}} onClick={routeUWFlowHome}>https://uwflow.com/</h1></div>
           </div>
         </div>
     </div>

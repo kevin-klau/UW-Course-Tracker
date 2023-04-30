@@ -948,3 +948,88 @@ input.NAFacButton {
     border: 2px solid  rgb(107, 107, 107);
     background-color: rgba(255,255,255,0.1);
 }
+
+.normHover:hover{
+    color: gray;
+    cursor:pointer;
+}
+
+.ARTNavCircle{
+    border: 1.5px solid rgb(251 175 0);
+}
+
+.ENGNavCircle{
+    border: 1.5px solid rgb(190 51 218);
+}
+
+.ENVNavCircle{
+    border: 1.5px solid rgb(190 213 0);
+}
+
+.HEANavCircle{
+    border: 1.5px solid  rgb(0 190 208);
+}
+
+.MATNavCircle{
+    border: 1.5px solid rgb(255 99 170);
+}
+
+.RENMavCircle{
+    border: 1.5px solid  rgb(60, 171, 75);
+}
+
+.SCINavCircle{
+    border: 1.5px solid rgb(99 160 255);
+}
+
+.VPAMavCircle{
+    border: 1.5px solid  rgb(77, 67, 215);
+}
+
+.WLUNavCircle{
+    border: 1.5px solid  rgb(178, 91, 199);
+}
+
+.NAFacNavCircle{
+    border: 1.5px solid  white;
+}
+
+.ARTNavCircleFilled{
+    background-color: rgb(251 175 0);
+}
+
+.ENGNavCircleFilled{
+    background-color: rgb(190 51 218);
+}
+
+.ENVNavCircleFilled{
+    background-color: rgb(190 213 0);
+}
+
+.HEANavCircleFilled{
+    background-color: rgb(0 190 208);
+}
+
+.MATNavCircleFilled{
+    background-color: rgb(255 99 170);
+}
+
+.RENMavCircleFilled{
+    background-color: rgb(60, 171, 75);
+}
+
+.SCINavCircleFilled{
+    background-color: rgb(99 160 255);
+}
+
+.VPAMavCircleFilled{
+    background-color: rgb(77, 67, 215);
+}
+
+.WLUNavCircleFilled{
+    background-color: rgb(178, 91, 199);
+}
+
+.NAFacNavCircleFilled{
+    background-color: white;
+}
