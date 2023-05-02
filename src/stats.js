@@ -55,7 +55,7 @@ function DataChart ({ data, faculty, onClick, fillColor, lightFillColor }){
     );
 }
 
-export default function Stats({ props }){
+export default function Stats({ props, potentialCourse }){
     
     const [filteredInfo, setFilteredInfo] = useState([]);
 
@@ -126,10 +126,10 @@ export default function Stats({ props }){
         fillColor='rgb(201, 120, 221)';
     }
 
+    
     const [oldData, setOldData] = useState();
     function submitCourseSearch(e){
         e.preventDefault();
-        
         
         for (let i = 0; i < scatterPlotData.length; i++){
             const theCode = scatterPlotData[i].code.toUpperCase()

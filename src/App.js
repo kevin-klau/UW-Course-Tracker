@@ -38,6 +38,8 @@ function App() {
 
   // Setting User Input
   const [userInput, setUserInput] = useState('');
+
+  const [sendUserInput, setSendUserInput] = useState("");
     
   // Checking whether or not to reveal alert
   const [alert, setAlert] = useState(false);
@@ -59,17 +61,17 @@ function App() {
       setAlert(false);
       setUserInput(e.target.value);
       if (e.target.value !== ""){
-          setResults(fuse.search(e.target.value).slice(0,5));
+          setResults(fuse.search(e.target.value.replace(/[\d\s]+/g, '')).slice(0,5));
       }
   }
 
   // Function to handle when they want to search
   function Submitted(e){
       e.preventDefault();
-
-      if (userInput.toUpperCase() !== results[0].item.course){
+      if (userInput.toUpperCase().replace(/[\d\s]+/g, '') !== results[0].item.course){
           setAlert(true);
       }else{
+          setSendUserInput(userInput);
           setAlert(false);
           Selected(results[0].item.course, results[0].item.faculty, results[0].item.name);
       }
@@ -122,11 +124,11 @@ function App() {
                   ))}
               </div></div>
             </div>
-            <div className="child"><Stats id="stat" key={selectedCourse.course} props={selectedCourse}></Stats></div>
+            <div className="child"><Stats id="stat" key={selectedCourse.course} props={selectedCourse} potentialCourse={sendUserInput}></Stats></div>
           </div>
           <div style={{marginTop: 'auto', paddingLeft: '20px', paddingRight:'20px', paddingTop: '15px'}} className="row">
             <div className="col-sm-4"><h1 class="theFont personal">Designed By: Kevin Lau</h1></div>
-            <div className="col-sm-4"><h1 class="theFont personal" style={{textAlign:'center'}}>Data Updated: 02-23-2023</h1></div>
+            <div className="col-sm-4"><h1 class="theFont personal" style={{textAlign:'center'}}>Data Updated: 04-30-2023</h1></div>
             <div className="col-sm-4" style={{display: 'flex', justifyContent:'right'}}><h1 class="theFont personal" style={{paddingRight:'4px'}}>Data Source: </h1><h1 class="theFont personal normHover" style={{textDecoration:'underline'}} onClick={routeUWFlowHome}>https://uwflow.com/</h1></div>
           </div>
         </div>

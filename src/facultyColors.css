@@ -982,7 +982,7 @@ input.NAFacButton {
     border: 1.5px solid rgb(99 160 255);
 }
 
-.VPAMavCircle{
+.VPANavCircle{
     border: 1.5px solid  rgb(77, 67, 215);
 }
 
@@ -1022,7 +1022,7 @@ input.NAFacButton {
     background-color: rgb(99 160 255);
 }
 
-.VPAMavCircleFilled{
+.VPANavCircleFilled{
     background-color: rgb(77, 67, 215);
 }
 
