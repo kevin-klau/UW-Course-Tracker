@@ -221,7 +221,7 @@ body{
   margin-bottom: 10px;
 }
 
-#SearchResults{
+.searchResults{
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 45px;
@@ -451,6 +451,9 @@ body{
   margin-bottom: -5px;
   padding-bottom: 10px;
   width: 83vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cardCode{
@@ -568,6 +571,40 @@ body{
   justify-content: center;
   margin-top: 10px;
 }
+
+.tooltip{
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  padding: 0.25em 0.5em;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.25em;
+  white-space: nowrap;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 100%;
+  transition-property: visibility;
+  transition-delay: 0s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition-delay: 0.3s;
+}
+
+.extraText{
+  display:none;
+}
+
 
 .threeCoursesMargins{
   margin: auto 20px auto 20px;

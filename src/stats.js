@@ -6,6 +6,11 @@ import {ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Cell
 import CardInfo from './theCards.js';
 import './facultyColors.css';
 import TopStats from './topStats.js';
+import ToolTip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
+import Zoom from '@mui/material/Zoom';
+
+
 
 let fillColor='white';
 let lightFillColor='grey';
@@ -130,7 +135,7 @@ export default function Stats({ props, potentialCourse }){
     const [oldData, setOldData] = useState();
     function submitCourseSearch(e){
         e.preventDefault();
-        
+
         for (let i = 0; i < scatterPlotData.length; i++){
             const theCode = scatterPlotData[i].code.toUpperCase()
             const theCodeLength = theCode.length;
@@ -160,7 +165,7 @@ export default function Stats({ props, potentialCourse }){
         } 
        
     }
-
+    
     useEffect(() => {
         setFilteredInfo(data.filter(item => item.code.substring(0, props.course.length+1) === (props.course+" ") && Number(item.ratings) >= 5));
     }, [props]);
@@ -234,6 +239,24 @@ export default function Stats({ props, potentialCourse }){
         props.faculty = 'NAFac';
     }
 
+    const CustomToolTip = styled(({ className, ...props }) => (
+        <ToolTip {...props} classes={{ popper: className }} />
+      ))(({ theme }) => ({
+        [`& .${tooltipClasses.arrow}`]: {
+            color: fillColor
+        },
+        [`& .${tooltipClasses.tooltip}`]: {
+            border:'2px solid '+fillColor,
+            backgroundColor: "rgb(14, 14, 37, 0.9)",
+            color: fillColor,
+            boxShadow: theme.shadows[1],
+            fontSize: 17,
+            fontFamily:'Anderson Grotesk',
+            maxHeight: '300px',
+            overflowY:'scroll'
+        },
+      }));
+    
     return(
         <>
         <div id="secondPageContainer" style={{display: 'flex'}}>
@@ -251,7 +274,13 @@ export default function Stats({ props, potentialCourse }){
                                 <button id="searchCourseButtonEnter" className = {props.faculty +"SideButton btn"} type="submit">🔎︎</button>
                             </form>
                         </div>
-                            <h2 id="courseHeadingName" className={faculty + "text theFont"}> {props.name}</h2>   
+                        <div id="courseHeadingName">
+                            <h2 className={faculty + "text theFont"}> {props.name}</h2> 
+                            <CustomToolTip TransitionComponent={Zoom} title="Courses with < 5 Ratings Aren't Included. These Include:" arrow>
+                                <h2 className={faculty+"text theFont"} style={{paddingLeft:'10px', paddingRight:'10px', fontSize:'25px'}}> ⓘ</h2>
+                            </CustomToolTip>
+                            
+                        </div>
                     </div>
                     <div id="displayedInfo">
                         <DataChart id="theChart" data={scatterPlotData} faculty={props.faculty} onClick={handlePointClick} fillColor={fillColor} lightFillColor={lightFillColor} className='col-lg-6'/> 

@@ -120,7 +120,7 @@ function App() {
               </form>
               <div id="Buttons" className="container">
                   {results.map((result) => (
-                  <button id="SearchResults" key={result.item.course} className={result.item.faculty+"Button btn theFont"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
+                  <button key={result.item.course} className={result.item.faculty+"Button btn theFont searchResults"} style={{borderWidth:"3px"}} onClick={() => Selected(result.item.course, result.item.faculty, result.item.name)}>{result.item.course}</button>
                   ))}
               </div></div>
             </div>
