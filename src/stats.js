@@ -165,6 +165,8 @@ export default function Stats({ props, potentialCourse }){
         } 
        
     }
+
+    
     
     useEffect(() => {
         setFilteredInfo(data.filter(item => item.code.substring(0, props.course.length+1) === (props.course+" ") && Number(item.ratings) >= 5));
@@ -241,22 +243,50 @@ export default function Stats({ props, potentialCourse }){
 
     const CustomToolTip = styled(({ className, ...props }) => (
         <ToolTip {...props} classes={{ popper: className }} />
-      ))(({ theme }) => ({
-        [`& .${tooltipClasses.arrow}`]: {
-            color: fillColor
-        },
-        [`& .${tooltipClasses.tooltip}`]: {
-            border:'2px solid '+fillColor,
-            backgroundColor: "rgb(14, 14, 37, 0.9)",
-            color: fillColor,
-            boxShadow: theme.shadows[1],
-            fontSize: 17,
-            fontFamily:'Anderson Grotesk',
-            maxHeight: '300px',
-            overflowY:'scroll'
-        },
-      }));
+        ))(({ theme }) => ({
+            [`& .${tooltipClasses.arrow}`]: {
+                color: fillColor
+            },
+            [`& .${tooltipClasses.tooltip}`]: {
+                border:'2px solid '+fillColor,
+                backgroundColor: "rgb(14, 14, 37, 0.9)",
+                color: fillColor,
+                boxShadow: theme.shadows[1],
+                fontSize: 17,
+                fontFamily:'Anderson Grotesk',
+                maxHeight: '300px',
+                overflowY:'scroll'
+            },
+        }));
     
+
+    // Printing excluded Courses
+    let excludedCourses = [];
+
+    // Putting all the excluded courses to sort the array
+    for (let i = 0; i < data.length; i++){
+        if (data[i].code.substring(0, props.course.length+1) === (props.course+" ") && data[i].ratings < 5){
+            let codeStart = 0;
+            for (let j = 0; j < data[i].code.length; j++){
+                if (data[i].code.charAt(j) === " "){
+                    codeStart = j + 1;
+                    break;
+                }
+            }
+            excludedCourses.push(data[i].code.substring(codeStart, data[i].code.length))
+        }
+    }
+    excludedCourses.sort();
+
+    // Putting all the excluded courses in a string to be printed (with commas and spacing)
+    let printExcluded = "";
+    for (let i = 0; i < excludedCourses.length; i++){
+        printExcluded += ", " + props.course + " " + excludedCourses[i];
+    }
+    printExcluded = printExcluded.substring(2, printExcluded.length)
+
+    const titleContent = `<h4>Courses with <5 Ratings Aren't Included. These Include:</h4> <h5>${printExcluded}</h5>`;
+
     return(
         <>
         <div id="secondPageContainer" style={{display: 'flex'}}>
@@ -276,7 +306,7 @@ export default function Stats({ props, potentialCourse }){
                         </div>
                         <div id="courseHeadingName">
                             <h2 className={faculty + "text theFont"}> {props.name}</h2> 
-                            <CustomToolTip TransitionComponent={Zoom} title="Courses with < 5 Ratings Aren't Included. These Include:" arrow>
+                            <CustomToolTip TransitionComponent={Zoom} title={<span dangerouslySetInnerHTML={{ __html: titleContent }} />} arrow>
                                 <h2 className={faculty+"text theFont"} style={{paddingLeft:'10px', paddingRight:'10px', fontSize:'25px'}}> ⓘ</h2>
                             </CustomToolTip>
                             
