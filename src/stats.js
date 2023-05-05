@@ -255,7 +255,26 @@ export default function Stats({ props, potentialCourse }){
                 fontSize: 17,
                 fontFamily:'Anderson Grotesk',
                 maxHeight: '300px',
-                overflowY:'scroll'
+                overflowY:'scroll',
+                maxWidth: '300px',
+                scrollbarWidth: 'thin', 
+                    scrollBehavior: 'smooth', 
+                    ...{
+                      '::-webkit-scrollbar': {
+                        width: '7px',
+                      },
+                      '::-webkit-scrollbar-track': {
+                        backgroundColor: 'rgba(0,0,0,0)'
+                      },
+                      '::-webkit-scrollbar-thumb': {
+                        backgroundColor: fillColor,
+                        borderRadius: '100px',
+                      },
+                      '::-webkit-scrollbar-thumb:hover': {
+                        backgroundColor: lightFillColor
+                      }
+                    }
+                
             },
         }));
     
@@ -285,7 +304,7 @@ export default function Stats({ props, potentialCourse }){
     }
     printExcluded = printExcluded.substring(2, printExcluded.length)
 
-    const titleContent = `<h4>Courses with <5 Ratings Aren't Included. These Include:</h4> <h5>${printExcluded}</h5>`;
+    const titleContent = `<h4>Courses with <5 Ratings Aren't Included. These Include:</h4> <h5><strong>${printExcluded}</strong></h5>`;
 
     return(
         <>

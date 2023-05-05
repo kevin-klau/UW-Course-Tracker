@@ -177,8 +177,8 @@ input.ARTButton {
 .ARTSideButton{
     border: 2px solid rgb(251 175 0);
     --bs-btn-color: rgb(251 175 0);
-    --bs-btn-hover-color: rgb(251 175 0);
-    --bs-btn-hover-border-color: rgb(251 175 0);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
     --bs-btn-active-bg: rgb(251 175 0);
     --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(251 175 0);
@@ -213,8 +213,8 @@ input.ENGButton {
 .ENGSideButton{
     border: 2px solid rgb(190 51 218);
     --bs-btn-color: rgb(190 51 218);
-    --bs-btn-hover-color: rgb(190 51 218);
-    --bs-btn-hover-border-color: rgb(190 51 218);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
     --bs-btn-active-bg: rgb(190 51 218);
     --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(190 51 218);
@@ -249,8 +249,8 @@ input.ENVButton {
 .ENVSideButton{
     border: 2px solid rgb(190 213 0);
     --bs-btn-color: rgb(190 213 0);
-    --bs-btn-hover-color: rgb(190 213 0);
-    --bs-btn-hover-border-color: rgb(190 213 0);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
     --bs-btn-active-bg: rgb(190 213 0);
     --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(190 213 0);
@@ -285,8 +285,8 @@ input.HEAButton {
 .HEASideButton{
     border: 2px solid rgb(0 190 208);
     --bs-btn-color: rgb(0 190 208);
-    --bs-btn-hover-color: rgb(0 190 208);
-    --bs-btn-hover-border-color: rgb(0 190 208);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
     --bs-btn-active-bg: rgb(0 190 208);
     --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(0 190 208);
@@ -321,8 +321,8 @@ input.MATButton {
 .MATSideButton{
     border: 2px solid rgb(255 99 170);
     --bs-btn-color: rgb(255 99 170);
-    --bs-btn-hover-color: rgb(255 99 170);
-    --bs-btn-hover-border-color: rgb(255 99 170);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
     --bs-btn-active-bg: rgb(255 99 170);
     --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(255 99 170);
@@ -357,8 +357,8 @@ input.RENButton {
 .RENSideButton{
     border: 2px solid rgb(60, 171, 75);
     --bs-btn-color: rgb(60, 171, 75);
-    --bs-btn-hover-color: rgb(60, 171, 75);
-    --bs-btn-hover-border-color: rgb(60, 171, 75);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
     --bs-btn-active-bg: rgb(60, 171, 75);
     --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(60, 171, 75);
@@ -393,8 +393,8 @@ input.SCIButton {
 .SCISideButton{
     border: 2px solid rgb(99 160 255);
     --bs-btn-color: rgb(99 160 255);
-    --bs-btn-hover-color: rgb(99 160 255);
-    --bs-btn-hover-border-color: rgb(99 160 255);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
     --bs-btn-active-bg: rgb(99 160 255);
     --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(99 160 255);
@@ -429,8 +429,8 @@ input.VPAButton {
 .VPASideButton{
     border: 2px solid rgb(77, 67, 215);
     --bs-btn-color: rgb(77, 67, 215);
-    --bs-btn-hover-color: rgb(77, 67, 215);
-    --bs-btn-hover-border-color: rgb(77, 67, 215);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
     --bs-btn-active-bg: rgb(77, 67, 215);
     --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(77, 67, 215);
@@ -465,8 +465,8 @@ input.WLUButton {
 .WLUSideButton{
     border: 2px solid rgb(178, 91, 199);
     --bs-btn-color: rgb(178, 91, 199);
-    --bs-btn-hover-color: rgb(178, 91, 199);
-    --bs-btn-hover-border-color: rgb(178, 91, 199);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-border-color: white;
     --bs-btn-active-bg: rgb(178, 91, 199);
     --bs-btn-active-color: none;
     --bs-btn-active-border-color: rgb(178, 91, 199);
